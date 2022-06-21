@@ -1,0 +1,264 @@
+extends ../layout
+include ../mixins/mixins
+
+block header
+    include ../components/header
+block content
+    .container
+        .breadcrumbs
+            a(href="/")._item Главная
+            ._item.-current Врачи медицинского центра
+    main.doctors.main-wrapper
+        section.doctors-tabs
+            ._container.container
+                h1.h1 #[span.primary Врачи] медицинского центра "Я Здоров!"
+                .tabs
+                    ._controls
+                        ._control.active.js-tab-control(data-tab='tab-1')
+                            .input-radio-dummy
+                                input#tc1(type="radio" name="tc" checked)
+                                label(for="tc1") Терапевт
+                        ._control.js-tab-control(data-tab='tab-2')
+                            .input-radio-dummy
+                                input#tc2(type="radio" name="tc")
+                                label(for="tc2") Гинеколог
+                        ._control.js-tab-control(data-tab='tab-3')
+                            .input-radio-dummy
+                                input#tc3(type="radio" name="tc")
+                                label(for="tc3") Уролог
+                        ._control.js-tab-control(data-tab='tab-1')
+                            .input-radio-dummy
+                                input#tc4(type="radio" name="tc")
+                                label(for="tc4") ЛОР
+                        ._control.js-tab-control(data-tab='tab-2')
+                            .input-radio-dummy
+                                input#tc5(type="radio" name="tc")
+                                label(for="tc5") Офтальмолог
+                        ._control.js-tab-control(data-tab='tab-3')
+                            .input-radio-dummy
+                                input#tc6(type="radio" name="tc")
+                                label(for="tc6") Невролог
+                        ._control.js-tab-control(data-tab='tab-1')
+                            .input-radio-dummy
+                                input#tc7(type="radio" name="tc")
+                                label(for="tc7") Профпатолог
+                        ._control.js-tab-control(data-tab='tab-2')
+                            .input-radio-dummy
+                                input#tc8(type="radio" name="tc")
+                                label(for="tc8") Психиатр-нарколог
+                    ._controls-mobile
+                        ._controls-mobile-select.js-select
+                            ._controls-mobile-select-val.js-select-val Терапевт
+                            +icon('arrow-down')
+                        ._controls-mobile-options.js-select-options
+                            ._controls-mobile-option.js-tab-control(data-tab='tab-1') Терапевт
+                            ._controls-mobile-option.js-tab-control(data-tab='tab-2') Гинеколог
+                            ._controls-mobile-option.js-tab-control(data-tab='tab-3') Уролог
+                            ._controls-mobile-option.js-tab-control(data-tab='tab-1') ЛОР
+                            ._controls-mobile-option.js-tab-control(data-tab='tab-2') Офтальмолог
+                            ._controls-mobile-option.js-tab-control(data-tab='tab-3') Невролог
+                            ._controls-mobile-option.js-tab-control(data-tab='tab-1') Профпатолог
+                            ._controls-mobile-option.js-tab-control(data-tab='tab-2') Психиатр-нарколог
+                    ._tab.visible#tab-1
+                        .doctors
+                            ._items
+                                ._item
+                                    ._bg
+                                    ._photo
+                                        +picture('doc1', 'png', 218, 300)
+                                        ._bg-elem
+                                            +icon('red-cross')
+                                    ._content
+                                        ._name Зенкина Татьяна Алексеевна
+                                        ._office Кабинет №2
+                                        ._text Врачебный приём при проведении медицинских осмотров по специальности неврология. Приём врача невролога по специальности рефлексотерапия.
+                                        ._worktime
+                                            | #[span.primary Режим работы:]<br>
+                                            | Вторник с 11.00 до 13.00;<br>
+                                            | Среда, пятница 14.00 до 16.00.
+                                    ._btns
+                                        .common-btn.common-btn--primary
+                                            +icon('pen')
+                                            | Записаться на прием
+                                        a(href="#").common-btn.common-btn--secondary
+                                            | Подробнее о специалисте
+                                ._item
+                                    ._bg
+                                    ._photo
+                                        +picture('doc1', 'png', 218, 300)
+                                        ._bg-elem
+                                            +icon('red-cross')
+                                    ._content
+                                        ._name Зенкина Татьяна Алексеевна
+                                        ._office Кабинет №2
+                                        ._text Врачебный приём при проведении медицинских осмотров по специальности неврология. Приём врача невролога по специальности рефлексотерапия.
+                                        ._worktime
+                                            | #[span.primary Режим работы:]<br>
+                                            | Вторник с 11.00 до 13.00;<br>
+                                            | Среда, пятница 14.00 до 16.00.
+                                    ._btns
+                                        .common-btn.common-btn--primary
+                                            +icon('pen')
+                                            | Записаться на прием
+                                        a(href="#").common-btn.common-btn--secondary
+                                            | Подробнее о специалисте
+                    ._tab#tab-2
+                        .doctors
+                            ._items
+                                ._item
+                                    ._bg
+                                    ._photo
+                                        +picture('doc1', 'png', 218, 300)
+                                        ._bg-elem
+                                            +icon('red-cross')
+                                    ._content
+                                        ._name Менкина Татьяна Алексеевна
+                                        ._office Кабинет №2
+                                        ._text Врачебный приём при проведении медицинских осмотров по специальности неврология. Приём врача невролога по специальности рефлексотерапия.
+                                        ._worktime
+                                            | #[span.primary Режим работы:]<br>
+                                            | Вторник с 11.00 до 13.00;<br>
+                                            | Среда, пятница 14.00 до 16.00.
+                                    ._btns
+                                        .common-btn.common-btn--primary
+                                            +icon('pen')
+                                            | Записаться на прием
+                                        a(href="#").common-btn.common-btn--secondary
+                                            | Подробнее о специалисте
+                                ._item
+                                    ._bg
+                                    ._photo
+                                        +picture('doc1', 'png', 218, 300)
+                                        ._bg-elem
+                                            +icon('red-cross')
+                                    ._content
+                                        ._name Менкина Татьяна Алексеевна
+                                        ._office Кабинет №2
+                                        ._text Врачебный приём при проведении медицинских осмотров по специальности неврология. Приём врача невролога по специальности рефлексотерапия.
+                                        ._worktime
+                                            | #[span.primary Режим работы:]<br>
+                                            | Вторник с 11.00 до 13.00;<br>
+                                            | Среда, пятница 14.00 до 16.00.
+                                    ._btns
+                                        .common-btn.common-btn--primary
+                                            +icon('pen')
+                                            | Записаться на прием
+                                        a(href="#").common-btn.common-btn--secondary
+                                            | Подробнее о специалисте
+                    ._tab#tab-3
+                        .doctors
+                            ._items
+                                ._item
+                                    ._bg
+                                    ._photo
+                                        +picture('doc1', 'png', 218, 300)
+                                        ._bg-elem
+                                            +icon('red-cross')
+                                    ._content
+                                        ._name Венкина Татьяна Алексеевна
+                                        ._office Кабинет №2
+                                        ._text Врачебный приём при проведении медицинских осмотров по специальности неврология. Приём врача невролога по специальности рефлексотерапия.
+                                        ._worktime
+                                            | #[span.primary Режим работы:]<br>
+                                            | Вторник с 11.00 до 13.00;<br>
+                                            | Среда, пятница 14.00 до 16.00.
+                                    ._btns
+                                        .common-btn.common-btn--primary
+                                            +icon('pen')
+                                            | Записаться на прием
+                                        a(href="#").common-btn.common-btn--secondary
+                                            | Подробнее о специалисте
+                                ._item
+                                    ._bg
+                                    ._photo
+                                        +picture('doc1', 'png', 218, 300)
+                                        ._bg-elem
+                                            +icon('red-cross')
+                                    ._content
+                                        ._name Венкина Татьяна Алексеевна
+                                        ._office Кабинет №2
+                                        ._text Врачебный приём при проведении медицинских осмотров по специальности неврология. Приём врача невролога по специальности рефлексотерапия.
+                                        ._worktime
+                                            | #[span.primary Режим работы:]<br>
+                                            | Вторник с 11.00 до 13.00;<br>
+                                            | Среда, пятница 14.00 до 16.00.
+                                    ._btns
+                                        .common-btn.common-btn--primary
+                                            +icon('pen')
+                                            | Записаться на прием
+                                        a(href="#").common-btn.common-btn--secondary
+                                            | Подробнее о специалисте
+        section.fw-banner
+            ._bg
+                +pictureAdaptive('appointment-bg', 'png', 1920, 350)
+            ._container.container
+                ._inner
+                    ._left
+                        ._title.h1 Записаться на прием #[span.primary за&nbsp;1&nbsp;минуту]
+                        ._text Воспользуйтесь удобным и бесплатным сервисом записи на прием. Вас перенаправит на систему регистрации, где сможете выбрать специалиста и удобное время приема.
+                    ._right
+                        ._tags
+                            ._tag #Без очередей
+                            ._tag #Выбирайте врача самостоятельно
+                            ._tag #Удобное время
+                        .btn-wrapper
+                            a(href="#").common-btn.common-btn--primary Войти и выбрать время
+                            a(href="#").common-btn.common-btn--secondary
+                                +icon('person')
+                                | Личный кабинет пациента
+        section.additional-info
+            ._container.container
+                ._inner
+                    ._left
+                        .h1 #[span.primary Полезная информация] о нашей работе
+                        .accordion
+                            ._item
+                                .__title.js-accordion-toggle.active
+                                    | Как можно записаться на прием?
+                                    +icon('arrow-down')
+                                .__content.js-accordion-content.opened Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                            ._item
+                                .__title.js-accordion-toggle
+                                    | Сколько длится прием у специалиста?
+                                    +icon('arrow-down')
+                                .__content.js-accordion-content Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                            ._item
+                                .__title.js-accordion-toggle
+                                    | Можно ли прийти без записи (по острой боли и др)?
+                                    +icon('arrow-down')
+                                .__content.js-accordion-content Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                            ._item
+                                .__title.js-accordion-toggle
+                                    | Работает ли мед. центр в выходные или в поздние часы в будни?
+                                    +icon('arrow-down')
+                                .__content.js-accordion-content Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                            ._item
+                                .__title.js-accordion-toggle
+                                    | Есть ли очереди, каково максимальное ожидание, если пришел по предварительной записи?
+                                    +icon('arrow-down')
+                                .__content.js-accordion-content Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                    ._right
+                        .aside-banner
+                            ._bg
+                                +picture('aside-banner-bg', 'png', 380, 510)
+                            ._content
+                                ._title.h2.primary Остались вопросы?
+                                ._text Нажмите кнопку “Перезвоните мне”, чтобы связаться с нашими специалистами
+                                ._btn.common-btn.common-btn.common-btn--primary.js-open-modal(data-modal="#modal-callback")
+                                    +icon('phone')
+                                    | Перезвоните мне
+        section.hotline
+            ._bg
+                +pictureAdaptive('hotline-bg', 'png', 1920, 150)
+            ._container.container
+                ._inner
+                    ._col
+                        ._title.h2 #[span.primary Телефон горячей линии ]
+                            a._phone(href="tel:88005001089") 8 (800) 500-10-89
+                    ._col
+                        ._btn.common-btn.common-btn.common-btn--secondary
+                            +icon('pen')
+                            | Написать
+                        ._text руководителю медицинского центра
+block footer
+    include ../components/footer

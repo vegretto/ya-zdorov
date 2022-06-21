@@ -1,0 +1,55 @@
+.accordion {
+  max-width: 780px;
+  margin: 0 auto;
+
+  &__item {
+    padding: 20px 0;
+    border-bottom: 2px dashed $primary;
+
+  }
+
+  &__title {
+    cursor: pointer;
+    position: relative;
+    transition: .3s ease-in-out;
+    padding-right: 100px;
+    @media (max-width: 600px) {
+      padding-right: 40px;
+    }
+
+    &:hover {
+      color: $primary;
+      transition: .3s ease-in-out;
+    }
+
+    &.active {
+      color: $primary;
+      transition: .3s ease-in-out;
+
+      svg {
+        transform: translateY(-50%) rotate(180deg);
+        transition: .3s ease-in-out;
+      }
+    }
+
+    svg {
+      width: 18px;
+      height: 18px;
+      position: absolute;
+      top: 50%;
+      right: 2px;
+      transform: translateY(-50%);
+      transition: .3s ease-in-out;
+    }
+  }
+
+  &__content {
+    display: none;
+    padding-top: 20px;
+
+    &.opened {
+      display: block;
+    }
+  }
+
+}

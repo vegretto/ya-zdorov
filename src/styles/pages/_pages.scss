@@ -1,0 +1,29 @@
+.main-worktime {
+  h1 {
+    br {
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+  }
+}
+
+.med-certificates {
+  h1 {
+    br {
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+  }
+
+  .certs-tabs .large-block {
+    margin-bottom: 80px;
+    @media (max-width: 767px) {
+      margin-bottom: 40px;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

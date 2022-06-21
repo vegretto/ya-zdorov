@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Я здоров</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="styles/style.min.css">
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__top">
+				<div class="header__visually-impaired-toggle text-icon-box" id="specialButton">
+					<svg class="icon icon-eye">
+						<use xlink:href="img/svg/sprite.svg#eye"></use>
+					</svg>Версия для слабовидящих
+				</div><a class="header__worktime text-icon-box" href="#">
+					<svg class="icon icon-calendar">
+						<use xlink:href="img/svg/sprite.svg#calendar"></use>
+					</svg>Режим работы кабинетов и врачей</a>
+				<div class="header__phone-box text-icon-box">
+					<svg class="icon icon-phone">
+						<use xlink:href="img/svg/sprite.svg#phone"></use>
+					</svg><a class="header__phone" href="tel:88005001089">8 (800) 500-10-89</a><span class="header__callback js-open-modal" data-modal="#modal-callback">Перезвоните мне</span>
+				</div><a class="header__account text-icon-box" href="">
+					<svg class="icon icon-person">
+						<use xlink:href="img/svg/sprite.svg#person"></use>
+					</svg>
+					<div class="header__account-text">Личный кабинет пациента</div></a>
+			</div>
+			<div class="header__middle">
+				<div class="header__mobile-menu-toggle js-open-mobile-menu">
+					<svg class="icon icon-mobile-menu">
+						<use xlink:href="img/svg/sprite.svg#mobile-menu"></use>
+					</svg>
+				</div><a class="header__logo" href="/">
+					<svg class="icon icon-logo">
+						<use xlink:href="img/svg/sprite.svg#logo"></use>
+					</svg></a>
+				<div class="header__address">
+					<svg class="icon icon-point">
+						<use xlink:href="img/svg/sprite.svg#point"></use>
+					</svg>Медицинский центр<br> в&nbsp;г.&nbsp;Миллерово, ул.&nbsp;Льва&nbsp;Толстого&nbsp;44
+				</div><a class="header__promo-btn common-btn common-btn--secondary" href="#">Акции и спецпредложения</a>
+				<div class="header__appointment-btn common-btn common-btn--primary">
+					<svg class="icon icon-pen">
+						<use xlink:href="img/svg/sprite.svg#pen"></use>
+					</svg>Записаться на прием
+				</div>
+			</div>
+			<div class="header__bottom">
+				<nav class="header__nav"><a class="header__nav-item" href="#">Медицинские услуги</a>
+					<div class="header__nav-submenu">
+						<div class="close js-close">
+							<svg class="icon icon-close">
+								<use xlink:href="img/svg/sprite.svg#close"></use>
+							</svg>
+						</div>
+						<div class="header__nav-submenu-items"><a class="header__nav-submenu-item current" href="#">Прием врача</a><a class="header__nav-submenu-item" href="#">Лечение / Процедуры</a><a class="header__nav-submenu-item" href="#">УЗИ</a><a class="header__nav-submenu-item" href="#">Медицинские анализы</a><a class="header__nav-submenu-item" href="#">Прием врача</a></div>
+					</div><a class="header__nav-item current" href="#">Комплексные программы</a>
+					<div class="header__nav-submenu">
+						<div class="close js-close">
+							<svg class="icon icon-close">
+								<use xlink:href="img/svg/sprite.svg#close"></use>
+							</svg>
+						</div>
+						<div class="header__nav-submenu-items"><a class="header__nav-submenu-item" href="#">Прием врача</a><a class="header__nav-submenu-item" href="#">Лечение / Процедуры</a><a class="header__nav-submenu-item" href="#">УЗИ</a><a class="header__nav-submenu-item" href="#">Медицинские анализы</a><a class="header__nav-submenu-item" href="#">Прием врача</a><a class="header__nav-submenu-item" href="#">Лечение / Процедуры</a><a class="header__nav-submenu-item" href="#">Лечение / Процедуры</a><a class="header__nav-submenu-item" href="#">УЗИ</a><a class="header__nav-submenu-item" href="#">Медицинские анализы</a></div>
+					</div><a class="header__nav-item" href="#">Справки и медкнижки</a><a class="header__nav-item" href="#">Врачи медицинского центра</a><a class="header__nav-item" href="#">Профосмотры</a><a class="header__nav-item" href="#">Цены</a><a class="header__nav-item" href="#">О медицинском центре</a><a class="header__nav-item" href="#">Контакты</a>
+				</nav>
+			</div>
+		</header>
+		<main class="main main-wrapper">
+			<div class="container">
+				<h1 class="h1"><span class="primary">Профессиональная забота,</span> для всей семьи</h1>
+			</div>
+			<section class="large-blocks-grid">
+				<div class="large-blocks-grid__container container">
+					<div class="large-blocks-grid__items"><a class="large-block" href="#">
+							<div class="large-block__bg">
+								<picture>
+									<source data-srcset="img/large-block-bg1-sm.webp" type="image/webp" media="(max-width: 600px)"/>
+									<source data-srcset="img/large-block-bg1-sm.png" media="(max-width: 600px)"/>
+									<source data-srcset="img/large-block-bg1.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMSAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNkMWQxZDEiLz48L3N2Zz4=" data-src="img/large-block-bg1.png" alt="" width="580" height="300"/>
+								</picture>
+							</div>
+							<div class="large-block__content">
+								<div class="large-block__text"><strong>Акция в честь открытия медицинского центра:</strong><br><span class="primary">Скидка 50% до 28 марта 2022 года;<br> 750 ₽ первичный прием</span></div>
+								<div class="large-block__hr"></div>
+								<h2 class="large-block__title h2">Прием врача</h2>
+								<div class="large-block__btn common-btn common-btn--primary">Узнать подробнее</div>
+							</div></a><a class="large-block" href="#">
+							<div class="large-block__bg">
+								<picture>
+									<source data-srcset="img/large-block-bg2-sm.webp" type="image/webp" media="(max-width: 600px)"/>
+									<source data-srcset="img/large-block-bg2-sm.png" media="(max-width: 600px)"/>
+									<source data-srcset="img/large-block-bg2.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMSAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNkMWQxZDEiLz48L3N2Zz4=" data-src="img/large-block-bg2.png" alt="" width="580" height="300"/>
+								</picture>
+							</div>
+							<div class="large-block__content">
+								<h2 class="large-block__title h2">Лечение и<br> процедуры</h2>
+								<div class="large-block__btn common-btn common-btn--primary">Узнать подробнее</div>
+							</div></a><a class="large-block large-block--fw large-block--blue large-block--main-page" href="#">
+							<div class="large-block__bg">
+								<picture>
+									<source data-srcset="img/large-block-bg3-sm.webp" type="image/webp" media="(max-width: 600px)"/>
+									<source data-srcset="img/large-block-bg3-sm.png" media="(max-width: 600px)"/>
+									<source data-srcset="img/large-block-bg3.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMSAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNkMWQxZDEiLz48L3N2Zz4=" data-src="img/large-block-bg3.png" alt="" width="459" height="300"/>
+								</picture>
+							</div>
+							<div class="large-block__content">
+								<h2 class="large-block__title h2">Справки и<br> медицинские<br> книжки</h2>
+								<div class="large-block__text">Оформляем за 1 день в<br> удобное для вас время</div>
+								<div class="large-block__hr"></div>
+								<ul class="ul">
+									<li>Медицинские справки для детей;</li>
+									<li>Справки для получения водительских прав;</li>
+									<li>Медицинские справки для устройства на работу;</li>
+									<li>Оформление и продление медицинских книжек.</li>
+								</ul>
+								<div class="large-block__btn common-btn common-btn--primary">Узнать подробнее</div>
+							</div></a><a class="large-block" href="#">
+							<div class="large-block__bg">
+								<picture>
+									<source data-srcset="img/large-block-bg4-sm.webp" type="image/webp" media="(max-width: 600px)"/>
+									<source data-srcset="img/large-block-bg4-sm.png" media="(max-width: 600px)"/>
+									<source data-srcset="img/large-block-bg4.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMSAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNkMWQxZDEiLz48L3N2Zz4=" data-src="img/large-block-bg4.png" alt="" width="580" height="300"/>
+								</picture>
+							</div>
+							<div class="large-block__content">
+								<h2 class="large-block__title h2">Анализы</h2>
+								<div class="large-block__btn common-btn common-btn--primary">Узнать подробнее</div>
+							</div></a><a class="large-block" href="#">
+							<div class="large-block__bg">
+								<picture>
+									<source data-srcset="img/large-block-bg5-sm.webp" type="image/webp" media="(max-width: 600px)"/>
+									<source data-srcset="img/large-block-bg5-sm.png" media="(max-width: 600px)"/>
+									<source data-srcset="img/large-block-bg5.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMSAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNkMWQxZDEiLz48L3N2Zz4=" data-src="img/large-block-bg5.png" alt="" width="580" height="300"/>
+								</picture>
+							</div>
+							<div class="large-block__content">
+								<h2 class="large-block__title h2">УЗИ</h2>
+								<div class="large-block__btn common-btn common-btn--primary">Узнать подробнее</div>
+							</div></a></div>
+				</div>
+			</section>
+			<section class="fw-banner">
+				<div class="fw-banner__bg">
+					<picture>
+						<source data-srcset="img/appointment-bg-sm.webp" type="image/webp" media="(max-width: 600px)"/>
+						<source data-srcset="img/appointment-bg-sm.png" media="(max-width: 600px)"/>
+						<source data-srcset="img/appointment-bg.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMSAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNkMWQxZDEiLz48L3N2Zz4=" data-src="img/appointment-bg.png" alt="" width="1920" height="350"/>
+					</picture>
+				</div>
+				<div class="fw-banner__container container">
+					<div class="fw-banner__inner">
+						<div class="fw-banner__left">
+							<div class="fw-banner__title h1">Записаться на прием <span class="primary">за&nbsp;1&nbsp;минуту</span></div>
+							<div class="fw-banner__text">Воспользуйтесь удобным и бесплатным сервисом записи на прием. Вас перенаправит на систему регистрации, где сможете выбрать специалиста и удобное время приема.</div>
+						</div>
+						<div class="fw-banner__right">
+							<div class="fw-banner__tags">
+								<div class="fw-banner__tag">#Без очередей</div>
+								<div class="fw-banner__tag">#Выбирайте врача самостоятельно</div>
+								<div class="fw-banner__tag">#Удобное время</div>
+							</div>
+							<div class="btn-wrapper"><a class="common-btn common-btn--primary" href="#">Войти и выбрать время</a><a class="common-btn common-btn--secondary" href="#">
+									<svg class="icon icon-person">
+										<use xlink:href="img/svg/sprite.svg#person"></use>
+									</svg>Личный кабинет пациента</a></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="doctors-tabs">
+				<div class="doctors-tabs__container container">
+					<div class="title-box title-box--mobile-hide-bottom-part">
+						<div class="h1"><span class="primary">Врачи,</span> которым вы<br> доверяете</div>
+						<div class="important">
+							<div class="important__box">
+								<svg class="icon icon-sale">
+									<use xlink:href="img/svg/sprite.svg#sale"></use>
+								</svg>
+								<div class="important__title h2">Акция в честь открытия медицинского центра:</div>
+							</div>
+							<div class="important__text">Скидка 50% до 28 марта 2022 года;<br> 750 ₽ первичный прием.</div>
+						</div>
+					</div>
+					<div class="tabs">
+						<div class="tabs__controls">
+							<div class="tabs__control active js-tab-control" data-tab="tab-1">
+								<div class="input-radio-dummy">
+									<input id="tc1" type="radio" name="tc" checked>
+									<label for="tc1">Терапевт</label>
+								</div>
+							</div>
+							<div class="tabs__control js-tab-control" data-tab="tab-2">
+								<div class="input-radio-dummy">
+									<input id="tc2" type="radio" name="tc">
+									<label for="tc2">Гинеколог</label>
+								</div>
+							</div>
+							<div class="tabs__control js-tab-control" data-tab="tab-3">
+								<div class="input-radio-dummy">
+									<input id="tc3" type="radio" name="tc">
+									<label for="tc3">Уролог</label>
+								</div>
+							</div>
+							<div class="tabs__control js-tab-control" data-tab="tab-1">
+								<div class="input-radio-dummy">
+									<input id="tc4" type="radio" name="tc">
+									<label for="tc4">ЛОР</label>
+								</div>
+							</div>
+							<div class="tabs__control js-tab-control" data-tab="tab-2">
+								<div class="input-radio-dummy">
+									<input id="tc5" type="radio" name="tc">
+									<label for="tc5">Офтальмолог</label>
+								</div>
+							</div>
+							<div class="tabs__control js-tab-control" data-tab="tab-3">
+								<div class="input-radio-dummy">
+									<input id="tc6" type="radio" name="tc">
+									<label for="tc6">Невролог</label>
+								</div>
+							</div>
+							<div class="tabs__control js-tab-control" data-tab="tab-1">
+								<div class="input-radio-dummy">
+									<input id="tc7" type="radio" name="tc">
+									<label for="tc7">Профпатолог</label>
+								</div>
+							</div>
+							<div class="tabs__control js-tab-control" data-tab="tab-2">
+								<div class="input-radio-dummy">
+									<input id="tc8" type="radio" name="tc">
+									<label for="tc8">Психиатр-нарколог</label>
+								</div>
+							</div>
+						</div>
+						<div class="tabs__controls-mobile">
+							<div class="tabs__controls-mobile-select js-select">
+								<div class="tabs__controls-mobile-select-val js-select-val">Терапевт</div>
+								<svg class="icon icon-arrow-down">
+									<use xlink:href="img/svg/sprite.svg#arrow-down"></use>
+								</svg>
+							</div>
+							<div class="tabs__controls-mobile-options js-select-options">
+								<div class="tabs__controls-mobile-option js-tab-control" data-tab="tab-1">Терапевт</div>
+								<div class="tabs__controls-mobile-option js-tab-control" data-tab="tab-2">Гинеколог</div>
+								<div class="tabs__controls-mobile-option js-tab-control" data-tab="tab-3">Уролог</div>
+								<div class="tabs__controls-mobile-option js-tab-control" data-tab="tab-1">ЛОР</div>
+								<div class="tabs__controls-mobile-option js-tab-control" data-tab="tab-2">Офтальмолог</div>
+								<div class="tabs__controls-mobile-option js-tab-control" data-tab="tab-3">Невролог</div>
+								<div class="tabs__controls-mobile-option js-tab-control" data-tab="tab-1">Профпатолог</div>
+								<div class="tabs__controls-mobile-option js-tab-control" data-tab="tab-2">Психиатр-нарколог</div>
+							</div>
+						</div>
+						<div class="tabs__tab visible" id="tab-1">
+							<div class="doctors">
+								<div class="doctors__items">
+									<div class="doctors__item">
+										<div class="doctors__bg"></div>
+										<div class="doctors__photo">
+											<picture>
+												<source data-srcset="img/doc1.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMSAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNkMWQxZDEiLz48L3N2Zz4=" data-src="img/doc1.png" alt="" width="218" height="300"/>
+											</picture>
+											<div class="doctors__bg-elem">
+												<svg class="icon icon-red-cross">
+													<use xlink:href="img/svg/sprite.svg#red-cross"></use>
+												</svg>
+											</div>
+										</div>
+										<div class="doctors__content">
+											<div class="doctors__name">Константинопольский Константин Константинович</div>
+											<div class="doctors__office">Кабинет №2</div>
+											<div class="doctors__text">Врачебный приём при проведении медицинских осмотров по специальности неврология. Приём врача невролога по специальности рефлексотерапия.</div>
+											<div class="doctors__worktime"><span class="primary">Режим работы:</span><br>
+												Вторник с 11.00 до 13.00;<br>
+												Среда, пятница 14.00 до 16.00.
+											</div>
+										</div>
+										<div class="doctors__btns">
+											<div class="common-btn common-btn--primary">
+												<svg class="icon icon-pen">
+													<use xlink:href="img/svg/sprite.svg#pen"></use>
+												</svg>Записаться на прием
+											</div><a class="common-btn common-btn--secondary" href="#">Подробнее о специалисте</a>
+										</div>
+									</div>
+									<div class="doctors__item">
+										<div class="doctors__bg"></div>
+										<div class="doctors__photo">
+											<picture>
+												<source data-srcset="img/doc1.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMSAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNkMWQxZDEiLz48L3N2Zz4=" data-src="img/doc1.png" alt="" width="218" height="300"/>
+											</picture>
+											<div class="doctors__bg-elem">
+												<svg class="icon icon-red-cross">
+													<use xlink:href="img/svg/sprite.svg#red-cross"></use>
+												</svg>
+											</div>
+										</div>
+										<div class="doctors__content">
+											<div class="doctors__name">Зенкина Татьяна Алексеевна</div>
+											<div class="doctors__office">Кабинет №2</div>
+											<div class="doctors__text">Врачебный приём при проведении медицинских осмотров по специальности неврология. Приём врача невролога по специальности рефлексотерапия. Врачебный приём при проведении медицинских осмотров по специальности неврология. Приём врача невролога по специальности рефлексотерапия. Врачебный приём при проведении медицинских осмотров по специальности неврология. Приём врача невролога по специальности рефлексотерапия.</div>
+											<div class="doctors__worktime"><span class="primary">Режим работы:</span><br>
+												Вторник с 11.00 до 13.00;<br>
+												Среда, пятница 14.00 до 16.00.
+											</div>
+										</div>
+										<div class="doctors__btns">
+											<div class="common-btn common-btn--primary">
+												<svg class="icon icon-pen">
+													<use xlink:href="img/svg/sprite.svg#pen"></use>
+												</svg>Записаться на прием
+											</div><a class="common-btn common-btn--secondary" href="#">Подробнее о специалисте</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tabs__tab" id="tab-2">
+							<div class="doctors">
+								<div class="doctors__items">
+									<div class="doctors__item">
+										<div class="doctors__bg"></div>
+										<div class="doctors__photo">
+											<picture>
+												<source data-srcset="img/doc1.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMSAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNkMWQxZDEiLz48L3N2Zz4=" data-src="img/doc1.png" alt="" width="218" height="300"/>
+											</picture>
+											<div class="doctors__bg-elem">
+												<svg class="icon icon-red-cross">
+													<use xlink:href="img/svg/sprite.svg#red-cross"></use>
+												</svg>
+											</div>
+										</div>
+										<div class="doctors__content">
+											<div class="doctors__name">Менкина Татьяна Алексеевна</div>
+											<div class="doctors__office">Кабинет №2</div>
+											<div class="doctors__text">Врачебный приём при проведении медицинских осмотров по специальности неврология. Приём врача невролога по специальности рефлексотерапия.</div>
+											<div class="doctors__worktime"><span class="primary">Режим работы:</span><br>
+												Вторник с 11.00 до 13.00;<br>
+												Среда, пятница 14.00 до 16.00.
+											</div>
+										</div>
+										<div class="doctors__btns">
+											<div class="common-btn common-btn--primary">
+												<svg class="icon icon-pen">
+													<use xlink:href="img/svg/sprite.svg#pen"></use>
+												</svg>Записаться на прием
+											</div><a class="common-btn common-btn--secondary" href="#">Подробнее о специалисте</a>
+										</div>
+									</div>
+									<div class="doctors__item">
+										<div class="doctors__bg"></div>
+										<div class="doctors__photo">
+											<picture>
+												<source data-srcset="img/doc1.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMSAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNkMWQxZDEiLz48L3N2Zz4=" data-src="img/doc1.png" alt="" width="218" height="300"/>
+											</picture>
+											<div class="doctors__bg-elem">
+												<svg class="icon icon-red-cross">
+													<use xlink:href="img/svg/sprite.svg#red-cross"></use>
+												</svg>
+											</div>
+										</div>
+										<div class="doctors__content">
+											<div class="doctors__name">Менкина Татьяна Алексеевна</div>
+											<div class="doctors__office">Кабинет №2</div>
+											<div class="doctors__text">Врачебный приём при проведении медицинских осмотров по специальности неврология. Приём врача невролога по специальности рефлексотерапия.</div>
+											<div class="doctors__worktime"><span class="primary">Режим работы:</span><br>
+												Вторник с 11.00 до 13.00;<br>
+												Среда, пятница 14.00 до 16.00.
+											</div>
+										</div>
+										<div class="doctors__btns">
+											<div class="common-btn common-btn--primary">
+												<svg class="icon icon-pen">
+													<use xlink:href="img/svg/sprite.svg#pen"></use>
+												</svg>Записаться на прием
+											</div><a class="common-btn common-btn--secondary" href="#">Подробнее о специалисте</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tabs__tab" id="tab-3">
+							<div class="doctors">
+								<div class="doctors__items">
+									<div class="doctors__item">
+										<div class="doctors__bg"></div>
+										<div class="doctors__photo">
+											<picture>
+												<source data-srcset="img/doc1.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMSAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNkMWQxZDEiLz48L3N2Zz4=" data-src="img/doc1.png" alt="" width="218" height="300"/>
+											</picture>
+											<div class="doctors__bg-elem">
+												<svg class="icon icon-red-cross">
+													<use xlink:href="img/svg/sprite.svg#red-cross"></use>
+												</svg>
+											</div>
+										</div>
+										<div class="doctors__content">
+											<div class="doctors__name">Венкина Татьяна Алексеевна</div>
+											<div class="doctors__office">Кабинет №2</div>
+											<div class="doctors__text">Врачебный приём при проведении медицинских осмотров по специальности неврология. Приём врача невролога по специальности рефлексотерапия.</div>
+											<div class="doctors__worktime"><span class="primary">Режим работы:</span><br>
+												Вторник с 11.00 до 13.00;<br>
+												Среда, пятница 14.00 до 16.00.
+											</div>
+										</div>
+										<div class="doctors__btns">
+											<div class="common-btn common-btn--primary">
+												<svg class="icon icon-pen">
+													<use xlink:href="img/svg/sprite.svg#pen"></use>
+												</svg>Записаться на прием
+											</div><a class="common-btn common-btn--secondary" href="#">Подробнее о специалисте</a>
+										</div>
+									</div>
+									<div class="doctors__item">
+										<div class="doctors__bg"></div>
+										<div class="doctors__photo">
+											<picture>
+												<source data-srcset="img/doc1.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMSAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNkMWQxZDEiLz48L3N2Zz4=" data-src="img/doc1.png" alt="" width="218" height="300"/>
+											</picture>
+											<div class="doctors__bg-elem">
+												<svg class="icon icon-red-cross">
+													<use xlink:href="img/svg/sprite.svg#red-cross"></use>
+												</svg>
+											</div>
+										</div>
+										<div class="doctors__content">
+											<div class="doctors__name">Венкина Татьяна Алексеевна</div>
+											<div class="doctors__office">Кабинет №2</div>
+											<div class="doctors__text">Врачебный приём при проведении медицинских осмотров по специальности неврология. Приём врача невролога по специальности рефлексотерапия.</div>
+											<div class="doctors__worktime"><span class="primary">Режим работы:</span><br>
+												Вторник с 11.00 до 13.00;<br>
+												Среда, пятница 14.00 до 16.00.
+											</div>
+										</div>
+										<div class="doctors__btns">
+											<div class="common-btn common-btn--primary">
+												<svg class="icon icon-pen">
+													<use xlink:href="img/svg/sprite.svg#pen"></use>
+												</svg>Записаться на прием
+											</div><a class="common-btn common-btn--secondary" href="#">Подробнее о специалисте</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="medium-block-grid">
+				<div class="medium-block-grid__container container">
+					<div class="medium-block-grid__title h1"><span class="primary">Сервис</span> на 10 баллов</div>
+					<div class="medium-block-grid__items"><a class="medium-block" href="#">
+							<div class="medium-block__icon">
+								<svg class="icon icon-medium-block-icon1">
+									<use xlink:href="img/svg/sprite.svg#medium-block-icon1"></use>
+								</svg>
+							</div>
+							<div class="medium-block__text">Работа со специалистами, которые уже зарекомендовали себя в городе</div>
+							<div class="medium-block__link">Врачи медицинского центра</div>
+							<div class="medium-block__bg-icon">
+								<svg class="icon icon-arrow-bottom-right">
+									<use xlink:href="img/svg/sprite.svg#arrow-bottom-right"></use>
+								</svg>
+							</div></a><a class="medium-block" href="#">
+							<div class="medium-block__icon">
+								<svg class="icon icon-medium-block-icon2">
+									<use xlink:href="img/svg/sprite.svg#medium-block-icon2"></use>
+								</svg>
+							</div>
+							<div class="medium-block__text">Удобное расположение в оживленной части города с парковками: ул. Льва Толстого, 44</div>
+							<div class="medium-block__link">Наши контакты</div>
+							<div class="medium-block__bg-icon">
+								<svg class="icon icon-arrow-bottom-right">
+									<use xlink:href="img/svg/sprite.svg#arrow-bottom-right"></use>
+								</svg>
+							</div></a><a class="medium-block" href="#">
+							<div class="medium-block__icon">
+								<svg class="icon icon-medium-block-icon3">
+									<use xlink:href="img/svg/sprite.svg#medium-block-icon3"></use>
+								</svg>
+							</div>
+							<div class="medium-block__text">Внимательный сервис на любом этапе обращения в медицинский центр</div>
+							<div class="medium-block__link">Подробнее об услугах и возможностях медицинского центра</div>
+							<div class="medium-block__bg-icon">
+								<svg class="icon icon-arrow-bottom-right">
+									<use xlink:href="img/svg/sprite.svg#arrow-bottom-right"></use>
+								</svg>
+							</div></a><a class="medium-block" href="#">
+							<div class="medium-block__icon">
+								<svg class="icon icon-medium-block-icon4">
+									<use xlink:href="img/svg/sprite.svg#medium-block-icon4"></use>
+								</svg>
+							</div>
+							<div class="medium-block__text">Предоставление результатов анализов и назначений на личную почту</div>
+							<div class="medium-block__link">Перейдите в Личный кабинет пользователя</div>
+							<div class="medium-block__bg-icon">
+								<svg class="icon icon-arrow-bottom-right">
+									<use xlink:href="img/svg/sprite.svg#arrow-bottom-right"></use>
+								</svg>
+							</div></a><a class="medium-block" href="#">
+							<div class="medium-block__icon">
+								<svg class="icon icon-medium-block-icon5">
+									<use xlink:href="img/svg/sprite.svg#medium-block-icon5"></use>
+								</svg>
+							</div>
+							<div class="medium-block__text">Увеличенное время работы в будни до 18:00. Работаем для вас по субботам</div>
+							<div class="medium-block__link">Смотрите график приема</div>
+							<div class="medium-block__bg-icon">
+								<svg class="icon icon-arrow-bottom-right">
+									<use xlink:href="img/svg/sprite.svg#arrow-bottom-right"></use>
+								</svg>
+							</div></a><a class="medium-block" href="#">
+							<div class="medium-block__icon">
+								<svg class="icon icon-medium-block-icon6">
+									<use xlink:href="img/svg/sprite.svg#medium-block-icon6"></use>
+								</svg>
+							</div>
+							<div class="medium-block__text">Наличие телефона горячей линии руководителя медицинского центра в общем доступе</div>
+							<div class="medium-block__link">Выразить свое мнение по поводу качества услуги</div>
+							<div class="medium-block__bg-icon">
+								<svg class="icon icon-arrow-bottom-right">
+									<use xlink:href="img/svg/sprite.svg#arrow-bottom-right"></use>
+								</svg>
+							</div></a></div>
+				</div>
+			</section>
+			<section class="promo">
+				<div class="promo__container container">
+					<div class="h1"><span class="primary">Акции</span> и спецпредложения</div>
+				</div>
+				<div class="promo__slider js-promo-slider">
+					<div class="swiper-wrapper">
+						<div class="fw-banner swiper-slide">
+							<div class="fw-banner__bg">
+								<picture>
+									<source data-srcset="img/promo-bg-sm.webp" type="image/webp" media="(max-width: 600px)"/>
+									<source data-srcset="img/promo-bg-sm.png" media="(max-width: 600px)"/>
+									<source data-srcset="img/promo-bg.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMSAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNkMWQxZDEiLz48L3N2Zz4=" data-src="img/promo-bg.png" alt="" width="1920" height="350"/>
+								</picture>
+							</div>
+							<div class="fw-banner__container container">
+								<div class="fw-banner__inner">
+									<div class="fw-banner__left">
+										<div class="fw-banner__title h2 primary">Получите медицинскую справку на вождение со скидкой!</div>
+										<div class="fw-banner__text">Приходите и приводите друзей<br> Скидка по промокоду для клиента “Я Здоров!” - 100 ₽</div><a class="fw-banner__btn common-btn common-btn--secondary" href="#">Получить скидку</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="fw-banner swiper-slide">
+							<div class="fw-banner__bg">
+								<picture>
+									<source data-srcset="img/promo-bg-sm.webp" type="image/webp" media="(max-width: 600px)"/>
+									<source data-srcset="img/promo-bg-sm.png" media="(max-width: 600px)"/>
+									<source data-srcset="img/promo-bg.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMSAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNkMWQxZDEiLz48L3N2Zz4=" data-src="img/promo-bg.png" alt="" width="1920" height="350"/>
+								</picture>
+							</div>
+							<div class="fw-banner__container container">
+								<div class="fw-banner__inner">
+									<div class="fw-banner__left">
+										<div class="fw-banner__title h2 primary">Получите медицинскую справку на вождение со скидкой!</div>
+										<div class="fw-banner__text">Приходите и приводите друзей<br> Скидка по промокоду для клиента “Я Здоров!” - 100 ₽</div><a class="fw-banner__btn common-btn common-btn--secondary" href="#">Получить скидку</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="fw-banner swiper-slide">
+							<div class="fw-banner__bg">
+								<picture>
+									<source data-srcset="img/promo-bg-sm.webp" type="image/webp" media="(max-width: 600px)"/>
+									<source data-srcset="img/promo-bg-sm.png" media="(max-width: 600px)"/>
+									<source data-srcset="img/promo-bg.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMSAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNkMWQxZDEiLz48L3N2Zz4=" data-src="img/promo-bg.png" alt="" width="1920" height="350"/>
+								</picture>
+							</div>
+							<div class="fw-banner__container container">
+								<div class="fw-banner__inner">
+									<div class="fw-banner__left">
+										<div class="fw-banner__title h2 primary">Получите медицинскую справку на вождение со скидкой!</div>
+										<div class="fw-banner__text">Приходите и приводите друзей<br> Скидка по промокоду для клиента “Я Здоров!” - 100 ₽</div><a class="fw-banner__btn common-btn common-btn--secondary" href="#">Получить скидку</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="promo__pagination-box">
+						<div class="promo__pagination"></div>
+					</div>
+				</div>
+			</section>
+			<section class="additional-info">
+				<div class="additional-info__container container">
+					<div class="additional-info__inner">
+						<div class="additional-info__left">
+							<div class="h1"><span class="primary">Полезная информация</span> о нашей работе</div>
+							<div class="accordion">
+								<div class="accordion__item">
+									<div class="accordion__title js-accordion-toggle active">Как можно записаться на прием?
+										<svg class="icon icon-arrow-down">
+											<use xlink:href="img/svg/sprite.svg#arrow-down"></use>
+										</svg>
+									</div>
+									<div class="accordion__content js-accordion-content opened">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
+								</div>
+								<div class="accordion__item">
+									<div class="accordion__title js-accordion-toggle">Сколько длится прием у специалиста?
+										<svg class="icon icon-arrow-down">
+											<use xlink:href="img/svg/sprite.svg#arrow-down"></use>
+										</svg>
+									</div>
+									<div class="accordion__content js-accordion-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
+								</div>
+								<div class="accordion__item">
+									<div class="accordion__title js-accordion-toggle">Можно ли прийти без записи (по острой боли и др)?
+										<svg class="icon icon-arrow-down">
+											<use xlink:href="img/svg/sprite.svg#arrow-down"></use>
+										</svg>
+									</div>
+									<div class="accordion__content js-accordion-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
+								</div>
+								<div class="accordion__item">
+									<div class="accordion__title js-accordion-toggle">Работает ли мед. центр в выходные или в поздние часы в будни?
+										<svg class="icon icon-arrow-down">
+											<use xlink:href="img/svg/sprite.svg#arrow-down"></use>
+										</svg>
+									</div>
+									<div class="accordion__content js-accordion-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
+								</div>
+								<div class="accordion__item">
+									<div class="accordion__title js-accordion-toggle">Есть ли очереди, каково максимальное ожидание, если пришел по предварительной записи?
+										<svg class="icon icon-arrow-down">
+											<use xlink:href="img/svg/sprite.svg#arrow-down"></use>
+										</svg>
+									</div>
+									<div class="accordion__content js-accordion-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
+								</div>
+							</div>
+						</div>
+						<div class="additional-info__right">
+							<div class="aside-banner">
+								<div class="aside-banner__bg">
+									<picture>
+										<source data-srcset="img/aside-banner-bg.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMSAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNkMWQxZDEiLz48L3N2Zz4=" data-src="img/aside-banner-bg.png" alt="" width="380" height="510"/>
+									</picture>
+								</div>
+								<div class="aside-banner__content">
+									<div class="aside-banner__title h2 primary">Остались вопросы?</div>
+									<div class="aside-banner__text">Нажмите кнопку “Перезвоните мне”, чтобы связаться с нашими специалистами</div>
+									<div class="aside-banner__btn common-btn common-btn common-btn--primary js-open-modal" data-modal="#modal-callback">
+										<svg class="icon icon-phone">
+											<use xlink:href="img/svg/sprite.svg#phone"></use>
+										</svg>Перезвоните мне
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="hotline">
+				<div class="hotline__bg">
+					<picture>
+						<source data-srcset="img/hotline-bg-sm.webp" type="image/webp" media="(max-width: 600px)"/>
+						<source data-srcset="img/hotline-bg-sm.png" media="(max-width: 600px)"/>
+						<source data-srcset="img/hotline-bg.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMSAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNkMWQxZDEiLz48L3N2Zz4=" data-src="img/hotline-bg.png" alt="" width="1920" height="150"/>
+					</picture>
+				</div>
+				<div class="hotline__container container">
+					<div class="hotline__inner">
+						<div class="hotline__col">
+							<div class="hotline__title h2"><span class="primary">Телефон горячей линии </span><a class="hotline__phone" href="tel:88005001089">8 (800) 500-10-89</a></div>
+						</div>
+						<div class="hotline__col">
+							<div class="hotline__btn common-btn common-btn common-btn--secondary">
+								<svg class="icon icon-pen">
+									<use xlink:href="img/svg/sprite.svg#pen"></use>
+								</svg>Написать
+							</div>
+							<div class="hotline__text">руководителю медицинского центра</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container container">
+				<div class="footer__top">
+					<div class="footer__col">
+						<div class="footer__col-inner">
+							<div class="footer__logo">
+								<svg class="icon icon-logo">
+									<use xlink:href="img/svg/sprite.svg#logo"></use>
+								</svg>
+							</div>
+							<div class="footer__address">
+								<svg class="icon icon-point">
+									<use xlink:href="img/svg/sprite.svg#point"></use>
+								</svg>Медицинский центр в&nbsp;г.&nbsp;Миллерово, ул.&nbsp;Льва&nbsp;Толстого&nbsp;44
+							</div>
+							<div class="footer__phone-box text-icon-box">
+								<svg class="icon icon-phone">
+									<use xlink:href="img/svg/sprite.svg#phone"></use>
+								</svg><a class="footer__phone" href="tel:88005001089">8 (800) 500-10-89</a><span class="footer__callback js-open-modal" data-modal="#modal-callback">Перезвоните мне</span>
+							</div>
+							<div class="footer__license">Лицензия № ЛО-26-01-04072757 от&nbsp;8&nbsp;октября&nbsp;2021&nbsp;г.</div>
+						</div>
+					</div>
+					<div class="footer__col footer__col--nav">
+						<div class="footer__col-inner">
+							<nav class="footer__nav"><a class="footer__nav-item footer__nav-item--main" href="#">Медицинские услуги</a><a class="footer__nav-item" href="#">Прием врача</a><a class="footer__nav-item" href="#">Лечение / Процедуры</a><a class="footer__nav-item" href="#">МРТ</a><a class="footer__nav-item" href="#">УЗИ</a><a class="footer__nav-item" href="#">Медицинские анализы</a><a class="footer__nav-item" href="#">КТ</a></nav>
+							<nav class="footer__nav"><a class="footer__nav-item footer__nav-item--main" href="#">Комплексные программы</a><a class="footer__nav-item" href="#">Ежегодное обследование</a><a class="footer__nav-item" href="#">Планирование беременности</a><a class="footer__nav-item" href="#">Женское здоровье</a><a class="footer__nav-item" href="#">Мужское здоровье</a><a class="footer__nav-item" href="#">Здоровое сердце</a><a class="footer__nav-item" href="#">Реабилитация после COVID</a></nav>
+						</div>
+					</div>
+					<div class="footer__col footer__col--nav">
+						<div class="footer__col-inner">
+							<nav class="footer__nav"><a class="footer__nav-item" href="#">Справки и медкнижки</a><a class="footer__nav-item" href="#">Врачи медицинского центра</a><a class="footer__nav-item" href="#">Профосмотры</a><a class="footer__nav-item" href="#">Цены</a><a class="footer__nav-item secondary" href="#">Акции и спецпредложения</a><a class="footer__nav-item" href="#">Программа лояльности</a><a class="footer__nav-item secondary" href="#">Контакты</a></nav>
+							<nav class="footer__nav"><a class="footer__nav-item footer__nav-item--main" href="#">О медицинском центре</a><a class="footer__nav-item" href="#">Отзывы</a><a class="footer__nav-item" href="#">Трудоустройство</a><a class="footer__nav-item" href="#">Правовая информация</a><a class="footer__nav-item" href="#">Лицензия и документы</a><a class="footer__nav-item" href="#">Пользовательское соглашение</a><a class="footer__nav-item" href="#">Политика конфиденциальности</a></nav>
+						</div>
+					</div>
+					<div class="footer__col footer__col--mobile mobile-only">
+						<div class="footer__col-inner">
+							<nav class="footer__nav"><a class="footer__nav-item" href="#">Медицинские услуги</a><a class="footer__nav-item" href="#">Комплексные программы</a><a class="footer__nav-item" href="#">Справки и медкнижки</a><a class="footer__nav-item" href="#">Врачи клиники</a><a class="footer__nav-item" href="#">Профосмотры</a></nav>
+							<nav class="footer__nav"><a class="footer__nav-item" href="#">Цены</a><a class="footer__nav-item" href="#">О клинике</a><a class="footer__nav-item secondary" href="#">Акции и спецпредложения</a><a class="footer__nav-item secondary" href="#">Контакты</a></nav>
+						</div>
+					</div>
+					<div class="footer__col">
+						<div class="footer__col-inner">
+							<div class="footer__appointment-btn common-btn common-btn--primary">
+								<svg class="icon icon-pen">
+									<use xlink:href="img/svg/sprite.svg#pen"></use>
+								</svg>Записаться на прием
+							</div><a class="footer__account text-icon-box" href="">
+								<svg class="icon icon-person">
+									<use xlink:href="img/svg/sprite.svg#person"></use>
+								</svg>
+								<div class="footer__account-text">Личный кабинет пациента</div><a class="footer__worktime text-icon-box" href="#">
+									<svg class="icon icon-calendar">
+										<use xlink:href="img/svg/sprite.svg#calendar"></use>
+									</svg>Режим работы кабинетов и врачей</a></a>
+							<div class="social"><a class="social__item" href="#">
+									<svg class="icon icon-vk">
+										<use xlink:href="img/svg/sprite.svg#vk"></use>
+									</svg></a><a class="social__item" href="#">
+									<svg class="icon icon-tg">
+										<use xlink:href="img/svg/sprite.svg#tg"></use>
+									</svg></a><a class="social__item" href="#">
+									<svg class="icon icon-wa">
+										<use xlink:href="img/svg/sprite.svg#wa"></use>
+									</svg></a><a class="social__item" href="#">
+									<svg class="icon icon-ok">
+										<use xlink:href="img/svg/sprite.svg#ok"></use>
+									</svg></a></div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<div class="footer__copywrite">© Медицинский центр "Я Здоров", 2022 год</div>
+					<div class="footer__developers">Разработка сайта -&nbsp;<a href="http://webelement.ru/">WEBELEMENT</a></div>
+				</div>
+			</div>
+		</footer>
+		<div class="mobile-menu">
+			<div class="mobile-menu__inner">
+				<div class="close js-close-mobile-menu">
+					<svg class="icon icon-close">
+						<use xlink:href="img/svg/sprite.svg#close"></use>
+					</svg>
+				</div>
+				<div class="mobile-menu__top">
+					<div class="mobile-menu__phone-box text-icon-box">
+						<svg class="icon icon-phone">
+							<use xlink:href="img/svg/sprite.svg#phone"></use>
+						</svg><a class="mobile-menu__phone" href="tel:88005001089">8 (800) 500-10-89</a>
+					</div>
+					<div class="mobile-menu__appointment-btn common-btn common-btn--primary">
+						<svg class="icon icon-pen">
+							<use xlink:href="img/svg/sprite.svg#pen"></use>
+						</svg>Записаться на прием
+					</div>
+				</div>
+				<div class="mobile-menu__middle">
+					<nav class="mobile-menu__nav"><a class="mobile-menu__nav-item current" href="#">Медицинские услуги
+							<div class="mobile-menu__nav-submenu-toggle">
+								<svg class="icon icon-arrow-right">
+									<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+								</svg>
+							</div></a>
+						<div class="mobile-menu__nav-submenu">
+							<div class="mobile-menu__nav-back js-menu-back">
+								<svg class="icon icon-arrow-right">
+									<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+								</svg>
+							</div>
+							<div class="mobile-menu__nav-submenu-category js-menu-back">Медицинские услуги</div>
+							<div class="mobile-menu__nav-submenu-items"><a class="mobile-menu__nav-submenu-item" href="#">Прием врача</a><a class="mobile-menu__nav-submenu-item" href="#">Лечение / Процедуры</a><a class="mobile-menu__nav-submenu-item" href="#">УЗИ</a><a class="mobile-menu__nav-submenu-item" href="#">Медицинские анализы</a></div>
+						</div><a class="mobile-menu__nav-item" href="#">Комплексные программы
+							<div class="mobile-menu__nav-submenu-toggle">
+								<svg class="icon icon-arrow-right">
+									<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+								</svg>
+							</div></a>
+						<div class="mobile-menu__nav-submenu">
+							<div class="mobile-menu__nav-back js-menu-back">
+								<svg class="icon icon-arrow-right">
+									<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+								</svg>
+							</div>
+							<div class="mobile-menu__nav-submenu-category js-menu-back">Комплексные программы</div>
+							<div class="mobile-menu__nav-submenu-items"><a class="mobile-menu__nav-submenu-item" href="#">Прием врача</a><a class="mobile-menu__nav-submenu-item" href="#">Лечение / Процедуры</a><a class="mobile-menu__nav-submenu-item" href="#">УЗИ</a><a class="mobile-menu__nav-submenu-item" href="#">Медицинские анализы</a></div>
+						</div><a class="mobile-menu__nav-item" href="#">Справки и медкнижки
+							<div class="mobile-menu__nav-submenu-toggle">
+								<svg class="icon icon-arrow-right">
+									<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+								</svg>
+							</div></a>
+						<div class="mobile-menu__nav-submenu">
+							<div class="mobile-menu__nav-back js-menu-back">
+								<svg class="icon icon-arrow-right">
+									<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+								</svg>
+							</div>
+							<div class="mobile-menu__nav-submenu-category js-menu-back">Справки и медкнижки</div>
+							<div class="mobile-menu__nav-submenu-items"><a class="mobile-menu__nav-submenu-item" href="#">Прием врача</a><a class="mobile-menu__nav-submenu-item" href="#">Лечение / Процедуры</a><a class="mobile-menu__nav-submenu-item" href="#">УЗИ</a><a class="mobile-menu__nav-submenu-item" href="#">Медицинские анализы</a></div>
+						</div><a class="mobile-menu__nav-item" href="#">Врачи клиники</a><a class="mobile-menu__nav-item" href="#">Профосмотры</a><a class="mobile-menu__nav-item" href="#">Цены</a><a class="mobile-menu__nav-item" href="#">О клинике</a><a class="mobile-menu__nav-item" href="#">Контакты</a>
+					</nav>
+				</div>
+				<div class="mobile-menu__bottom"></div>
+			</div>
+		</div>
+		<div class="modal modal--callback" id="modal-callback">
+			<div class="modal__body">
+				<div class="close js-close-modal">
+					<svg class="icon icon-close">
+						<use xlink:href="img/svg/sprite.svg#close"></use>
+					</svg>
+				</div>
+				<div class="modal__content">
+					<div class="modal__text">Чтобы связаться с нашими специалистами <span class="primary">оставьте свой номер телефона, и мы вам перезвоним</span></div>
+					<form class="form">
+						<div class="form-group">
+							<label class="label" for="mc1">Введите номер телефона:</label>
+							<input class="input" type="tel" id="mc1" required="required"/>
+							<div class="error-message">Это поле обязательно для заполнения</div>
+						</div>
+						<button class="form__btn common-btn common-btn--primary js-open-modal" type="submit" data-modal="#modal-callback-success">Отправить</button>
+						<div class="form__text">Нажимая на кнопку, я соглашаюсь на обработку моих персональных данных и ознакомлен(а) с условиями <a href="#">политики конфиденциальности.</a></div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="modal modal--callback-success" id="modal-callback-success">
+			<div class="modal__body">
+				<div class="close js-close-modal">
+					<svg class="icon icon-close">
+						<use xlink:href="img/svg/sprite.svg#close"></use>
+					</svg>
+				</div>
+				<div class="modal__content">
+					<div class="modal__text"><span class="primary">Ваша заявка принята!</span><br> Мы обязательно вам перезвоним в ближайшее время</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal modal--testimonial-success" id="modal-testimonial-success">
+			<div class="modal__body">
+				<div class="close js-close-modal">
+					<svg class="icon icon-close">
+						<use xlink:href="img/svg/sprite.svg#close"></use>
+					</svg>
+				</div>
+				<div class="modal__content">
+					<div class="modal__text"><span class="primary">Отзыв отправлен в отдел качества.</span><br> После его обработки с вами свяжется менеджер и расскажет условия получения скидки</div>
+				</div>
+			</div>
+		</div>
+		<script src="scripts/vendor.min.js"></script>
+		<script src="scripts/vendor/uhpv-full.min.js"></script>
+		<script src="scripts/main.min.js"></script>
+	</body>
+</html>

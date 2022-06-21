@@ -1,0 +1,97 @@
+extends ../layout
+include ../mixins/mixins
+
+block header
+    include ../components/header
+block content
+    .container
+        .breadcrumbs
+            a(href="/")._item Главная
+            a(href="/")._item Врачи медицинского центра
+            ._item.-current Зенкина Татьяна Алексеевна
+    .main-wrapper.doctor
+        .container
+            h1.h1 #[span.primary Зенкина Татьяна Алексеевна,]<br> невролог (врач высшей категории)
+            .content-wrapper
+                aside.sidebar
+                    ._doctors
+                        ._doctors-cat Неврологи
+                        a(href="#")._doctors-item Зенкина Татьяна Алексеевна
+                        a(href="#")._doctors-item Иванов Иван Иванович
+                    ._text
+                        .typography
+                            p Невролог - врач, получивший высшее медицинское образование и прошедший специализацию по специальности «неврология». Невролог занимается диагностикой и лечением болезней, связанных с нервной системой.
+                            p Это заболевания центральной (головной и спинной мозг) и периферической нервной системы (нервные волокна).
+                            ul.ul
+                                li Опухоли головного и спинного мозга
+                                li Невриты
+                                li Невралгии
+                                li Инсульты и другие нарушения кровообращения головного мозга
+                                li Энцефалиты
+                                li Приступы эпилепсии
+                    a(href="#")._doctor-btn.common-btn.common-btn--primary Другие врачи
+                main.main-content
+                    .doctors-card
+                        .doctors
+                            .__item
+                                ._bg
+                                ._photo
+                                    +picture('doc1', 'png', 218, 300)
+                                    ._bg-elem
+                                        +icon('red-cross')
+                                ._content
+                                    ._office Кабинет №2
+                                    ._text Врачебный приём при проведении медицинских осмотров по специальности неврология. Приём врача невролога по специальности рефлексотерапия.
+                                    ._worktime
+                                        | #[span.primary Режим работы:]<br>
+                                        | Вторник с 11.00 до 13.00;<br>
+                                        | Среда, пятница 14.00 до 16.00.
+                                ._btns
+                                    .common-btn.common-btn--primary
+                                        +icon('pen')
+                                        | Записаться на прием
+                        ._content
+                            h2.h2 Консультация специалиста включает в себя:
+                            ol.ol
+                                li Сбор сведений о начале и течении заболевания, о ранее проведенных обследованиях и лечении, анализ жалоб пациента, сбор анамнеза.
+                                li Осмотр пациента с выработкой плана диагностики и лечения пациента: назначение необходимых исследований, лабораторных анализов, инструментальных методов диагностики, а также медикаментозной терапии.
+                                li Интерпретация результатов лабораторных анализов, данных инструментальных исследований с целью коррекции лечения. Назначение контрольных или дополнительных диагностических исследований.
+                                p При необходимости врач направляет пациента на консультацию к другим специалистам и принимает решение о трудоспособности и режиме пациента.
+                                p Консультация может проводиться при отсутствии пациента, но обязательно на основании результатов обследований с учетом недавнего осмотра пациента.
+                        ._btn-wrapper.btn-wrapper.btn-wrapper--center.mobile-only-flex
+                            a(href="#")._doctor-btn.common-btn.common-btn--primary Другие врачи
+        section.large-blocks-grid
+            ._container.container
+                .h1 #[span.primary Цены на консультации и прием врача]<br> без очередей и в удобное для вас время:
+                ._items
+                    .large-block
+                        ._bg
+                            +pictureAdaptive('price-bg1', 'png', 580, 300)
+                        ._content
+                            h2._title.h2 Первичный прием любого специалиста
+                            ._title.h2 1 500 ₽
+                    .large-block
+                        ._bg
+                            +pictureAdaptive('price-bg2', 'png', 580, 300)
+                        ._content
+                            h2._title.h2 Повторный прием специалиста
+                            h2._title.h2 1 000 ₽
+                .btn-wrapper.-center
+                    a(href="#").common-btn.common-btn--primary Узнать стоимость других услуг
+        section.hotline
+            ._bg
+                +pictureAdaptive('hotline-bg', 'png', 1920, 150)
+            ._container.container
+                ._inner
+                    ._col
+                        ._title.h2 #[span.primary Телефон горячей линии ]
+                            a._phone(href="tel:88005001089") 8 (800) 500-10-89
+                    ._col
+                        ._btn.common-btn.common-btn.common-btn--secondary
+                            +icon('pen')
+                            | Написать
+                        ._text руководителю медицинского центра
+
+
+block footer
+    include ../components/footer

@@ -1,0 +1,55 @@
+.doctors-card {
+  margin-bottom: 20px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &__content {
+    margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__doctor-btn {
+    width: calc(100% - 80px);
+  }
+  .doctors {
+    &__item {
+      margin-bottom: 40px;
+      @media (max-width: 991px) {
+        border-radius: 0 0 26px 26px;
+      }
+    }
+    &__bg {
+      @media (max-width: 991px) {
+        height: calc(100% - 180px);
+      }
+      @media (max-width: 600px) {
+        height: 250px;
+        bottom: 70px;
+      }
+      @media (max-width: 480px) {
+        height: 150px
+      }
+    }
+    &__content {
+      padding-top: 64px;
+      @media (max-width: 991px) {
+        padding-top: 0;
+      }
+    }
+    &__office {
+      margin-bottom: 54px;
+      @media (max-width: 991px) {
+        margin-bottom: 20px;
+      }
+    }
+    &__btns {
+      position: absolute;
+      right: 0;
+      top: 50px;
+      @media (max-width: 767px) {
+        position: static;
+      }
+    }
+  }
+}

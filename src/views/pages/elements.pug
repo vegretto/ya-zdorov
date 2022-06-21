@@ -1,0 +1,265 @@
+extends ../layout
+include ../mixins/mixins
+
+block header
+    include ../components/header
+block content
+    .container
+        .breadcrumbs
+            a(href="/")._item Главная
+            a(href="/")._item О медицинском центре
+            ._item.-current Подкатегория
+    .main-wrapper.elements
+        ._container.container
+            h1.h1 #[span.primary Заголовок H1.] Заголовок должен быть длинным, чтобы был верно выстроен интерлиньяж
+            .content-wrapper
+                aside.sidebar
+                    nav._nav
+                        a(href="#")._nav-item.current Трудоустройство
+                        a(href="#")._nav-item Отзывы
+                        a(href="#")._nav-item Правовая информация
+                        a(href="#")._nav-item Лицензия и документы
+                        a(href="#")._nav-item Пользовательское соглашение
+                        a(href="#")._nav-item Политика конфиденциальности
+                main.main-content
+                    .typography
+                        .lead Лид. Первый абзац текста/статьи, информативный отрывок, позволяющий захватить внимание читателя на материале.
+                        p Текст блока. В основном тексте блока должны быть верно определены: кегель, межбуквенные и межстрочные интервалы, абзацы, подобран читабельный шрифт. Это блоки, в которых будет содержаться основной информационный посыл блока, следовательно, он должен быть максимально комфортен для чтения.
+                        p Текст блока. В основном тексте блока должны быть верно определены: кегель, межбуквенные и межстрочные интервалы, абзацы, подобран читабельный шрифт. Это блоки, в которых будет содержаться основной информационный посыл блока, следовательно, он должен быть максимально комфортен для чтения.
+                        h2.primary Заголовок H2. Многострочный заголовок, длина которого иногда бывает так не кстати.
+                        p Текст блока. В основном тексте блока должны быть верно определены: кегель, межбуквенные и межстрочные интервалы, абзацы, подобран читабельный шрифт. Это блоки, в которых будет содержаться основной информационный посыл блока, следовательно, он должен быть максимально комфортен для чтения.
+                        p Текст блока. В основном тексте блока должны быть верно определены: кегель, межбуквенные и межстрочные интервалы, абзацы, подобран читабельный шрифт. Это блоки, в которых будет содержаться основной информационный посыл блока, следовательно, он должен быть максимально комфортен для чтения.
+                        p Текст блока. В основном тексте блока должны быть верно определены: кегель, межбуквенные и межстрочные интервалы, абзацы, подобран читабельный шрифт. Это блоки, в которых будет содержаться основной информационный посыл блока, следовательно, он должен быть максимально комфортен для чтения.
+                        h3 Заголовок Н3. Делаем заголовок нарочито длинным, чтобы убедится в правильном интерлиньяже
+                        p Текст блока. В основном тексте блока должны быть верно определены: кегель, межбуквенные и межстрочные интервалы, абзацы, подобран читабельный шрифт. Это блоки, в которых будет содержаться основной информационный посыл блока, следовательно, он должен быть максимально комфортен для чтения.
+                        p Текст блока. В основном тексте блока должны быть верно определены: кегель, межбуквенные и межстрочные интервалы, абзацы, подобран читабельный шрифт. Это блоки, в которых будет содержаться основной информационный посыл блока, следовательно, он должен быть максимально комфортен для чтения.
+                        h2.primary Списки
+                        ul
+                            li Текст блока. В основном тексте блока должны быть верно определены: кегель, межбуквенные и межстрочные интервалы, абзацы, подобран читабельный шрифт. Это блоки, в которых будет содержаться основной информационный посыл блока, следовательно, он должен быть максимально комфортен для чтения.
+                            li
+                                ul
+                                    li Текст блока. В основном тексте блока должны быть верно определены: кегель, межбуквенные и межстрочные интервалы, абзацы, подобран читабельный шрифт. Это блоки, в которых будет содержаться основной информационный посыл блока, следовательно, он должен быть максимально комфортен для чтения.
+                                    li
+                                        ol
+                                            li Текст блока. В основном тексте блока должны быть верно определены: кегель, межбуквенные и межстрочные интервалы, абзацы, подобран читабельный шрифт. Это блоки, в которых будет содержаться основной информационный посыл блока, следовательно, он должен быть максимально комфортен для чтения.
+                                            li Текст блока. В основном тексте блока должны быть верно определены: кегель, межбуквенные и межстрочные интервалы, абзацы, подобран читабельный шрифт. Это блоки, в которых будет содержаться основной информационный посыл блока, следовательно, он должен быть максимально комфортен для чтения.
+                            li
+                                ol
+                                    li Текст блока. В основном тексте блока должны быть верно определены: кегель, межбуквенные и межстрочные интервалы, абзацы, подобран читабельный шрифт. Это блоки, в которых будет содержаться основной информационный посыл блока, следовательно, он должен быть максимально комфортен для чтения
+                        ol
+                            li Текст блока. В основном тексте блока должны быть верно определены: кегель, межбуквенные и межстрочные интервалы, абзацы, подобран читабельный шрифт. Это блоки, в которых будет содержаться основной информационный посыл блока, следовательно, он должен быть максимально комфортен для чтения.
+                            li
+                                ul
+                                    li Текст блока. В основном тексте блока должны быть верно определены: кегель, межбуквенные и межстрочные интервалы, абзацы, подобран читабельный шрифт. Это блоки, в которых будет содержаться основной информационный посыл блока, следовательно, он должен быть максимально комфортен для чтения.
+                            li
+                                ol
+                                    li Текст блока. В основном тексте блока должны быть верно определены: кегель, межбуквенные и межстрочные интервалы, абзацы, подобран читабельный шрифт. Это блоки, в которых будет содержаться основной информационный посыл блока, следовательно, он должен быть максимально комфортен для чтения
+                    .float-block
+                        +picture('elements1', png, 380, 300)
+                        ._text
+                            .typography
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid commodi cumque cupiditate dolor dolorem dolores dolorum eligendi eos facilis in inventore ipsum necessitatibus nemo optio porro sapiente, tempore temporibus unde.
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid commodi cumque cupiditate dolor dolorem dolores dolorum eligendi eos facilis in inventore ipsum necessitatibus nemo optio porro sapiente, tempore temporibus unde.
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid commodi cumque cupiditate dolor dolorem dolores dolorum eligendi eos facilis in inventore ipsum necessitatibus nemo optio porro sapiente, tempore temporibus unde.
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid commodi cumque cupiditate dolor dolorem dolores dolorum eligendi eos facilis in inventore ipsum necessitatibus nemo optio porro sapiente, tempore temporibus unde.
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid commodi cumque cupiditate dolor dolorem dolores dolorum eligendi eos facilis in inventore ipsum necessitatibus nemo optio porro sapiente, tempore temporibus unde.
+        .fw-img
+            +pictureAdaptive('appointment-bg', 'png', 1920, 350)
+        section
+            .container
+                .flex-wrapper
+                    .col-6
+                        .typography
+                            ul.ul.primary
+                                li Нумерованный список
+                                li Маркированный список
+                            ol.ol.primary
+                                li Нумерованный список
+                                li Маркированный список
+                            .comment * Элемент «Комментарий» (класс comment) применяется к пояснительному тексту. И еще немного специально написанного текста, чтобы получилось несколько строк для наглядности.
+                    .col-6
+                        .typography
+                            blockquote
+                                p И открылись царю слова «И это тоже пройдет». Удивление от того, что никогда он не замечал этой строчки ранее, охладило Соломона. Больше срывов с ним не случалось долгие годы, но, наконец, пришла пора ему уходить в мир иной. Он сидел и рассматривал свое кольцо, с которым, казалось, никогда не расставался. Соломон знал каждую щербинку на нем. Грустно улыбнулся царь, в последний раз прочитывая сначала одну надпись “Это пройдет”, затем вторую “И это тоже пройдет”.
+                                p И открылись царю слова «И это тоже пройдет». Удивление от того, что никогда он не замечал этой строчки ранее, охладило Соломона. Больше срывов с ним не случалось долгие годы, но, наконец, пришла пора ему уходить в мир иной. Он сидел и рассматривал свое кольцо, с которым, казалось, никогда не расставался. Соломон знал каждую щербинку на нем. Грустно улыбнулся царь, в последний раз прочитывая сначала одну надпись “Это пройдет”, затем вторую “И это тоже пройдет”.
+                            cite Цитата
+                .important
+                    ._box
+                        +icon('sale')
+                        ._title.h2 Важно. Используется для выделения особо важной информации:
+                    ._text Важная информация, важнаяинформация, важнаяинформация, важнаяинформация
+        section.medium-block-grid.-content
+            ._container.container
+                ._items
+                    .medium-block
+                        ._icon
+                            +icon('medium-block-icon1')
+                        ._text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis eget.
+                    .medium-block
+                        ._icon
+                            +icon('medium-block-icon2')
+                        ._text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis eget.
+                    .medium-block
+                        ._icon
+                            +icon('medium-block-icon3')
+                        ._text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis eget.
+                    .medium-block
+                        ._icon
+                            +icon('medium-block-icon4')
+                        ._text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis eget.
+                    .medium-block
+                        ._icon
+                            +icon('medium-block-icon5')
+                        ._text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis eget.
+                    .medium-block
+                        ._icon
+                            +icon('medium-block-icon6')
+                        ._text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis eget.
+        section
+            .container
+                a(href="#").large-block.-fw.-promo.-gray
+                    ._bg
+                        +pictureAdaptive('large-block-bg7', 'png', 1180, 300)
+                    ._content.-mobile-br-show
+                        ._text #[strong Фотографию поменьше, примерно на ]
+                            span.primary 70% ширины сайта с подписью к ней
+                        ._btn.common-btn.common-btn--secondary Получить скидку
+        section
+            .container
+                .common-slider.js-common-slider
+                    ._wrapper.swiper-wrapper
+                        ._slide.swiper-slide
+                            +picture('slider1', 'png', 580, 350)
+                        ._slide.swiper-slide
+                            +picture('slider1', 'png', 580, 350)
+                        ._slide.swiper-slide
+                            +picture('slider1', 'png', 580, 350)
+                        ._slide.swiper-slide
+                            +picture('slider1', 'png', 580, 350)
+                    ._pagination-box
+                        ._pagination
+                    ._arrow.-prev
+                        +icon('arrow-right')
+                    ._arrow.-next
+                        +icon('arrow-right')
+        section
+            .container
+                form.form
+                    ._header
+                        ._title.h1.txt-center Регистрация
+                        ._header-text.primary.txt-center
+                            strong Регистрация даст вам доступ к скидкам и бонусной программе
+                    ._container.col-6.col-6--center
+                        ._form-groups-wrapper
+                            .flex-wrapper
+                                .col-6
+                                    +form-group('text', 'cf1', 'Введите Имя:', true, 'input', 'label')
+                                    +form-group('text', 'cf2', 'Введите Фамилию:', true, 'input', 'label')
+                                    +form-group('text', 'cf3', 'Введите Отчество:', true, 'input', 'label')
+                                .col-6
+                                    +form-group('tel', 'cf4', 'Введите номер телефона:', true, 'input', 'label')
+                                    +form-group('email', 'cf5', 'Введите Email:', true, 'input', 'label')
+                                    +form-group('password', 'cf6', 'Введите пароль:', true, 'input', 'label')
+                        ._btn-wrapper.btn-wrapper.btn-wrapper--center
+                            button._btn.common-btn.common-btn--primary(type="submit") Отправить
+                        ._text.txt-center Нажимая на кнопку, я соглашаюсь на обработку моих персональных данных и ознакомлен(а) с условиями #[a(href="#") политики конфиденциальности.]
+                        +form-group-checkbox('cf7', 'Подписаться на новости', true, false, 'checkbox', 'label', 'form-group--center')
+        section
+            .container
+                .typography
+                    table
+                        thead
+                            tr
+                                th Кабинет врача
+                                th Фамилия специалиста
+                                th Номер кабинета
+                                th Стоимость приема
+                        tbody
+                            tr
+                                td.b Невролог
+                                td Зенкина Татьяна Алексеевна
+                                td.b 2
+                                td 1500 рублей первичный прием;<br>1000 рублей повторный прием.
+                            tr
+                                td.b Невролог
+                                td Зенкина Татьяна Алексеевна
+                                td.b 2
+                                td 1500 рублей первичный прием;<br>1000 рублей повторный прием.
+                            tr
+                                td.b Терапевт
+                                td Иванов Иван Иванович
+                                td.b 3
+                                td 1500 рублей первичный прием;<br>1000 рублей повторный прием.
+                            tr
+                                td.b Рефлексотерапия
+                                td Среда, пятница с 14.00 до 16.00
+                                td.b 3
+                                td 1500 рублей первичный прием;<br>1000 рублей повторный прием.
+                            tr
+                                td.b Терапевт
+                                td Иванов Иван Иванович
+                                td.b 3
+                                td 1500 рублей первичный прием;<br>1000 рублей повторный прием.
+                            tr
+                                td.b Невролог
+                                td Зенкина Татьяна Алексеевна
+                                td.b 2
+                                td 1500 рублей первичный прием;<br>1000 рублей повторный прием.
+                            tr
+                                td.b Невролог
+                                td Зенкина Татьяна Алексеевна
+                                td.b 2
+                                td 1500 рублей первичный прием;<br>1000 рублей повторный прием.
+                            tr
+                                td.b Терапевт
+                                td Иванов Иван Иванович
+                                td.b 3
+                                td 1500 рублей первичный прием;<br>1000 рублей повторный прием.
+                            tr
+                                td.b Рефлексотерапия
+                                td Среда, пятница с 14.00 до 16.00
+                                td.b 3
+                                td 1500 рублей первичный прием;<br>1000 рублей повторный прием.
+                            tr
+                                td.b Терапевт
+                                td Иванов Иван Иванович
+                                td.b 3
+                                td 1500 рублей первичный прием;<br>1000 рублей повторный прием.
+                .pagination
+                    a(href="#")._item.-prev Предыдущий
+                    a(href="#")._item 1
+                    a(href="#")._item 2
+                    a(href="#")._item.current 3
+                    a(href="#")._item 4
+                    a(href="#")._item 5
+                    a(href="#")._item.-next Следующий
+        section
+            .container
+                .accordion
+                    ._item
+                        .__title.js-accordion-toggle.active
+                            | Как можно записаться на прием?
+                            +icon('arrow-down')
+                        .__content.js-accordion-content.opened Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                    ._item
+                        .__title.js-accordion-toggle
+                            | Сколько длится прием у специалиста?
+                            +icon('arrow-down')
+                        .__content.js-accordion-content Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                    ._item
+                        .__title.js-accordion-toggle
+                            | Можно ли прийти без записи (по острой боли и др)?
+                            +icon('arrow-down')
+                        .__content.js-accordion-content Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                    ._item
+                        .__title.js-accordion-toggle
+                            | Работает ли мед. центр в выходные или в поздние часы в будни?
+                            +icon('arrow-down')
+                        .__content.js-accordion-content Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                    ._item
+                        .__title.js-accordion-toggle
+                            | Есть ли очереди, каково максимальное ожидание, если пришел по предварительной записи?
+                            +icon('arrow-down')
+                        .__content.js-accordion-content Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+block footer
+    include ../components/footer

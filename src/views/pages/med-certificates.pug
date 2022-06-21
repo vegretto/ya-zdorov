@@ -1,0 +1,332 @@
+extends ../layout
+include ../mixins/mixins
+
+block header
+    include ../components/header
+block content
+    .container
+        .breadcrumbs
+            a(href="/")._item Главная
+            ._item.-current Справки и медкнижки
+    main.med-certificates.main-wrapper
+        .container
+            .title-box.-align-center
+                h1.h1 #[span.primary Выдача справок и медицинских<br> книжек] в медицинском центре<br> "Я&nbsp;Здоров!"
+                .side-small-block
+                    +icon('stamp')
+                    ._text Оформляем за&nbsp;1 день в&nbsp;удобное для вас время
+        section.certs-tabs
+            ._container.container
+                .tabs
+                    ._controls
+                        ._control.active.js-tab-control(data-tab='tab-1')
+                            .input-radio-dummy
+                                input#tc1(type="radio" name="tc" checked)
+                                label(for="tc1") Медицинские справки для детей
+                        ._control.js-tab-control(data-tab='tab-2')
+                            .input-radio-dummy
+                                input#tc2(type="radio" name="tc")
+                                label(for="tc2") Справки для получения водительских прав
+                        ._control.js-tab-control(data-tab='tab-3')
+                            .input-radio-dummy
+                                input#tc3(type="radio" name="tc")
+                                label(for="tc3") Медицинские справки для устройства на работу
+                        ._control.js-tab-control(data-tab='tab-1')
+                            .input-radio-dummy
+                                input#tc4(type="radio" name="tc")
+                                label(for="tc4") Оформление и продление медицинских книжек
+                        ._control.js-tab-control(data-tab='tab-2')
+                            .input-radio-dummy
+                                input#tc5(type="radio" name="tc")
+                                label(for="tc5") Другое
+                    ._controls-mobile
+                        ._controls-mobile-select.js-select
+                            ._controls-mobile-select-val.js-select-val Медицинские справки для детей
+                            +icon('arrow-down')
+                        ._controls-mobile-options.js-select-options
+                            ._controls-mobile-option.js-tab-control(data-tab='tab-1') Медицинские справки для детей
+                            ._controls-mobile-option.js-tab-control(data-tab='tab-2') Справки для получения водительских прав
+                            ._controls-mobile-option.js-tab-control(data-tab='tab-3') Медицинские справки для устройства на работу
+                            ._controls-mobile-option.js-tab-control(data-tab='tab-1') Оформление и продление медицинских книжек
+                            ._controls-mobile-option.js-tab-control(data-tab='tab-2') Другое
+                    ._tab.visible#tab-1
+                        .large-block.-fw.-l-blue
+                            ._bg
+                                +pictureAdaptive('certs1', 'png', 380, 300)
+                            ._content
+                                h2._title.h2 Медицинские справки для детей
+                                ._text В нашем медицинском центре вы можете оформить медицинские справки следующего вида и назначения:
+                                .__hr
+                                ul.ul
+                                    li Справка в десткий сад для оформления ребенка или после перенесенного ОРВИ;
+                                    li Справка в школу;
+                                    li Справка в бассейн для ребенка;
+                                    li Справка в детский лагерь;
+                                    li Справка в спортивную школу или секцию;
+                                    li Справка в учебные заведения формы 086/у.
+                        .doctors
+                            .title-box.-align-center
+                                h1.h1 #[span.primary Прием (осмотр, консультация)] невролога
+                                .side-small-block
+                                    +icon('sale')
+                                    ._text Стоимость 500 ₽
+                            ._items
+                                ._item
+                                    ._bg
+                                    ._photo
+                                        +picture('doc1', 'png', 218, 300)
+                                        ._bg-elem
+                                            +icon('red-cross')
+                                    ._content
+                                        ._name Зенкина Татьяна Алексеевна
+                                        ._office Кабинет №2
+                                        ._text Врачебный приём при проведении медицинских осмотров по специальности неврология. Приём врача невролога по специальности рефлексотерапия.
+                                        ._worktime
+                                            | #[span.primary Режим работы:]<br>
+                                            | Вторник с 11.00 до 13.00;<br>
+                                            | Среда, пятница 14.00 до 16.00.
+                                    ._btns
+                                        .common-btn.common-btn--primary
+                                            +icon('pen')
+                                            | Записаться на прием
+                                        a(href="#").common-btn.common-btn--secondary
+                                            | Подробнее о специалисте
+                                ._item
+                                    ._bg
+                                    ._photo
+                                        +picture('doc1', 'png', 218, 300)
+                                        ._bg-elem
+                                            +icon('red-cross')
+                                    ._content
+                                        ._name Зенкина Татьяна Алексеевна
+                                        ._office Кабинет №2
+                                        ._text Врачебный приём при проведении медицинских осмотров по специальности неврология. Приём врача невролога по специальности рефлексотерапия.
+                                        ._worktime
+                                            | #[span.primary Режим работы:]<br>
+                                            | Вторник с 11.00 до 13.00;<br>
+                                            | Среда, пятница 14.00 до 16.00.
+                                    ._btns
+                                        .common-btn.common-btn--primary
+                                            +icon('pen')
+                                            | Записаться на прием
+                                        a(href="#").common-btn.common-btn--secondary
+                                            | Подробнее о специалисте
+                    ._tab#tab-2
+                        .large-block.-fw.-l-blue
+                            ._bg
+                                +pictureAdaptive('certs1', 'png', 380, 300)
+                            ._content
+                                h2._title.h2 Справки для получения водительских прав
+                                ._text В нашем медицинском центре вы можете оформить медицинские справки следующего вида и назначения:
+                                .__hr
+                                ul.ul
+                                    li Справка в десткий сад для оформления ребенка или после перенесенного ОРВИ;
+                                    li Справка в школу;
+                                    li Справка в бассейн для ребенка;
+                                    li Справка в детский лагерь;
+                                    li Справка в спортивную школу или секцию;
+                                    li Справка в учебные заведения формы 086/у.
+                        .doctors
+                            .title-box.-align-center
+                                h1.h1 #[span.primary Прием (осмотр, консультация)] невролога2
+                                .side-small-block
+                                    +icon('sale')
+                                    ._text Стоимость 500 ₽
+                            ._items
+                                ._item
+                                    ._bg
+                                    ._photo
+                                        +picture('doc1', 'png', 218, 300)
+                                        ._bg-elem
+                                            +icon('red-cross')
+                                    ._content
+                                        ._name Зенкина Татьяна Алексеевна
+                                        ._office Кабинет №2
+                                        ._text Врачебный приём при проведении медицинских осмотров по специальности неврология. Приём врача невролога по специальности рефлексотерапия.
+                                        ._worktime
+                                            | #[span.primary Режим работы:]<br>
+                                            | Вторник с 11.00 до 13.00;<br>
+                                            | Среда, пятница 14.00 до 16.00.
+                                    ._btns
+                                        .common-btn.common-btn--primary
+                                            +icon('pen')
+                                            | Записаться на прием
+                                        a(href="#").common-btn.common-btn--secondary
+                                            | Подробнее о специалисте
+                                ._item
+                                    ._bg
+                                    ._photo
+                                        +picture('doc1', 'png', 218, 300)
+                                        ._bg-elem
+                                            +icon('red-cross')
+                                    ._content
+                                        ._name Зенкина Татьяна Алексеевна
+                                        ._office Кабинет №2
+                                        ._text Врачебный приём при проведении медицинских осмотров по специальности неврология. Приём врача невролога по специальности рефлексотерапия.
+                                        ._worktime
+                                            | #[span.primary Режим работы:]<br>
+                                            | Вторник с 11.00 до 13.00;<br>
+                                            | Среда, пятница 14.00 до 16.00.
+                                    ._btns
+                                        .common-btn.common-btn--primary
+                                            +icon('pen')
+                                            | Записаться на прием
+                                        a(href="#").common-btn.common-btn--secondary
+                                            | Подробнее о специалисте
+                    ._tab#tab-3
+                        .large-block.-fw.-l-blue
+                            ._bg
+                                +pictureAdaptive('certs1', 'png', 380, 300)
+                            ._content
+                                h2._title.h2 Медицинские<br> справки для детей
+                                ._text В нашем медицинском центре вы можете оформить медицинские справки следующего вида и назначения:
+                                .__hr
+                                ul.ul
+                                    li Справка в десткий сад для оформления ребенка или после перенесенного ОРВИ;
+                                    li Справка в школу;
+                                    li Справка в бассейн для ребенка;
+                                    li Справка в детский лагерь;
+                                    li Справка в спортивную школу или секцию;
+                                    li Справка в учебные заведения формы 086/у.
+                        .doctors
+                            .title-box.-align-center
+                                h1.h1 #[span.primary Прием (осмотр, консультация)] невролога3
+                                .side-small-block
+                                    +icon('sale')
+                                    ._text Стоимость 500 ₽
+                            ._items
+                                ._item
+                                    ._bg
+                                    ._photo
+                                        +picture('doc1', 'png', 218, 300)
+                                        ._bg-elem
+                                            +icon('red-cross')
+                                    ._content
+                                        ._name Зенкина Татьяна Алексеевна
+                                        ._office Кабинет №2
+                                        ._text Врачебный приём при проведении медицинских осмотров по специальности неврология. Приём врача невролога по специальности рефлексотерапия.
+                                        ._worktime
+                                            | #[span.primary Режим работы:]<br>
+                                            | Вторник с 11.00 до 13.00;<br>
+                                            | Среда, пятница 14.00 до 16.00.
+                                    ._btns
+                                        .common-btn.common-btn--primary
+                                            +icon('pen')
+                                            | Записаться на прием
+                                        a(href="#").common-btn.common-btn--secondary
+                                            | Подробнее о специалисте
+                                ._item
+                                    ._bg
+                                    ._photo
+                                        +picture('doc1', 'png', 218, 300)
+                                        ._bg-elem
+                                            +icon('red-cross')
+                                    ._content
+                                        ._name Зенкина Татьяна Алексеевна
+                                        ._office Кабинет №2
+                                        ._text Врачебный приём при проведении медицинских осмотров по специальности неврология. Приём врача невролога по специальности рефлексотерапия.
+                                        ._worktime
+                                            | #[span.primary Режим работы:]<br>
+                                            | Вторник с 11.00 до 13.00;<br>
+                                            | Среда, пятница 14.00 до 16.00.
+                                    ._btns
+                                        .common-btn.common-btn--primary
+                                            +icon('pen')
+                                            | Записаться на прием
+                                        a(href="#").common-btn.common-btn--secondary
+                                            | Подробнее о специалисте
+        section.promo
+            ._container.container
+                .h1 #[span.primary Акции] и спецпредложения
+            ._slider.js-promo-slider
+                .swiper-wrapper
+                    .fw-banner.swiper-slide
+                        ._bg
+                            +pictureAdaptive('promo-bg', 'png', 1920, 350)
+                        ._container.container
+                            ._inner
+                                ._left
+                                    ._title.h2.primary Получите медицинскую справку на вождение со скидкой!
+                                    ._text Приходите и приводите друзей<br> Скидка по промокоду для клиента “Я Здоров!” - 100 ₽
+                                    a(href="#")._btn.common-btn.common-btn--secondary Получить скидку
+                    .fw-banner.swiper-slide
+                        ._bg
+                            +pictureAdaptive('promo-bg', 'png', 1920, 350)
+                        ._container.container
+                            ._inner
+                                ._left
+                                    ._title.h2.primary Получите медицинскую справку на вождение со скидкой!
+                                    ._text Приходите и приводите друзей<br> Скидка по промокоду для клиента “Я Здоров!” - 100 ₽
+                                    a(href="#")._btn.common-btn.common-btn--secondary Получить скидку
+                    .fw-banner.swiper-slide
+                        ._bg
+                            +pictureAdaptive('promo-bg', 'png', 1920, 350)
+                        ._container.container
+                            ._inner
+                                ._left
+                                    ._title.h2.primary Получите медицинскую справку на вождение со скидкой!
+                                    ._text Приходите и приводите друзей<br> Скидка по промокоду для клиента “Я Здоров!” - 100 ₽
+                                    a(href="#")._btn.common-btn.common-btn--secondary Получить скидку
+                ._pagination-box
+                    ._pagination
+        section.medium-block-grid
+            ._container.container
+                ._title.h1 #[span.primary Сервис] на 10 баллов
+                ._items
+                    a(href="#").medium-block
+                        ._icon
+                            +icon('medium-block-icon1')
+                        ._text Работа со специалистами, которые уже зарекомендовали себя в городе
+                        ._link Врачи медицинского центра
+                        ._bg-icon
+                            +icon('arrow-bottom-right')
+                    a(href="#").medium-block
+                        ._icon
+                            +icon('medium-block-icon2')
+                        ._text Удобное расположение в оживленной части города с парковками: ул. Льва Толстого, 44
+                        ._link Наши контакты
+                        ._bg-icon
+                            +icon('arrow-bottom-right')
+                    a(href="#").medium-block
+                        ._icon
+                            +icon('medium-block-icon3')
+                        ._text Внимательный сервис на любом этапе обращения в медицинский центр
+                        ._link Подробнее об услугах и возможностях медицинского центра
+                        ._bg-icon
+                            +icon('arrow-bottom-right')
+                    a(href="#").medium-block
+                        ._icon
+                            +icon('medium-block-icon4')
+                        ._text Предоставление результатов анализов и назначений на личную почту
+                        ._link Перейдите в Личный кабинет пользователя
+                        ._bg-icon
+                            +icon('arrow-bottom-right')
+                    a(href="#").medium-block
+                        ._icon
+                            +icon('medium-block-icon5')
+                        ._text Увеличенное время работы в будни до 18:00. Работаем для вас по субботам
+                        ._link Смотрите график приема
+                        ._bg-icon
+                            +icon('arrow-bottom-right')
+                    a(href="#").medium-block
+                        ._icon
+                            +icon('medium-block-icon6')
+                        ._text Наличие телефона горячей линии руководителя медицинского центра в общем доступе
+                        ._link Выразить свое мнение по поводу качества услуги
+                        ._bg-icon
+                            +icon('arrow-bottom-right')
+        section.hotline
+            ._bg
+                +pictureAdaptive('hotline-bg', 'png', 1920, 150)
+            ._container.container
+                ._inner
+                    ._col
+                        ._title.h2 #[span.primary Телефон горячей линии ]
+                            a._phone(href="tel:88005001089") 8 (800) 500-10-89
+                    ._col
+                        ._btn.common-btn.common-btn.common-btn--secondary
+                            +icon('pen')
+                            | Написать
+                        ._text руководителю медицинского центра
+block footer
+    include ../components/footer

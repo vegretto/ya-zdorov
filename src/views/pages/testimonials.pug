@@ -1,0 +1,194 @@
+extends ../layout
+include ../mixins/mixins
+
+block header
+    include ../components/header
+block content
+    .container
+        .breadcrumbs
+            a(href="/")._item Главная
+            a(href="/")._item О медицинском центре
+            ._item.-current Отзывы
+    .main-wrapper.testimonials
+        ._container.container
+            h1.h1 #[span.primary Отзывы о медицинском центре] и наших врачах
+            .content-wrapper
+                aside.sidebar
+                    nav._nav
+                        a(href="#")._nav-item.current Трудоустройство
+                        a(href="#")._nav-item Отзывы
+                        a(href="#")._nav-item Правовая информация
+                        a(href="#")._nav-item Лицензия и документы
+                        a(href="#")._nav-item Пользовательское соглашение
+                        a(href="#")._nav-item Политика конфиденциальности
+                main.main-content.-flex
+                    ._main-box
+                        .testimonials
+                            ._item
+                                ._name Сергеева Светлана
+                                ._text-wrapper.read-more-wrapper.js-read-more-wrapper
+                                    ._text.read-more-container.js-read-more-container
+                                            p Проходила обследование в медицинском центре у офтальмолога Иванова Ивана Ивановича. Осталась не просто довольна, а восхищена работой медицинского центра. Это что то на европейском уровне, сервис, внимание. Я ни минуты не сидела в ожидании. Все очень обходительны и приветливы. Надо сказать мне еще и скидку дали. Теперь даже не хочу думать о госудаственной поликлинике. Спасибо. Я ваша медицинский центр навека!
+                                            p Проходила обследование в медицинском центре у офтальмолога Иванова Ивана Ивановича. Осталась не просто довольна, а восхищена работой медицинского центра. Это что то на европейском уровне, сервис, внимание. Я ни минуты не сидела в ожидании. Все очень обходительны и приветливы. Надо сказать мне еще и скидку дали. Теперь даже не хочу думать о госудаственной поликлинике. Спасибо. Я ваша медицинский центр навека!
+                                    .read-more-toggle.js-read-more-toggle Читать полностью
+                                    .read-more-bg
+                                ._info
+                                    ._info-item
+                                        ._info-title Оценка качества работы:
+                                        .stars.js-stars(data-rating="4")
+                                            ._item
+                                                +icon('star')
+                                            ._item
+                                                +icon('star')
+                                            ._item
+                                                +icon('star')
+                                            ._item
+                                                +icon('star')
+                                            ._item
+                                                +icon('star')
+                                    ._info-item
+                                        ._info-title Источник:
+                                        a(href="#")._info-link https://prodoctorov.ru/
+                                    ._info-item
+                                        ._info-title Дата отзыва:
+                                        ._info-date 22.02.2022
+                            ._item
+                                ._name Сергеева Светлана
+                                ._text-wrapper.read-more-wrapper.js-read-more-wrapper
+                                    ._text.read-more-container.js-read-more-container
+                                            p Проходила обследование в медицинском центре у офтальмолога Иванова Ивана Ивановича. Осталась не просто довольна, а восхищена работой медицинского центра. Это что то на европейском уровне, сервис, внимание. Я ни минуты не сидела в ожидании. Все очень обходительны и приветливы. Надо сказать мне еще и скидку дали. Теперь даже не хочу думать о госудаственной поликлинике. Спасибо. Я ваша медицинский центр навека!
+                                            p Проходила обследование в медицинском центре у офтальмолога Иванова Ивана Ивановича. Осталась не просто довольна, а восхищена работой медицинского центра. Это что то на европейском уровне, сервис, внимание. Я ни минуты не сидела в ожидании. Все очень обходительны и приветливы. Надо сказать мне еще и скидку дали. Теперь даже не хочу думать о госудаственной поликлинике. Спасибо. Я ваша медицинский центр навека!
+                                    .read-more-toggle.js-read-more-toggle Читать полностью
+                                    .read-more-bg
+                                ._info
+                                    ._info-item
+                                        ._info-title Оценка качества работы:
+                                        .stars.js-stars(data-rating="4")
+                                            ._item
+                                                +icon('star')
+                                            ._item
+                                                +icon('star')
+                                            ._item
+                                                +icon('star')
+                                            ._item
+                                                +icon('star')
+                                            ._item
+                                                +icon('star')
+                                    ._info-item
+                                        ._info-title Источник:
+                                        a(href="#")._info-link https://prodoctorov.ru/
+                                    ._info-item
+                                        ._info-title Дата отзыва:
+                                        ._info-date 22.02.2022
+                            ._item
+                                ._name Сергеева Светлана
+                                ._text-wrapper.read-more-wrapper.js-read-more-wrapper
+                                    ._text.read-more-container.js-read-more-container
+                                            p Проходила обследование в медицинском центре у офтальмолога Иванова Ивана Ивановича. Осталась не просто довольна, а восхищена работой медицинского центра. Это что то на европейском уровне, сервис, внимание. Я ни минуты не сидела в ожидании. Все очень обходительны и приветливы. Надо сказать мне еще и скидку дали. Теперь даже не хочу думать о госудаственной поликлинике. Спасибо. Я ваша медицинский центр навека!
+                                    .read-more-toggle.js-read-more-toggle Читать полностью
+                                    .read-more-bg
+                                ._info
+                                    ._info-item
+                                        ._info-title Оценка качества работы:
+                                        .stars.js-stars(data-rating="4")
+                                            ._item
+                                                +icon('star')
+                                            ._item
+                                                +icon('star')
+                                            ._item
+                                                +icon('star')
+                                            ._item
+                                                +icon('star')
+                                            ._item
+                                                +icon('star')
+                                    ._info-item
+                                        ._info-title Источник:
+                                        a(href="#")._info-link https://prodoctorov.ru/
+                                    ._info-item
+                                        ._info-title Дата отзыва:
+                                        ._info-date 22.02.2022
+                            ._item
+                                ._name Сергеева Светлана
+                                ._text-wrapper.read-more-wrapper.js-read-more-wrapper
+                                    ._text.read-more-container.js-read-more-container
+                                            p Проходила обследование в медицинском центре у офтальмолога Иванова Ивана Ивановича. Осталась не просто довольна, а восхищена работой медицинского центра. Это что то на европейском уровне, сервис, внимание. Я ни минуты не сидела в ожидании. Все очень обходительны и приветливы. Надо сказать мне еще и скидку дали. Теперь даже не хочу думать о госудаственной поликлинике. Спасибо. Я ваша медицинский центр навека!
+                                            p Проходила обследование в медицинском центре у офтальмолога Иванова Ивана Ивановича. Осталась не просто довольна, а восхищена работой медицинского центра. Это что то на европейском уровне, сервис, внимание. Я ни минуты не сидела в ожидании. Все очень обходительны и приветливы. Надо сказать мне еще и скидку дали. Теперь даже не хочу думать о госудаственной поликлинике. Спасибо. Я ваша медицинский центр навека!
+                                    .read-more-toggle.js-read-more-toggle Читать полностью
+                                    .read-more-bg
+                                ._info
+                                    ._info-item
+                                        ._info-title Оценка качества работы:
+                                        .stars.js-stars(data-rating="4")
+                                            ._item
+                                                +icon('star')
+                                            ._item
+                                                +icon('star')
+                                            ._item
+                                                +icon('star')
+                                            ._item
+                                                +icon('star')
+                                            ._item
+                                                +icon('star')
+                                    ._info-item
+                                        ._info-title Источник:
+                                        a(href="#")._info-link https://prodoctorov.ru/
+                                    ._info-item
+                                        ._info-title Дата отзыва:
+                                        ._info-date 22.02.2022
+                        .pagination
+                            a(href="#")._item.-prev Предыдущий
+                            a(href="#")._item 1
+                            a(href="#")._item 2
+                            a(href="#")._item.current 3
+                            a(href="#")._item 4
+                            a(href="#")._item 5
+                            a(href="#")._item.-next Следующий
+                    ._sidebox
+                        .important
+                            ._box
+                                +icon('sale')
+                                ._text Напишите отзыв и получите скидку 20%
+                        .common-btn.common-btn--secondary.js-scroll-to(data-scroll="feedback") Оставить отзыв
+        section.feedback#feedback
+            ._container.container
+                .h1 Оставить отзыв
+                .h2 #[span.primary Оставьте отзыв и получите скидку 20%] на следующее посещение медицинского центра
+                form.form
+                    ._form-groups-wrapper
+                        .flex-wrapper
+                            .col-3
+                                +form-group('tel', 'fb1', 'Введите номер телефона:', true, 'input', 'label')
+                                +form-group('text', 'fb2', 'Введите ваше имя и фамилию:', true, 'input', 'label')
+                            .col-9
+                                +form-group-textarea('fb3', 'Введите текст отзыва:', true, '', 'input textarea', 'label')
+                        ._rating
+                            ._rating-text Оцените качество работы по 5 бальной шкале:
+                            .stars.-input.js-stars-input(data-rating="0")
+                                input._input(type="text")
+                                ._item(data-val="1")
+                                    +icon('star')
+                                ._item(data-val="2")
+                                    +icon('star')
+                                ._item(data-val="3")
+                                    +icon('star')
+                                ._item(data-val="4")
+                                    +icon('star')
+                                ._item(data-val="5")
+                                    +icon('star')
+                    button._btn.common-btn.common-btn--primary(type="submit") Отправить
+                    ._text Нажимая на кнопку, я соглашаюсь на обработку моих персональных данных и ознакомлен(а) с условиями #[a(href="#") политики конфиденциальности.]
+        section.hotline
+            ._bg
+                +pictureAdaptive('hotline-bg', 'png', 1920, 150)
+            ._container.container
+                ._inner
+                    ._col
+                        ._title.h2 #[span.primary Телефон горячей линии ]
+                            a._phone(href="tel:88005001089") 8 (800) 500-10-89
+                    ._col
+                        ._btn.common-btn.common-btn.common-btn--secondary
+                            +icon('pen')
+                            | Написать
+                        ._text руководителю медицинского центра
+block footer
+    include ../components/footer

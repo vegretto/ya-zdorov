@@ -1,0 +1,11 @@
+.modal.-callback#modal-callback
+    ._body
+        .close.js-close-modal
+            +icon('close')
+        ._content
+            ._text Чтобы связаться с нашими специалистами #[span.primary оставьте свой номер телефона, и мы вам перезвоним]
+            form.form
+                +form-group('tel', 'mc1', 'Введите номер телефона:', true, 'input', 'label')
+                button._btn.common-btn.common-btn--primary.js-open-modal(type="submit" data-modal="#modal-callback-success") Отправить
+                ._text Нажимая на кнопку, я соглашаюсь на обработку моих персональных данных и ознакомлен(а) с условиями #[a(href="#") политики конфиденциальности.]
+

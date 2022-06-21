@@ -1,0 +1,173 @@
+extends ../layout
+include ../mixins/mixins
+
+block header
+    include ../components/header
+block content
+    .container
+        .breadcrumbs
+            a(href="/")._item Главная
+            ._item.-current Режим работы
+    main.main-worktime.main-wrapper
+        .container
+            .title-box.-align-center
+                h1.h1 #[span.primary Режим работы] медицинского центра<br> и кабинетов "Я&nbsp;Здоров!"
+                .common-btn.common-btn--primary
+                    +icon('pen')
+                    | Записаться на прием
+        section.adaptive-table.-worktime
+            ._container.container
+                table
+                    thead
+                        tr
+                            th Кабинет врача
+                            th Фамилия специалиста
+                            th Номер кабинета
+                            th Режим работы
+                            th Деятельность
+                    tbody
+                        tr
+                            td.b Невролог
+                            td Зенкина Татьяна Алексеевна
+                            td.b 2
+                            td.b Вторник с 11.00 до 13.00
+                            td.left Проведение обследования в целях выявления заболеваний и состояний, установление диагноза, если таковой есть.
+                        tr
+                            td.b Невролог
+                            td Зенкина Татьяна Алексеевна
+                            td.b 2
+                            td.b Среда, пятница с 14.00 до 16.00
+                            td.left
+                                p Проведение медицинских освидетельствований и медицинских экспертиз:
+                                ol.ol
+                                    li Сбор жалоб, анамнеза жизни;
+                                    li Осмотр пациента проведение предварительных и периодических медицинских осмотров;
+                                    li Подготовка необходимой медицинской документации для выдачи заключений предварительного диагноза.
+                        tr
+                            td.b Терапевт
+                            td Иванов Иван Иванович
+                            td.b 3
+                            td.b Вторник с 9.00 до 11.00
+                            td.left Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, modi, voluptatem. Alias consequuntur distinctio ea earum esse rerum. Consequatur et id magni nemo quam. Assumenda delectus provident sequi temporibus vel!
+                        tr
+                            td.b Рефлексотерапия
+                            td Среда, пятница с 14.00 до 16.00
+                            td.b 3
+                            td.b Вторник с 9.00 до 11.00
+                            td.left Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, modi, voluptatem. Alias consequuntur distinctio ea earum esse rerum. Consequatur et id magni nemo quam. Assumenda delectus provident sequi temporibus vel!
+                        tr
+                            td.b Терапевт
+                            td Иванов Иван Иванович
+                            td.b 3
+                            td.b Среда, пятница с 14.00 до 16.00
+                            td.left Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, modi, voluptatem. Alias consequuntur distinctio ea earum esse rerum. Consequatur et id magni nemo quam. Assumenda delectus provident sequi temporibus vel!
+                        tr
+                            td.b Невролог
+                            td Зенкина Татьяна Алексеевна
+                            td.b 2
+                            td.b Вторник с 11.00 до 13.00
+                            td.left Проведение обследования в целях выявления заболеваний и состояний, установление диагноза, если таковой есть.
+                        tr
+                            td.b Невролог
+                            td Зенкина Татьяна Алексеевна
+                            td.b 2
+                            td.b Среда, пятница с 14.00 до 16.00
+                            td.left
+                                p Проведение медицинских освидетельствований и медицинских экспертиз:
+                                ol.ol
+                                    li Сбор жалоб, анамнеза жизни;
+                                    li Осмотр пациента проведение предварительных и периодических медицинских осмотров;
+                                    li Подготовка необходимой медицинской документации для выдачи заключений предварительного диагноза.
+                        tr
+                            td.b Терапевт
+                            td Иванов Иван Иванович
+                            td.b 3
+                            td.b Вторник с 9.00 до 11.00
+                            td.left Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, modi, voluptatem. Alias consequuntur distinctio ea earum esse rerum. Consequatur et id magni nemo quam. Assumenda delectus provident sequi temporibus vel!
+                        tr
+                            td.b Рефлексотерапия
+                            td Среда, пятница с 14.00 до 16.00
+                            td.b 3
+                            td.b Вторник с 9.00 до 11.00
+                            td.left Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, modi, voluptatem. Alias consequuntur distinctio ea earum esse rerum. Consequatur et id magni nemo quam. Assumenda delectus provident sequi temporibus vel!
+                        tr
+                            td.b Терапевт
+                            td Иванов Иван Иванович
+                            td.b 3
+                            td.b Среда, пятница с 14.00 до 16.00
+                            td.left Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, modi, voluptatem. Alias consequuntur distinctio ea earum esse rerum. Consequatur et id magni nemo quam. Assumenda delectus provident sequi temporibus vel!
+        section.fw-banner
+            ._bg
+                +pictureAdaptive('appointment-bg', 'png', 1920, 350)
+            ._container.container
+                ._inner
+                    ._left
+                        ._title.h1 Записаться на прием #[span.primary за&nbsp;1&nbsp;минуту]
+                        ._text Воспользуйтесь удобным и бесплатным сервисом записи на прием. Вас перенаправит на систему регистрации, где сможете выбрать специалиста и удобное время приема.
+                    ._right
+                        ._tags
+                            ._tag #Без очередей
+                            ._tag #Выбирайте врача самостоятельно
+                            ._tag #Удобное время
+                        .btn-wrapper
+                            a(href="#").common-btn.common-btn--primary Войти и выбрать время
+                            a(href="#").common-btn.common-btn--secondary
+                                +icon('person')
+                                | Личный кабинет пациента
+        section.additional-info
+            ._container.container
+                ._inner
+                    ._left
+                        .h1 #[span.primary Полезная информация] о нашей работе
+                        .accordion
+                            ._item
+                                .__title.js-accordion-toggle.active
+                                    | Как можно записаться на прием?
+                                    +icon('arrow-down')
+                                .__content.js-accordion-content.opened Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                            ._item
+                                .__title.js-accordion-toggle
+                                    | Сколько длится прием у специалиста?
+                                    +icon('arrow-down')
+                                .__content.js-accordion-content Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                            ._item
+                                .__title.js-accordion-toggle
+                                    | Можно ли прийти без записи (по острой боли и др)?
+                                    +icon('arrow-down')
+                                .__content.js-accordion-content Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                            ._item
+                                .__title.js-accordion-toggle
+                                    | Работает ли мед. центр в выходные или в поздние часы в будни?
+                                    +icon('arrow-down')
+                                .__content.js-accordion-content Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                            ._item
+                                .__title.js-accordion-toggle
+                                    | Есть ли очереди, каково максимальное ожидание, если пришел по предварительной записи?
+                                    +icon('arrow-down')
+                                .__content.js-accordion-content Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                    ._right
+                        .aside-banner
+                            ._bg
+                                +picture('aside-banner-bg', 'png', 380, 510)
+                            ._content
+                                ._title.h2.primary Остались вопросы?
+                                ._text Нажмите кнопку “Перезвоните мне”, чтобы связаться с нашими специалистами
+                                ._btn.common-btn.common-btn.common-btn--primary.js-open-modal(data-modal="#modal-callback")
+                                    +icon('phone')
+                                    | Перезвоните мне
+        section.hotline
+            ._bg
+                +pictureAdaptive('hotline-bg', 'png', 1920, 150)
+            ._container.container
+                ._inner
+                    ._col
+                        ._title.h2 #[span.primary Телефон горячей линии ]
+                            a._phone(href="tel:88005001089") 8 (800) 500-10-89
+                    ._col
+                        ._btn.common-btn.common-btn.common-btn--secondary
+                            +icon('pen')
+                            | Написать
+                        ._text руководителю медицинского центра
+
+block footer
+    include ../components/footer

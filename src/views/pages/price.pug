@@ -1,0 +1,312 @@
+extends ../layout
+include ../mixins/mixins
+
+block header
+    include ../components/header
+block content
+    .container
+        .breadcrumbs
+            a(href="/")._item Главная
+            ._item.-current Цены
+    main.price.main-wrapper
+        ._container.container
+            h1.h1 #[span.primary Стоимость услуг] и приема врачей
+        section.price-tabs
+            ._container.container
+                .tabs
+                    ._controls
+                        ._control.active.js-tab-control(data-tab='tab-1')
+                            .input-radio-dummy
+                                input#tc1(type="radio" name="tc" checked)
+                                label(for="tc1") Прием врачей
+                        ._control.js-tab-control(data-tab='tab-2')
+                            .input-radio-dummy
+                                input#tc2(type="radio" name="tc")
+                                label(for="tc2") Стоимость процедур
+                        ._control.js-tab-control(data-tab='tab-3')
+                            .input-radio-dummy
+                                input#tc3(type="radio" name="tc")
+                                label(for="tc3") Стоимость оформления
+                        ._control.js-tab-control(data-tab='tab-1')
+                            .input-radio-dummy
+                                input#tc4(type="radio" name="tc")
+                                label(for="tc4") Стоимость профосмотра
+                        ._control.js-tab-control(data-tab='tab-2')
+                            .input-radio-dummy
+                                input#tc5(type="radio" name="tc")
+                                label(for="tc5") Стоимость анализов
+                    ._controls-mobile
+                        ._controls-mobile-select.js-select
+                            ._controls-mobile-select-val.js-select-val Прием врачей
+                            +icon('arrow-down')
+                        ._controls-mobile-options.js-select-options
+                            ._controls-mobile-option.js-tab-control(data-tab='tab-1') Прием врачей
+                            ._controls-mobile-option.js-tab-control(data-tab='tab-2') Стоимость процедур
+                            ._controls-mobile-option.js-tab-control(data-tab='tab-3') Стоимость оформления
+                            ._controls-mobile-option.js-tab-control(data-tab='tab-1') Стоимость профосмотра
+                            ._controls-mobile-option.js-tab-control(data-tab='tab-2') Стоимость анализов
+                    ._tab.visible#tab-1
+                        .adaptive-table
+                            table
+                                thead
+                                    tr
+                                        th Кабинет врача
+                                        th Фамилия специалиста
+                                        th Номер кабинета
+                                        th Стоимость приема
+                                tbody
+                                    tr
+                                        td.b Невролог
+                                        td Зенкина Татьяна Алексеевна
+                                        td.b 2
+                                        td 1500 рублей первичный прием;<br>1000 рублей повторный прием.
+                                    tr
+                                        td.b Невролог
+                                        td Зенкина Татьяна Алексеевна
+                                        td.b 2
+                                        td 1500 рублей первичный прием;<br>1000 рублей повторный прием.
+                                    tr
+                                        td.b Терапевт
+                                        td Иванов Иван Иванович
+                                        td.b 3
+                                        td 1500 рублей первичный прием;<br>1000 рублей повторный прием.
+                                    tr
+                                        td.b Рефлексотерапия
+                                        td Среда, пятница с 14.00 до 16.00
+                                        td.b 3
+                                        td 1500 рублей первичный прием;<br>1000 рублей повторный прием.
+                                    tr
+                                        td.b Терапевт
+                                        td Иванов Иван Иванович
+                                        td.b 3
+                                        td 1500 рублей первичный прием;<br>1000 рублей повторный прием.
+                                    tr
+                                        td.b Невролог
+                                        td Зенкина Татьяна Алексеевна
+                                        td.b 2
+                                        td 1500 рублей первичный прием;<br>1000 рублей повторный прием.
+                                    tr
+                                        td.b Невролог
+                                        td Зенкина Татьяна Алексеевна
+                                        td.b 2
+                                        td 1500 рублей первичный прием;<br>1000 рублей повторный прием.
+                                    tr
+                                        td.b Терапевт
+                                        td Иванов Иван Иванович
+                                        td.b 3
+                                        td 1500 рублей первичный прием;<br>1000 рублей повторный прием.
+                                    tr
+                                        td.b Рефлексотерапия
+                                        td Среда, пятница с 14.00 до 16.00
+                                        td.b 3
+                                        td 1500 рублей первичный прием;<br>1000 рублей повторный прием.
+                                    tr
+                                        td.b Терапевт
+                                        td Иванов Иван Иванович
+                                        td.b 3
+                                        td 1500 рублей первичный прием;<br>1000 рублей повторный прием.
+                    ._tab#tab-2
+                        .adaptive-table
+                            table
+                                thead
+                                    tr
+                                        th Кабинет врача
+                                        th Фамилия специалиста
+                                        th Номер кабинета
+                                        th Стоимость приема
+                                tbody
+                                    tr
+                                        td.b Терапевт
+                                        td Иванов Иван Иванович
+                                        td.b 3
+                                        td 1500 рублей первичный прием;<br>1000 рублей повторный прием.
+                                    tr
+                                        td.b Рефлексотерапия
+                                        td Среда, пятница с 14.00 до 16.00
+                                        td.b 3
+                                        td 1500 рублей первичный прием;<br>1000 рублей повторный прием.
+                                    tr
+                                        td.b Терапевт
+                                        td Иванов Иван Иванович
+                                        td.b 3
+                                        td 1500 рублей первичный прием;<br>1000 рублей повторный прием.
+                                    tr
+                                        td.b Невролог
+                                        td Зенкина Татьяна Алексеевна
+                                        td.b 2
+                                        td 1500 рублей первичный прием;<br>1000 рублей повторный прием.
+                                    tr
+                                        td.b Невролог
+                                        td Зенкина Татьяна Алексеевна
+                                        td.b 2
+                                        td 1500 рублей первичный прием;<br>1000 рублей повторный прием.
+                                    tr
+                                        td.b Терапевт
+                                        td Иванов Иван Иванович
+                                        td.b 3
+                                        td 1500 рублей первичный прием;<br>1000 рублей повторный прием.
+                                    tr
+                                        td.b Рефлексотерапия
+                                        td Среда, пятница с 14.00 до 16.00
+                                        td.b 3
+                                        td 1500 рублей первичный прием;<br>1000 рублей повторный прием.
+                                    tr
+                                        td.b Терапевт
+                                        td Иванов Иван Иванович
+                                        td.b 3
+                                        td 1500 рублей первичный прием;<br>1000 рублей повторный прием.
+                    ._tab#tab-3
+                        .adaptive-table
+                            table
+                                thead
+                                    tr
+                                        th Кабинет врача
+                                        th Фамилия специалиста
+                                        th Номер кабинета
+                                        th Стоимость приема
+                                tbody
+                                    tr
+                                        td.b Невролог
+                                        td Зенкина Татьяна Алексеевна
+                                        td.b 2
+                                        td 1500 рублей первичный прием;<br>1000 рублей повторный прием.
+                                    tr
+                                        td.b Невролог
+                                        td Зенкина Татьяна Алексеевна
+                                        td.b 2
+                                        td 1500 рублей первичный прием;<br>1000 рублей повторный прием.
+                                    tr
+                                        td.b Терапевт
+                                        td Иванов Иван Иванович
+                                        td.b 3
+                                        td 1500 рублей первичный прием;<br>1000 рублей повторный прием.
+                                    tr
+                                        td.b Рефлексотерапия
+                                        td Среда, пятница с 14.00 до 16.00
+                                        td.b 3
+                                        td 1500 рублей первичный прием;<br>1000 рублей повторный прием.
+                                    tr
+                                        td.b Терапевт
+                                        td Иванов Иван Иванович
+                                        td.b 3
+                                        td 1500 рублей первичный прием;<br>1000 рублей повторный прием.
+                                    tr
+                                        td.b Невролог
+                                        td Зенкина Татьяна Алексеевна
+                                        td.b 2
+                                        td 1500 рублей первичный прием;<br>1000 рублей повторный прием.
+                                    tr
+                                        td.b Невролог
+                                        td Зенкина Татьяна Алексеевна
+                                        td.b 2
+                                        td 1500 рублей первичный прием;<br>1000 рублей повторный прием.
+                                    tr
+                                        td.b Терапевт
+                                        td Иванов Иван Иванович
+                                        td.b 3
+                                        td 1500 рублей первичный прием;<br>1000 рублей повторный прием.
+                                    tr
+                                        td.b Рефлексотерапия
+                                        td Среда, пятница с 14.00 до 16.00
+                                        td.b 3
+                                        td 1500 рублей первичный прием;<br>1000 рублей повторный прием.
+                                    tr
+                                        td.b Терапевт
+                                        td Иванов Иван Иванович
+                                        td.b 3
+                                        td 1500 рублей первичный прием;<br>1000 рублей повторный прием.
+        section.promo
+            ._container.container
+                .h1 #[span.primary Акции] и спецпредложения
+            ._slider.js-promo-slider
+                .swiper-wrapper
+                    .fw-banner.swiper-slide
+                        ._bg
+                            +pictureAdaptive('promo-bg', 'png', 1920, 350)
+                        ._container.container
+                            ._inner
+                                ._left
+                                    ._title.h2.primary Получите медицинскую справку на вождение со скидкой!
+                                    ._text Приходите и приводите друзей<br> Скидка по промокоду для клиента “Я Здоров!” - 100 ₽
+                                    a(href="#")._btn.common-btn.common-btn--secondary Получить скидку
+                    .fw-banner.swiper-slide
+                        ._bg
+                            +pictureAdaptive('promo-bg', 'png', 1920, 350)
+                        ._container.container
+                            ._inner
+                                ._left
+                                    ._title.h2.primary Получите медицинскую справку на вождение со скидкой!
+                                    ._text Приходите и приводите друзей<br> Скидка по промокоду для клиента “Я Здоров!” - 100 ₽
+                                    a(href="#")._btn.common-btn.common-btn--secondary Получить скидку
+                    .fw-banner.swiper-slide
+                        ._bg
+                            +pictureAdaptive('promo-bg', 'png', 1920, 350)
+                        ._container.container
+                            ._inner
+                                ._left
+                                    ._title.h2.primary Получите медицинскую справку на вождение со скидкой!
+                                    ._text Приходите и приводите друзей<br> Скидка по промокоду для клиента “Я Здоров!” - 100 ₽
+                                    a(href="#")._btn.common-btn.common-btn--secondary Получить скидку
+                ._pagination-box
+                    ._pagination
+        section.additional-info
+            ._container.container
+                ._inner
+                    ._left
+                        .h1 #[span.primary Полезная информация] о нашей работе
+                        .accordion
+                            ._item
+                                .__title.js-accordion-toggle.active
+                                    | Как можно записаться на прием?
+                                    +icon('arrow-down')
+                                .__content.js-accordion-content.opened Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                            ._item
+                                .__title.js-accordion-toggle
+                                    | Сколько длится прием у специалиста?
+                                    +icon('arrow-down')
+                                .__content.js-accordion-content Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                            ._item
+                                .__title.js-accordion-toggle
+                                    | Можно ли прийти без записи (по острой боли и др)?
+                                    +icon('arrow-down')
+                                .__content.js-accordion-content Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                            ._item
+                                .__title.js-accordion-toggle
+                                    | Работает ли мед. центр в выходные или в поздние часы в будни?
+                                    +icon('arrow-down')
+                                .__content.js-accordion-content Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                            ._item
+                                .__title.js-accordion-toggle
+                                    | Есть ли очереди, каково максимальное ожидание, если пришел по предварительной записи?
+                                    +icon('arrow-down')
+                                .__content.js-accordion-content Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                    ._right
+                        .aside-banner
+                            ._bg
+                                +picture('aside-banner-bg', 'png', 380, 510)
+                            ._content
+                                ._title.h2.primary Остались вопросы?
+                                ._text Нажмите кнопку “Перезвоните мне”, чтобы связаться с нашими специалистами
+                                ._btn.common-btn.common-btn.common-btn--primary.js-open-modal(data-modal="#modal-callback")
+                                    +icon('phone')
+                                    | Перезвоните мне
+        section.fw-banner
+            ._bg
+                +pictureAdaptive('appointment-bg', 'png', 1920, 350)
+            ._container.container
+                ._inner
+                    ._left
+                        ._title.h1 Записаться на прием #[span.primary за&nbsp;1&nbsp;минуту]
+                        ._text Воспользуйтесь удобным и бесплатным сервисом записи на прием. Вас перенаправит на систему регистрации, где сможете выбрать специалиста и удобное время приема.
+                    ._right
+                        ._tags
+                            ._tag #Без очередей
+                            ._tag #Выбирайте врача самостоятельно
+                            ._tag #Удобное время
+                        .btn-wrapper
+                            a(href="#").common-btn.common-btn--primary Войти и выбрать время
+                            a(href="#").common-btn.common-btn--secondary
+                                +icon('person')
+                                | Личный кабинет пациента
+block footer
+    include ../components/footer

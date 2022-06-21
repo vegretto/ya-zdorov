@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Я здоров</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="styles/style.min.css">
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__top">
+				<div class="header__visually-impaired-toggle text-icon-box" id="specialButton">
+					<svg class="icon icon-eye">
+						<use xlink:href="img/svg/sprite.svg#eye"></use>
+					</svg>Версия для слабовидящих
+				</div><a class="header__worktime text-icon-box" href="#">
+					<svg class="icon icon-calendar">
+						<use xlink:href="img/svg/sprite.svg#calendar"></use>
+					</svg>Режим работы кабинетов и врачей</a>
+				<div class="header__phone-box text-icon-box">
+					<svg class="icon icon-phone">
+						<use xlink:href="img/svg/sprite.svg#phone"></use>
+					</svg><a class="header__phone" href="tel:88005001089">8 (800) 500-10-89</a><span class="header__callback js-open-modal" data-modal="#modal-callback">Перезвоните мне</span>
+				</div><a class="header__account text-icon-box" href="">
+					<svg class="icon icon-person">
+						<use xlink:href="img/svg/sprite.svg#person"></use>
+					</svg>
+					<div class="header__account-text">Личный кабинет пациента</div></a>
+			</div>
+			<div class="header__middle">
+				<div class="header__mobile-menu-toggle js-open-mobile-menu">
+					<svg class="icon icon-mobile-menu">
+						<use xlink:href="img/svg/sprite.svg#mobile-menu"></use>
+					</svg>
+				</div><a class="header__logo" href="/">
+					<svg class="icon icon-logo">
+						<use xlink:href="img/svg/sprite.svg#logo"></use>
+					</svg></a>
+				<div class="header__address">
+					<svg class="icon icon-point">
+						<use xlink:href="img/svg/sprite.svg#point"></use>
+					</svg>Медицинский центр<br> в&nbsp;г.&nbsp;Миллерово, ул.&nbsp;Льва&nbsp;Толстого&nbsp;44
+				</div><a class="header__promo-btn common-btn common-btn--secondary" href="#">Акции и спецпредложения</a>
+				<div class="header__appointment-btn common-btn common-btn--primary">
+					<svg class="icon icon-pen">
+						<use xlink:href="img/svg/sprite.svg#pen"></use>
+					</svg>Записаться на прием
+				</div>
+			</div>
+			<div class="header__bottom">
+				<nav class="header__nav"><a class="header__nav-item" href="#">Медицинские услуги</a>
+					<div class="header__nav-submenu">
+						<div class="close js-close">
+							<svg class="icon icon-close">
+								<use xlink:href="img/svg/sprite.svg#close"></use>
+							</svg>
+						</div>
+						<div class="header__nav-submenu-items"><a class="header__nav-submenu-item current" href="#">Прием врача</a><a class="header__nav-submenu-item" href="#">Лечение / Процедуры</a><a class="header__nav-submenu-item" href="#">УЗИ</a><a class="header__nav-submenu-item" href="#">Медицинские анализы</a><a class="header__nav-submenu-item" href="#">Прием врача</a></div>
+					</div><a class="header__nav-item current" href="#">Комплексные программы</a>
+					<div class="header__nav-submenu">
+						<div class="close js-close">
+							<svg class="icon icon-close">
+								<use xlink:href="img/svg/sprite.svg#close"></use>
+							</svg>
+						</div>
+						<div class="header__nav-submenu-items"><a class="header__nav-submenu-item" href="#">Прием врача</a><a class="header__nav-submenu-item" href="#">Лечение / Процедуры</a><a class="header__nav-submenu-item" href="#">УЗИ</a><a class="header__nav-submenu-item" href="#">Медицинские анализы</a><a class="header__nav-submenu-item" href="#">Прием врача</a><a class="header__nav-submenu-item" href="#">Лечение / Процедуры</a><a class="header__nav-submenu-item" href="#">Лечение / Процедуры</a><a class="header__nav-submenu-item" href="#">УЗИ</a><a class="header__nav-submenu-item" href="#">Медицинские анализы</a></div>
+					</div><a class="header__nav-item" href="#">Справки и медкнижки</a><a class="header__nav-item" href="#">Врачи медицинского центра</a><a class="header__nav-item" href="#">Профосмотры</a><a class="header__nav-item" href="#">Цены</a><a class="header__nav-item" href="#">О медицинском центре</a><a class="header__nav-item" href="#">Контакты</a>
+				</nav>
+			</div>
+		</header>
+		<div class="container">
+			<div class="breadcrumbs"><a class="breadcrumbs__item" href="/">Главная</a><a class="breadcrumbs__item" href="/">О медицинском центре</a>
+				<div class="breadcrumbs__item breadcrumbs__item--current">Отзывы</div>
+			</div>
+		</div>
+		<div class="main-wrapper testimonials">
+			<div class="main-wrapper__container container">
+				<h1 class="h1"><span class="primary">Отзывы о медицинском центре</span> и наших врачах</h1>
+				<div class="content-wrapper">
+					<aside class="sidebar">
+						<nav class="sidebar__nav"><a class="sidebar__nav-item current" href="#">Трудоустройство</a><a class="sidebar__nav-item" href="#">Отзывы</a><a class="sidebar__nav-item" href="#">Правовая информация</a><a class="sidebar__nav-item" href="#">Лицензия и документы</a><a class="sidebar__nav-item" href="#">Пользовательское соглашение</a><a class="sidebar__nav-item" href="#">Политика конфиденциальности</a></nav>
+					</aside>
+					<main class="main-content main-content--flex">
+						<div class="main-content__main-box">
+							<div class="testimonials">
+								<div class="testimonials__item">
+									<div class="testimonials__name">Сергеева Светлана</div>
+									<div class="testimonials__text-wrapper read-more-wrapper js-read-more-wrapper">
+										<div class="testimonials__text read-more-container js-read-more-container">
+											<p>Проходила обследование в медицинском центре у офтальмолога Иванова Ивана Ивановича. Осталась не просто довольна, а восхищена работой медицинского центра. Это что то на европейском уровне, сервис, внимание. Я ни минуты не сидела в ожидании. Все очень обходительны и приветливы. Надо сказать мне еще и скидку дали. Теперь даже не хочу думать о госудаственной поликлинике. Спасибо. Я ваша медицинский центр навека!</p>
+											<p>Проходила обследование в медицинском центре у офтальмолога Иванова Ивана Ивановича. Осталась не просто довольна, а восхищена работой медицинского центра. Это что то на европейском уровне, сервис, внимание. Я ни минуты не сидела в ожидании. Все очень обходительны и приветливы. Надо сказать мне еще и скидку дали. Теперь даже не хочу думать о госудаственной поликлинике. Спасибо. Я ваша медицинский центр навека!</p>
+										</div>
+										<div class="read-more-toggle js-read-more-toggle">Читать полностью</div>
+										<div class="read-more-bg"></div>
+									</div>
+									<div class="testimonials__info">
+										<div class="testimonials__info-item">
+											<div class="testimonials__info-title">Оценка качества работы:</div>
+											<div class="stars js-stars" data-rating="4">
+												<div class="stars__item">
+													<svg class="icon icon-star">
+														<use xlink:href="img/svg/sprite.svg#star"></use>
+													</svg>
+												</div>
+												<div class="stars__item">
+													<svg class="icon icon-star">
+														<use xlink:href="img/svg/sprite.svg#star"></use>
+													</svg>
+												</div>
+												<div class="stars__item">
+													<svg class="icon icon-star">
+														<use xlink:href="img/svg/sprite.svg#star"></use>
+													</svg>
+												</div>
+												<div class="stars__item">
+													<svg class="icon icon-star">
+														<use xlink:href="img/svg/sprite.svg#star"></use>
+													</svg>
+												</div>
+												<div class="stars__item">
+													<svg class="icon icon-star">
+														<use xlink:href="img/svg/sprite.svg#star"></use>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div class="testimonials__info-item">
+											<div class="testimonials__info-title">Источник:</div><a class="testimonials__info-link" href="#">https://prodoctorov.ru/</a>
+										</div>
+										<div class="testimonials__info-item">
+											<div class="testimonials__info-title">Дата отзыва:</div>
+											<div class="testimonials__info-date">22.02.2022</div>
+										</div>
+									</div>
+								</div>
+								<div class="testimonials__item">
+									<div class="testimonials__name">Сергеева Светлана</div>
+									<div class="testimonials__text-wrapper read-more-wrapper js-read-more-wrapper">
+										<div class="testimonials__text read-more-container js-read-more-container">
+											<p>Проходила обследование в медицинском центре у офтальмолога Иванова Ивана Ивановича. Осталась не просто довольна, а восхищена работой медицинского центра. Это что то на европейском уровне, сервис, внимание. Я ни минуты не сидела в ожидании. Все очень обходительны и приветливы. Надо сказать мне еще и скидку дали. Теперь даже не хочу думать о госудаственной поликлинике. Спасибо. Я ваша медицинский центр навека!</p>
+											<p>Проходила обследование в медицинском центре у офтальмолога Иванова Ивана Ивановича. Осталась не просто довольна, а восхищена работой медицинского центра. Это что то на европейском уровне, сервис, внимание. Я ни минуты не сидела в ожидании. Все очень обходительны и приветливы. Надо сказать мне еще и скидку дали. Теперь даже не хочу думать о госудаственной поликлинике. Спасибо. Я ваша медицинский центр навека!</p>
+										</div>
+										<div class="read-more-toggle js-read-more-toggle">Читать полностью</div>
+										<div class="read-more-bg"></div>
+									</div>
+									<div class="testimonials__info">
+										<div class="testimonials__info-item">
+											<div class="testimonials__info-title">Оценка качества работы:</div>
+											<div class="stars js-stars" data-rating="4">
+												<div class="stars__item">
+													<svg class="icon icon-star">
+														<use xlink:href="img/svg/sprite.svg#star"></use>
+													</svg>
+												</div>
+												<div class="stars__item">
+													<svg class="icon icon-star">
+														<use xlink:href="img/svg/sprite.svg#star"></use>
+													</svg>
+												</div>
+												<div class="stars__item">
+													<svg class="icon icon-star">
+														<use xlink:href="img/svg/sprite.svg#star"></use>
+													</svg>
+												</div>
+												<div class="stars__item">
+													<svg class="icon icon-star">
+														<use xlink:href="img/svg/sprite.svg#star"></use>
+													</svg>
+												</div>
+												<div class="stars__item">
+													<svg class="icon icon-star">
+														<use xlink:href="img/svg/sprite.svg#star"></use>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div class="testimonials__info-item">
+											<div class="testimonials__info-title">Источник:</div><a class="testimonials__info-link" href="#">https://prodoctorov.ru/</a>
+										</div>
+										<div class="testimonials__info-item">
+											<div class="testimonials__info-title">Дата отзыва:</div>
+											<div class="testimonials__info-date">22.02.2022</div>
+										</div>
+									</div>
+								</div>
+								<div class="testimonials__item">
+									<div class="testimonials__name">Сергеева Светлана</div>
+									<div class="testimonials__text-wrapper read-more-wrapper js-read-more-wrapper">
+										<div class="testimonials__text read-more-container js-read-more-container">
+											<p>Проходила обследование в медицинском центре у офтальмолога Иванова Ивана Ивановича. Осталась не просто довольна, а восхищена работой медицинского центра. Это что то на европейском уровне, сервис, внимание. Я ни минуты не сидела в ожидании. Все очень обходительны и приветливы. Надо сказать мне еще и скидку дали. Теперь даже не хочу думать о госудаственной поликлинике. Спасибо. Я ваша медицинский центр навека!</p>
+										</div>
+										<div class="read-more-toggle js-read-more-toggle">Читать полностью</div>
+										<div class="read-more-bg"></div>
+									</div>
+									<div class="testimonials__info">
+										<div class="testimonials__info-item">
+											<div class="testimonials__info-title">Оценка качества работы:</div>
+											<div class="stars js-stars" data-rating="4">
+												<div class="stars__item">
+													<svg class="icon icon-star">
+														<use xlink:href="img/svg/sprite.svg#star"></use>
+													</svg>
+												</div>
+												<div class="stars__item">
+													<svg class="icon icon-star">
+														<use xlink:href="img/svg/sprite.svg#star"></use>
+													</svg>
+												</div>
+												<div class="stars__item">
+													<svg class="icon icon-star">
+														<use xlink:href="img/svg/sprite.svg#star"></use>
+													</svg>
+												</div>
+												<div class="stars__item">
+													<svg class="icon icon-star">
+														<use xlink:href="img/svg/sprite.svg#star"></use>
+													</svg>
+												</div>
+												<div class="stars__item">
+													<svg class="icon icon-star">
+														<use xlink:href="img/svg/sprite.svg#star"></use>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div class="testimonials__info-item">
+											<div class="testimonials__info-title">Источник:</div><a class="testimonials__info-link" href="#">https://prodoctorov.ru/</a>
+										</div>
+										<div class="testimonials__info-item">
+											<div class="testimonials__info-title">Дата отзыва:</div>
+											<div class="testimonials__info-date">22.02.2022</div>
+										</div>
+									</div>
+								</div>
+								<div class="testimonials__item">
+									<div class="testimonials__name">Сергеева Светлана</div>
+									<div class="testimonials__text-wrapper read-more-wrapper js-read-more-wrapper">
+										<div class="testimonials__text read-more-container js-read-more-container">
+											<p>Проходила обследование в медицинском центре у офтальмолога Иванова Ивана Ивановича. Осталась не просто довольна, а восхищена работой медицинского центра. Это что то на европейском уровне, сервис, внимание. Я ни минуты не сидела в ожидании. Все очень обходительны и приветливы. Надо сказать мне еще и скидку дали. Теперь даже не хочу думать о госудаственной поликлинике. Спасибо. Я ваша медицинский центр навека!</p>
+											<p>Проходила обследование в медицинском центре у офтальмолога Иванова Ивана Ивановича. Осталась не просто довольна, а восхищена работой медицинского центра. Это что то на европейском уровне, сервис, внимание. Я ни минуты не сидела в ожидании. Все очень обходительны и приветливы. Надо сказать мне еще и скидку дали. Теперь даже не хочу думать о госудаственной поликлинике. Спасибо. Я ваша медицинский центр навека!</p>
+										</div>
+										<div class="read-more-toggle js-read-more-toggle">Читать полностью</div>
+										<div class="read-more-bg"></div>
+									</div>
+									<div class="testimonials__info">
+										<div class="testimonials__info-item">
+											<div class="testimonials__info-title">Оценка качества работы:</div>
+											<div class="stars js-stars" data-rating="4">
+												<div class="stars__item">
+													<svg class="icon icon-star">
+														<use xlink:href="img/svg/sprite.svg#star"></use>
+													</svg>
+												</div>
+												<div class="stars__item">
+													<svg class="icon icon-star">
+														<use xlink:href="img/svg/sprite.svg#star"></use>
+													</svg>
+												</div>
+												<div class="stars__item">
+													<svg class="icon icon-star">
+														<use xlink:href="img/svg/sprite.svg#star"></use>
+													</svg>
+												</div>
+												<div class="stars__item">
+													<svg class="icon icon-star">
+														<use xlink:href="img/svg/sprite.svg#star"></use>
+													</svg>
+												</div>
+												<div class="stars__item">
+													<svg class="icon icon-star">
+														<use xlink:href="img/svg/sprite.svg#star"></use>
+													</svg>
+												</div>
+											</div>
+										</div>
+										<div class="testimonials__info-item">
+											<div class="testimonials__info-title">Источник:</div><a class="testimonials__info-link" href="#">https://prodoctorov.ru/</a>
+										</div>
+										<div class="testimonials__info-item">
+											<div class="testimonials__info-title">Дата отзыва:</div>
+											<div class="testimonials__info-date">22.02.2022</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="pagination"><a class="pagination__item pagination__item--prev" href="#">Предыдущий</a><a class="pagination__item" href="#">1</a><a class="pagination__item" href="#">2</a><a class="pagination__item current" href="#">3</a><a class="pagination__item" href="#">4</a><a class="pagination__item" href="#">5</a><a class="pagination__item pagination__item--next" href="#">Следующий</a></div>
+						</div>
+						<div class="main-content__sidebox">
+							<div class="important">
+								<div class="important__box">
+									<svg class="icon icon-sale">
+										<use xlink:href="img/svg/sprite.svg#sale"></use>
+									</svg>
+									<div class="important__text">Напишите отзыв и получите скидку 20%</div>
+								</div>
+							</div>
+							<div class="common-btn common-btn--secondary js-scroll-to" data-scroll="feedback">Оставить отзыв</div>
+						</div>
+					</main>
+				</div>
+			</div>
+			<section class="feedback" id="feedback">
+				<div class="feedback__container container">
+					<div class="h1">Оставить отзыв</div>
+					<div class="h2"><span class="primary">Оставьте отзыв и получите скидку 20%</span> на следующее посещение медицинского центра</div>
+					<form class="form">
+						<div class="form__form-groups-wrapper">
+							<div class="flex-wrapper">
+								<div class="col-3">
+									<div class="form-group">
+										<label class="label" for="fb1">Введите номер телефона:</label>
+										<input class="input" type="tel" id="fb1" required="required"/>
+										<div class="error-message">Это поле обязательно для заполнения</div>
+									</div>
+									<div class="form-group">
+										<label class="label" for="fb2">Введите ваше имя и фамилию:</label>
+										<input class="input" type="text" id="fb2" required="required"/>
+										<div class="error-message">Это поле обязательно для заполнения</div>
+									</div>
+								</div>
+								<div class="col-9">
+									<div class="form-group form-group--textarea">
+										<label class="label" for="fb3">Введите текст отзыва:</label>
+										<textarea class="input textarea" id="fb3" reqiured="reqiured"></textarea>
+										<div class="error-message">Это поле обязательно для заполнения</div>
+									</div>
+								</div>
+							</div>
+							<div class="form__rating">
+								<div class="form__rating-text">Оцените качество работы по 5 бальной шкале:</div>
+								<div class="stars stars--input js-stars-input" data-rating="0">
+									<input class="stars__input" type="text">
+									<div class="stars__item" data-val="1">
+										<svg class="icon icon-star">
+											<use xlink:href="img/svg/sprite.svg#star"></use>
+										</svg>
+									</div>
+									<div class="stars__item" data-val="2">
+										<svg class="icon icon-star">
+											<use xlink:href="img/svg/sprite.svg#star"></use>
+										</svg>
+									</div>
+									<div class="stars__item" data-val="3">
+										<svg class="icon icon-star">
+											<use xlink:href="img/svg/sprite.svg#star"></use>
+										</svg>
+									</div>
+									<div class="stars__item" data-val="4">
+										<svg class="icon icon-star">
+											<use xlink:href="img/svg/sprite.svg#star"></use>
+										</svg>
+									</div>
+									<div class="stars__item" data-val="5">
+										<svg class="icon icon-star">
+											<use xlink:href="img/svg/sprite.svg#star"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button class="form__btn common-btn common-btn--primary" type="submit">Отправить</button>
+						<div class="form__text">Нажимая на кнопку, я соглашаюсь на обработку моих персональных данных и ознакомлен(а) с условиями <a href="#">политики конфиденциальности.</a></div>
+					</form>
+				</div>
+			</section>
+			<section class="hotline">
+				<div class="hotline__bg">
+					<picture>
+						<source data-srcset="img/hotline-bg-sm.webp" type="image/webp" media="(max-width: 600px)"/>
+						<source data-srcset="img/hotline-bg-sm.png" media="(max-width: 600px)"/>
+						<source data-srcset="img/hotline-bg.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMSAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNkMWQxZDEiLz48L3N2Zz4=" data-src="img/hotline-bg.png" alt="" width="1920" height="150"/>
+					</picture>
+				</div>
+				<div class="hotline__container container">
+					<div class="hotline__inner">
+						<div class="hotline__col">
+							<div class="hotline__title h2"><span class="primary">Телефон горячей линии </span><a class="hotline__phone" href="tel:88005001089">8 (800) 500-10-89</a></div>
+						</div>
+						<div class="hotline__col">
+							<div class="hotline__btn common-btn common-btn common-btn--secondary">
+								<svg class="icon icon-pen">
+									<use xlink:href="img/svg/sprite.svg#pen"></use>
+								</svg>Написать
+							</div>
+							<div class="hotline__text">руководителю медицинского центра</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer class="footer">
+			<div class="footer__container container">
+				<div class="footer__top">
+					<div class="footer__col">
+						<div class="footer__col-inner">
+							<div class="footer__logo">
+								<svg class="icon icon-logo">
+									<use xlink:href="img/svg/sprite.svg#logo"></use>
+								</svg>
+							</div>
+							<div class="footer__address">
+								<svg class="icon icon-point">
+									<use xlink:href="img/svg/sprite.svg#point"></use>
+								</svg>Медицинский центр в&nbsp;г.&nbsp;Миллерово, ул.&nbsp;Льва&nbsp;Толстого&nbsp;44
+							</div>
+							<div class="footer__phone-box text-icon-box">
+								<svg class="icon icon-phone">
+									<use xlink:href="img/svg/sprite.svg#phone"></use>
+								</svg><a class="footer__phone" href="tel:88005001089">8 (800) 500-10-89</a><span class="footer__callback js-open-modal" data-modal="#modal-callback">Перезвоните мне</span>
+							</div>
+							<div class="footer__license">Лицензия № ЛО-26-01-04072757 от&nbsp;8&nbsp;октября&nbsp;2021&nbsp;г.</div>
+						</div>
+					</div>
+					<div class="footer__col footer__col--nav">
+						<div class="footer__col-inner">
+							<nav class="footer__nav"><a class="footer__nav-item footer__nav-item--main" href="#">Медицинские услуги</a><a class="footer__nav-item" href="#">Прием врача</a><a class="footer__nav-item" href="#">Лечение / Процедуры</a><a class="footer__nav-item" href="#">МРТ</a><a class="footer__nav-item" href="#">УЗИ</a><a class="footer__nav-item" href="#">Медицинские анализы</a><a class="footer__nav-item" href="#">КТ</a></nav>
+							<nav class="footer__nav"><a class="footer__nav-item footer__nav-item--main" href="#">Комплексные программы</a><a class="footer__nav-item" href="#">Ежегодное обследование</a><a class="footer__nav-item" href="#">Планирование беременности</a><a class="footer__nav-item" href="#">Женское здоровье</a><a class="footer__nav-item" href="#">Мужское здоровье</a><a class="footer__nav-item" href="#">Здоровое сердце</a><a class="footer__nav-item" href="#">Реабилитация после COVID</a></nav>
+						</div>
+					</div>
+					<div class="footer__col footer__col--nav">
+						<div class="footer__col-inner">
+							<nav class="footer__nav"><a class="footer__nav-item" href="#">Справки и медкнижки</a><a class="footer__nav-item" href="#">Врачи медицинского центра</a><a class="footer__nav-item" href="#">Профосмотры</a><a class="footer__nav-item" href="#">Цены</a><a class="footer__nav-item secondary" href="#">Акции и спецпредложения</a><a class="footer__nav-item" href="#">Программа лояльности</a><a class="footer__nav-item secondary" href="#">Контакты</a></nav>
+							<nav class="footer__nav"><a class="footer__nav-item footer__nav-item--main" href="#">О медицинском центре</a><a class="footer__nav-item" href="#">Отзывы</a><a class="footer__nav-item" href="#">Трудоустройство</a><a class="footer__nav-item" href="#">Правовая информация</a><a class="footer__nav-item" href="#">Лицензия и документы</a><a class="footer__nav-item" href="#">Пользовательское соглашение</a><a class="footer__nav-item" href="#">Политика конфиденциальности</a></nav>
+						</div>
+					</div>
+					<div class="footer__col footer__col--mobile mobile-only">
+						<div class="footer__col-inner">
+							<nav class="footer__nav"><a class="footer__nav-item" href="#">Медицинские услуги</a><a class="footer__nav-item" href="#">Комплексные программы</a><a class="footer__nav-item" href="#">Справки и медкнижки</a><a class="footer__nav-item" href="#">Врачи клиники</a><a class="footer__nav-item" href="#">Профосмотры</a></nav>
+							<nav class="footer__nav"><a class="footer__nav-item" href="#">Цены</a><a class="footer__nav-item" href="#">О клинике</a><a class="footer__nav-item secondary" href="#">Акции и спецпредложения</a><a class="footer__nav-item secondary" href="#">Контакты</a></nav>
+						</div>
+					</div>
+					<div class="footer__col">
+						<div class="footer__col-inner">
+							<div class="footer__appointment-btn common-btn common-btn--primary">
+								<svg class="icon icon-pen">
+									<use xlink:href="img/svg/sprite.svg#pen"></use>
+								</svg>Записаться на прием
+							</div><a class="footer__account text-icon-box" href="">
+								<svg class="icon icon-person">
+									<use xlink:href="img/svg/sprite.svg#person"></use>
+								</svg>
+								<div class="footer__account-text">Личный кабинет пациента</div><a class="footer__worktime text-icon-box" href="#">
+									<svg class="icon icon-calendar">
+										<use xlink:href="img/svg/sprite.svg#calendar"></use>
+									</svg>Режим работы кабинетов и врачей</a></a>
+							<div class="social"><a class="social__item" href="#">
+									<svg class="icon icon-vk">
+										<use xlink:href="img/svg/sprite.svg#vk"></use>
+									</svg></a><a class="social__item" href="#">
+									<svg class="icon icon-tg">
+										<use xlink:href="img/svg/sprite.svg#tg"></use>
+									</svg></a><a class="social__item" href="#">
+									<svg class="icon icon-wa">
+										<use xlink:href="img/svg/sprite.svg#wa"></use>
+									</svg></a><a class="social__item" href="#">
+									<svg class="icon icon-ok">
+										<use xlink:href="img/svg/sprite.svg#ok"></use>
+									</svg></a></div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<div class="footer__copywrite">© Медицинский центр "Я Здоров", 2022 год</div>
+					<div class="footer__developers">Разработка сайта -&nbsp;<a href="http://webelement.ru/">WEBELEMENT</a></div>
+				</div>
+			</div>
+		</footer>
+		<div class="mobile-menu">
+			<div class="mobile-menu__inner">
+				<div class="close js-close-mobile-menu">
+					<svg class="icon icon-close">
+						<use xlink:href="img/svg/sprite.svg#close"></use>
+					</svg>
+				</div>
+				<div class="mobile-menu__top">
+					<div class="mobile-menu__phone-box text-icon-box">
+						<svg class="icon icon-phone">
+							<use xlink:href="img/svg/sprite.svg#phone"></use>
+						</svg><a class="mobile-menu__phone" href="tel:88005001089">8 (800) 500-10-89</a>
+					</div>
+					<div class="mobile-menu__appointment-btn common-btn common-btn--primary">
+						<svg class="icon icon-pen">
+							<use xlink:href="img/svg/sprite.svg#pen"></use>
+						</svg>Записаться на прием
+					</div>
+				</div>
+				<div class="mobile-menu__middle">
+					<nav class="mobile-menu__nav"><a class="mobile-menu__nav-item current" href="#">Медицинские услуги
+							<div class="mobile-menu__nav-submenu-toggle">
+								<svg class="icon icon-arrow-right">
+									<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+								</svg>
+							</div></a>
+						<div class="mobile-menu__nav-submenu">
+							<div class="mobile-menu__nav-back js-menu-back">
+								<svg class="icon icon-arrow-right">
+									<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+								</svg>
+							</div>
+							<div class="mobile-menu__nav-submenu-category js-menu-back">Медицинские услуги</div>
+							<div class="mobile-menu__nav-submenu-items"><a class="mobile-menu__nav-submenu-item" href="#">Прием врача</a><a class="mobile-menu__nav-submenu-item" href="#">Лечение / Процедуры</a><a class="mobile-menu__nav-submenu-item" href="#">УЗИ</a><a class="mobile-menu__nav-submenu-item" href="#">Медицинские анализы</a></div>
+						</div><a class="mobile-menu__nav-item" href="#">Комплексные программы
+							<div class="mobile-menu__nav-submenu-toggle">
+								<svg class="icon icon-arrow-right">
+									<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+								</svg>
+							</div></a>
+						<div class="mobile-menu__nav-submenu">
+							<div class="mobile-menu__nav-back js-menu-back">
+								<svg class="icon icon-arrow-right">
+									<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+								</svg>
+							</div>
+							<div class="mobile-menu__nav-submenu-category js-menu-back">Комплексные программы</div>
+							<div class="mobile-menu__nav-submenu-items"><a class="mobile-menu__nav-submenu-item" href="#">Прием врача</a><a class="mobile-menu__nav-submenu-item" href="#">Лечение / Процедуры</a><a class="mobile-menu__nav-submenu-item" href="#">УЗИ</a><a class="mobile-menu__nav-submenu-item" href="#">Медицинские анализы</a></div>
+						</div><a class="mobile-menu__nav-item" href="#">Справки и медкнижки
+							<div class="mobile-menu__nav-submenu-toggle">
+								<svg class="icon icon-arrow-right">
+									<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+								</svg>
+							</div></a>
+						<div class="mobile-menu__nav-submenu">
+							<div class="mobile-menu__nav-back js-menu-back">
+								<svg class="icon icon-arrow-right">
+									<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+								</svg>
+							</div>
+							<div class="mobile-menu__nav-submenu-category js-menu-back">Справки и медкнижки</div>
+							<div class="mobile-menu__nav-submenu-items"><a class="mobile-menu__nav-submenu-item" href="#">Прием врача</a><a class="mobile-menu__nav-submenu-item" href="#">Лечение / Процедуры</a><a class="mobile-menu__nav-submenu-item" href="#">УЗИ</a><a class="mobile-menu__nav-submenu-item" href="#">Медицинские анализы</a></div>
+						</div><a class="mobile-menu__nav-item" href="#">Врачи клиники</a><a class="mobile-menu__nav-item" href="#">Профосмотры</a><a class="mobile-menu__nav-item" href="#">Цены</a><a class="mobile-menu__nav-item" href="#">О клинике</a><a class="mobile-menu__nav-item" href="#">Контакты</a>
+					</nav>
+				</div>
+				<div class="mobile-menu__bottom"></div>
+			</div>
+		</div>
+		<div class="modal modal--callback" id="modal-callback">
+			<div class="modal__body">
+				<div class="close js-close-modal">
+					<svg class="icon icon-close">
+						<use xlink:href="img/svg/sprite.svg#close"></use>
+					</svg>
+				</div>
+				<div class="modal__content">
+					<div class="modal__text">Чтобы связаться с нашими специалистами <span class="primary">оставьте свой номер телефона, и мы вам перезвоним</span></div>
+					<form class="form">
+						<div class="form-group">
+							<label class="label" for="mc1">Введите номер телефона:</label>
+							<input class="input" type="tel" id="mc1" required="required"/>
+							<div class="error-message">Это поле обязательно для заполнения</div>
+						</div>
+						<button class="form__btn common-btn common-btn--primary js-open-modal" type="submit" data-modal="#modal-callback-success">Отправить</button>
+						<div class="form__text">Нажимая на кнопку, я соглашаюсь на обработку моих персональных данных и ознакомлен(а) с условиями <a href="#">политики конфиденциальности.</a></div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="modal modal--callback-success" id="modal-callback-success">
+			<div class="modal__body">
+				<div class="close js-close-modal">
+					<svg class="icon icon-close">
+						<use xlink:href="img/svg/sprite.svg#close"></use>
+					</svg>
+				</div>
+				<div class="modal__content">
+					<div class="modal__text"><span class="primary">Ваша заявка принята!</span><br> Мы обязательно вам перезвоним в ближайшее время</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal modal--testimonial-success" id="modal-testimonial-success">
+			<div class="modal__body">
+				<div class="close js-close-modal">
+					<svg class="icon icon-close">
+						<use xlink:href="img/svg/sprite.svg#close"></use>
+					</svg>
+				</div>
+				<div class="modal__content">
+					<div class="modal__text"><span class="primary">Отзыв отправлен в отдел качества.</span><br> После его обработки с вами свяжется менеджер и расскажет условия получения скидки</div>
+				</div>
+			</div>
+		</div>
+		<script src="scripts/vendor.min.js"></script>
+		<script src="scripts/vendor/uhpv-full.min.js"></script>
+		<script src="scripts/main.min.js"></script>
+	</body>
+</html>

@@ -1,0 +1,259 @@
+.footer {
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    @media (max-width: 1199px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: -20px;
+    }
+    @media (max-width: 600px) {
+      margin-bottom: 0
+    }
+  }
+
+  &__col {
+    flex-basis: 280px;
+    max-width: 280px;
+
+    @media (max-width: 1199px) {
+      flex-basis: 34%;
+      max-width: 34%;
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: 991px) {
+      flex-basis: 50%;
+      max-width: 50%;
+    }
+
+    @media (max-width: 600px) {
+      flex-basis: 100%;
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+
+    &--nav {
+      @media (max-width: 1199px) {
+        order: 1;
+      }
+      @media (max-width: 600px) {
+        display: none;
+      }
+
+      .footer__col-inner {
+        justify-content: flex-end;
+      }
+    }
+
+    &--mobile {
+      padding: 20px 0;
+      border-top: 2px dashed $primary;
+      border-bottom: 2px dashed $primary;
+
+      .footer__col-inner {
+        flex-direction: row;
+      }
+    }
+  }
+
+  &__col-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: 280px;
+    max-width: 280px;
+    height: 100%;
+    @media (max-width: 1199px) {
+      margin: 0 auto;
+    }
+    @media (max-width: 600px) {
+      margin: 0;
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 20px;
+    @media (max-width: 600px) {
+      display: none;
+    }
+
+    svg {
+      width: 240px;
+      height: 60px;
+    }
+  }
+
+  &__address {
+    display: flex;
+    align-items: baseline;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 20px;
+
+    svg {
+      width: 12px;
+      height: 13px;
+      fill: none;
+      margin-right: 10px;
+      flex-shrink: 0;
+    }
+  }
+
+  &__phone-box {
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    max-width: 280px;
+
+    &:hover {
+      text-decoration-color: transparent;
+    }
+
+    svg {
+      stroke: $primary;
+      flex-shrink: 0;
+    }
+  }
+
+  &__phone {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    @media (max-width: 600px) {
+      margin-bottom: 5px;
+    }
+
+    &:hover {
+      text-decoration-color: $black-template;
+    }
+  }
+
+  &__callback {
+    color: $primary;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-underline-offset: 2px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    margin-left: 25px;
+
+    &:hover {
+      text-decoration-color: transparent;
+      transition: .3s ease-in-out;
+    }
+  }
+
+  &__license {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 0;
+    border-bottom: 2px dashed $primary;
+    @media (max-width: 600px) {
+      border-bottom: 0;
+      padding: 0;
+      margin-right: 20px;
+    }
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+      border: 0;
+      @media (max-width: 600px) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__nav-item {
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 3px;
+
+    &:hover {
+      text-decoration-color: $black-template;
+    }
+
+    &--main {
+      color: $primary;
+      margin-bottom: 20px;
+
+      &:hover {
+        text-decoration-color: $primary;
+      }
+
+    }
+  }
+
+  &__appointment-btn {
+    margin-bottom: 20px;
+    @media (max-width: 600px) {
+      display: none;
+    }
+  }
+
+  &__account {
+    margin-bottom: 20px;
+    margin-right: 0;
+
+    svg {
+      stroke: $primary;
+    }
+  }
+
+  &__worktime {
+    margin-bottom: 20px;
+    margin-right: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: $gray-template;
+    padding: 17px 40px 15px;
+    border-radius: 26px 26px 0 0;
+    @media (max-width: 600px) {
+      justify-content: center;
+      padding: 20px;
+    }
+  }
+
+  &__copywrite {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  &__developers {
+    font-size: 14px;
+    line-height: 19px;
+
+    a {
+      &:hover {
+        text-decoration-color: $black-template;
+      }
+    }
+  }
+
+  .social {
+    @media (max-width: 600px) {
+      display: none;
+    }
+  }
+}

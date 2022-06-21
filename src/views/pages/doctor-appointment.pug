@@ -1,0 +1,122 @@
+extends ../layout
+include ../mixins/mixins
+
+block header
+    include ../components/header
+block content
+    .container
+        .breadcrumbs
+            a(href="/")._item Главная
+            a(href="/")._item Медицинские услуги
+            ._item.-current Прием врачей
+    .main-wrapper.doctor-appointment
+        .container
+            h1.h1 #[span.primary Прием врачей] в медицинском центре "Я&nbsp;Здоров!"
+            .content-wrapper
+                aside.sidebar
+                    nav._nav
+                        a(href="#")._nav-item.current Прием врачей
+                        a(href="#")._nav-item Лечение / Процедуры
+                        a(href="#")._nav-item УЗИ
+                        a(href="#")._nav-item Медицинские анализы
+                main.main-content
+                    .text-w-sideblock
+                        .__text Консультативный прием ведут опытные, квалифицированные врачи, кандидаты и доктора наук, имеющие большой опыт работы. Многие наши врачи являются авторами уникальных методик и техник, имеют сертификаты и награды за вклад в развитие медицины.
+                        .__sideblock
+                            a(href="#").common-btn.common-btn--secondary.common-btn--sm Режим работы кабинетов врачей
+                    .btn-wrapper.-grid
+                        a(href="#").common-btn.common-btn--primary Терапевт
+                        a(href="#").common-btn.common-btn--primary Гениколог
+                        a(href="#").common-btn.common-btn--primary Офтальмолог
+                        a(href="#").common-btn.common-btn--primary Профпатолог
+                        a(href="#").common-btn.common-btn--primary Психиатр-нарколог
+                        a(href="#").common-btn.common-btn--primary Невролог
+                        a(href="#").common-btn.common-btn--primary Уролог
+                        a(href="#").common-btn.common-btn--primary ЛОР
+                    .typography
+                        h2.h2 Консультация специалиста включает в себя:
+                        ol.ol
+                            li Сбор сведений о начале и течении заболевания, о ранее проведенных обследованиях и лечении, анализ жалоб пациента, сбор анамнеза.
+                            li Осмотр пациента с выработкой плана диагностики и лечения пациента: назначение необходимых исследований, лабораторных анализов, инструментальных методов диагностики, а также медикаментозной терапии.
+                            li Интерпретация результатов лабораторных анализов, данных инструментальных исследований с целью коррекции лечения. Назначение контрольных или дополнительных диагностических исследований.
+                        p При необходимости врач направляет пациента на консультацию к другим специалистам и принимает решение о трудоспособности и режиме пациента.
+                        p Консультация может проводиться при отсутствии пациента, но обязательно на основании результатов обследований с учетом недавнего осмотра пациента.
+        section.large-blocks-grid
+            ._container.container
+                .h1 #[span.primary Цены на консультации и прием врача]<br> без очередей и в удобное для вас время:
+                ._items
+                    .large-block
+                        ._bg
+                            +pictureAdaptive('price-bg1', 'png', 580, 300)
+                        ._content
+                            h2._title.h2 Первичный прием любого специалиста
+                            ._title.h2 1 500 ₽
+                    .large-block
+                        ._bg
+                            +pictureAdaptive('price-bg2', 'png', 580, 300)
+                        ._content
+                            h2._title.h2 Повторный прием специалиста
+                            h2._title.h2 1 000 ₽
+                .btn-wrapper.-center
+                    a(href="#").common-btn.common-btn--primary Узнать стоимость других услуг
+        section.fw-banner
+            ._bg
+                +pictureAdaptive('appointment-bg', 'png', 1920, 350)
+            ._container.container
+                ._inner
+                    ._left
+                        ._title.h1 Записаться на прием #[span.primary за&nbsp;1&nbsp;минуту]
+                        ._text Воспользуйтесь удобным и бесплатным сервисом записи на прием. Вас перенаправит на систему регистрации, где сможете выбрать специалиста и удобное время приема.
+                    ._right
+                        ._tags
+                            ._tag #Без очередей
+                            ._tag #Выбирайте врача самостоятельно
+                            ._tag #Удобное время
+                        .btn-wrapper
+                            a(href="#").common-btn.common-btn--primary Войти и выбрать время
+                            a(href="#").common-btn.common-btn--secondary
+                                +icon('person')
+                                | Личный кабинет пациента
+        section.additional-info
+            ._container.container
+                ._inner
+                    ._left
+                        .h1 #[span.primary Полезная информация] о нашей работе
+                        .accordion
+                            ._item
+                                .__title.js-accordion-toggle.active
+                                    | Как можно записаться на прием?
+                                    +icon('arrow-down')
+                                .__content.js-accordion-content.opened Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                            ._item
+                                .__title.js-accordion-toggle
+                                    | Сколько длится прием у специалиста?
+                                    +icon('arrow-down')
+                                .__content.js-accordion-content Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                            ._item
+                                .__title.js-accordion-toggle
+                                    | Можно ли прийти без записи (по острой боли и др)?
+                                    +icon('arrow-down')
+                                .__content.js-accordion-content Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                            ._item
+                                .__title.js-accordion-toggle
+                                    | Работает ли мед. центр в выходные или в поздние часы в будни?
+                                    +icon('arrow-down')
+                                .__content.js-accordion-content Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                            ._item
+                                .__title.js-accordion-toggle
+                                    | Есть ли очереди, каково максимальное ожидание, если пришел по предварительной записи?
+                                    +icon('arrow-down')
+                                .__content.js-accordion-content Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                    ._right
+                        .aside-banner
+                            ._bg
+                                +picture('aside-banner-bg', 'png', 380, 510)
+                            ._content
+                                ._title.h2.primary Остались вопросы?
+                                ._text Нажмите кнопку “Перезвоните мне”, чтобы связаться с нашими специалистами
+                                ._btn.common-btn.common-btn.common-btn--primary.js-open-modal(data-modal="#modal-callback")
+                                    +icon('phone')
+                                    | Перезвоните мне
+block footer
+    include ../components/footer

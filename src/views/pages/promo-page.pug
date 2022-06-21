@@ -1,0 +1,57 @@
+extends ../layout
+include ../mixins/mixins
+
+block header
+    include ../components/header
+block content
+    .container
+        .breadcrumbs
+            a(href="/")._item Главная
+            a(href="/")._item Акции и спецпредложения
+            ._item.-current Получи медицинскую справку на вождение со скидкой!
+    main.promo-page.main-wrapper
+        ._container.container
+            h1.h1 #[span.primary Получите медицинскую справку на вождение] со скидкой!
+        section
+            .container
+                .fw-img
+                    +pictureAdaptive('promo-page-bg', 'png', 1180, 300)
+                .flex-wrapper
+                    .col-6
+                        .typography
+                            h2.h2.primary Приходите и приводите друзей<br> Скидка по промокоду для клиента “Я Здоров!” - 100 ₽
+                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Энейский euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.  Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
+
+                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Энейский euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.  Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
+                    .col-6
+                        .typography
+                            h2.h2.primary Правила проведения и условия акции
+                            ol
+                                li Организатор Акции (далее – Организатор):<br>Общество с ограниченной ответственностью «Глазнов»<br>Адрес местонахождения: lorem ipsum dolor sit amet;<br>ОГРН: lorem ipsum dolor sit amet;<br>ИНН: lorem ipsum dolor sit amet;<br>КПП: lorem ipsum dolor sit amet;<br>Телефон: lorem ipsum dolor sit amet;
+                                li Акция проводится в следующие сроки: lorem ipsum dolor sit amet;
+                                li Территория проведения Акции – lorem ipsum dolor sit amet;
+                                li
+                                    p Информирование:
+                                    ol
+                                        li Информирование участников Акции проводится путем размещения анонса в сети Интернет на сайтах: в официальной группе «Instagram» по адресу;
+                                        li В случае изменения Правил или отмены Акции, соответствующая информация размещается в сети Интернет в официальной группе  «Instagram».
+        section.large-blocks-grid
+            ._container.container
+                .h1 #[span.primary Другие акции ] медицинского центра
+                ._items
+                    a(href="#").large-block
+                        ._bg
+                            +pictureAdaptive('large-block-bg1', 'png', 580, 300)
+                        ._content
+                            ._text #[strong Акция в честь открытия медицинского центра:]<br>
+                                span.primary Скидка 50% до 28 марта 2022 года;<br> 750 ₽ первичный прием
+                            ._btn.common-btn.common-btn--primary Узнать подробнее
+                    a(href="#").large-block
+                        ._bg
+                            +pictureAdaptive('large-block-bg6', 'png', 580, 300)
+                        ._content
+                            ._text #[strong Программа лояльности:]<br>
+                                span.primary Копи баллы и оплачивай стоимость услуг
+                            ._btn.common-btn.common-btn--primary Узнать подробнее
+block footer
+    include ../components/footer

@@ -1,0 +1,48 @@
+//===========//
+//MIXIN FONTS
+//===========//
+@mixin font-face($name, $certain-name, $path, $weight: null, $style: null, $exts: woff2 woff) {
+
+  $src: local(quote($certain-name));
+
+  $extmods: (
+          eot: "?"
+  );
+
+  $formats: (
+          otf: "opentype",
+          ttf: "truetype"
+  );
+
+  @each $ext in $exts {
+    $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+    $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+    $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+  }
+
+  @font-face {
+    font-family: quote($name);
+    font-style: $style;
+    font-display: swap;
+    font-weight: $weight;
+    src: $src;
+  }
+}
+
+@include font-face("Open Sans", "OpenSans-Light", "../fonts/OpenSans/OpenSans-Light", 300, normal);
+@include font-face("Open Sans", "OpenSans-Italic", "../fonts/OpenSans/OpenSans-Italic", 400, italic);
+@include font-face("Open Sans", "OpenSans-Regular", "../fonts/OpenSans/OpenSans-Regular", 400, normal);
+@include font-face("Open Sans", "OpenSans-SemiBold", "../fonts/OpenSans/OpenSans-SemiBold", 600, normal);
+@include font-face("Open Sans", "OpenSans-Bold", "../fonts/OpenSans/OpenSans-Bold", 700, normal);;
+@include font-face("Open Sans", "OpenSans-Bold", "../fonts/OpenSans/OpenSans-BoldItalic", 700, italic);
+//@include font-face("Open Sans", "OpenSans-ExtraBold", "../fonts/ProximaNova/ProximaNova-ExtraBold", 800, normal);
+//@include font-face("Open Sans", "OpenSans-Black", "../fonts/ProximaNova/ProximaNova-Black", 900, normal);
+
+
+@include font-face("Aquawax Pro", "AquawaxPro-Light", "../fonts/AquawaxPro/AquawaxPro-Light", 300, normal);
+@include font-face("Aquawax Pro", "AquawaxPro-Regular", "../fonts/AquawaxPro/AquawaxPro-Regular", 400, normal);
+@include font-face("Aquawax Pro", "AquawaxPro-SemiBold", "../fonts/AquawaxPro/AquawaxPro-SemiBold", 600, normal);
+@include font-face("Aquawax Pro", "AquawaxPro-Bold", "../fonts/AquawaxPro/AquawaxPro-Bold", 700, normal);
+
+
+

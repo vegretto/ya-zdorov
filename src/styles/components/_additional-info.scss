@@ -1,0 +1,30 @@
+.additional-info {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 991px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__left {
+    flex-basis: 700px;
+    max-width: 700px;
+    margin-right: 40px;
+    @media (max-width: 991px) {
+      flex-basis: auto;
+      margin-right: 0;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__right {
+    flex-basis: 380px;
+    max-width: 380px;
+    flex-shrink: 0;
+    @media (max-width: 991px) {
+      flex-basis: auto;
+    }
+  }
+}

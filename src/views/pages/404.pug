@@ -1,0 +1,18 @@
+extends ../layout
+include ../mixins/mixins
+
+block header
+    include ../components/header
+block content
+    main.error-page.main-wrapper
+        ._bg
+            +pictureAdaptive('404-bg', 'png', 1920, 923)
+        ._content
+            ._error-code 404
+            ._subtitle ошибка
+            ._text
+                | Страница, которую вы ищете, не существует или устарела.
+            ._options Вы можете вернуться #[a(href="#") назад]<br> либо перейти на #[a(href="/") главную]
+
+block footer
+    include ../components/footer

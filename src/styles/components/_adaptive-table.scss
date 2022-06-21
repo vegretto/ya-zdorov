@@ -1,0 +1,113 @@
+.adaptive-table {
+  overflow-x: auto;
+  margin-bottom: 40px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  @media (max-width: 600px) {
+    margin: 0 -10px 40px;
+    padding: 0 10px;
+  }
+
+  table {
+    border-collapse: collapse;
+    min-width: 450px;
+    width: 100%;
+  }
+
+  th {
+    background-color: $primary;
+    color: $white;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    padding: 15px 25px;
+    white-space: nowrap;
+    @media (max-width: 1199px) {
+      padding: 15px 10px;
+    }
+    @media (max-width: 991px) {
+      white-space: initial;
+      font-size: 14px;
+      line-height: 19px;
+    }
+    @media (max-width: 600px) {
+      padding: 10px 5px;
+      font-size: 12px;
+      line-height: 16px;
+    }
+
+    &:first-child {
+      border-radius: 26px 0 0 26px;
+      overflow: hidden;
+      @media (max-width: 600px) {
+        padding-left: 10px;
+      }
+    }
+
+    &:last-child {
+      border-radius: 0 26px 26px 0;
+      overflow: hidden;
+      @media (max-width: 600px) {
+        padding-right: 10px;
+      }
+    }
+  }
+
+  td {
+    vertical-align: top;
+    text-align: center;
+    padding: 15px 25px;
+    @media (max-width: 1199px) {
+      padding: 15px 10px;
+    }
+    @media (max-width: 991px) {
+      font-size: 14px;
+      line-height: 19px;
+    }
+    @media (max-width: 600px) {
+      font-size: 12px;
+      line-height: 16px;
+      padding: 10px 5px;
+    }
+
+    &:first-child {
+      @media (max-width: 600px) {
+        padding-left: 10px;
+      }
+    }
+
+    &:last-child {
+      @media (max-width: 600px) {
+        padding-right: 10px;
+      }
+    }
+
+    &.left {
+      text-align: left;
+    }
+
+    &.b {
+      font-weight: 600;
+    }
+  }
+
+  tr:nth-child(2n) {
+    td {
+      background-color: $lblue-template;
+
+      &:first-child {
+        border-radius: 26px 0 0 26px;
+        overflow: hidden;
+
+      }
+
+      &:last-child {
+        border-radius: 0 26px 26px 0;
+        overflow: hidden;
+      }
+    }
+  }
+
+}

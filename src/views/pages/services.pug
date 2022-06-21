@@ -1,0 +1,80 @@
+extends ../layout
+include ../mixins/mixins
+
+block header
+    include ../components/header
+block content
+    .container
+        .breadcrumbs
+            a(href="/")._item Главная
+            ._item.-current Медицинские услуги
+    main.services.main-wrapper
+        .container
+            h1.h1 #[span.primary Услуги медицинского центра] "Я Здоров!"
+        section.large-blocks-grid
+            ._container.container
+                ._items
+                    a(href="#").large-block
+                        ._bg
+                            +pictureAdaptive('large-block-bg1', 'png', 580, 300)
+                        ._content
+                            ._text #[strong Акция в честь открытия медицинского центра:]<br>
+                                span.primary Скидка 50% до 28 марта 2022 года;<br> 750 ₽ первичный прием
+                            ._hr
+                            h2._title.h2 Прием врача
+                            ._btn.common-btn.common-btn--primary Узнать подробнее
+                    a(href="#").large-block
+                        ._bg
+                            +pictureAdaptive('large-block-bg2', 'png', 580, 300)
+                        ._content
+                            h2._title.h2 Лечение и<br> процедуры
+                            ._btn.common-btn.common-btn--primary Узнать подробнее
+                    a(href="#").large-block
+                        ._bg
+                            +pictureAdaptive('large-block-bg4', 'png', 580, 300)
+                        ._content
+                            h2._title.h2 Анализы
+                            ._btn.common-btn.common-btn--primary Узнать подробнее
+                    a(href="#").large-block
+                        ._bg
+                            +pictureAdaptive('large-block-bg5', 'png', 580, 300)
+                        ._content
+                            h2._title.h2 УЗИ
+                            ._btn.common-btn.common-btn--primary Узнать подробнее
+        section.fw-banner
+            ._bg
+                +pictureAdaptive('appointment-bg', 'png', 1920, 350)
+            ._container.container
+                ._inner
+                    ._left
+                        ._title.h1 Записаться на прием #[span.primary за&nbsp;1&nbsp;минуту]
+                        ._text Воспользуйтесь удобным и бесплатным сервисом записи на прием. Вас перенаправит на систему регистрации, где сможете выбрать специалиста и удобное время приема.
+                    ._right
+                        ._tags
+                            ._tag #Без очередей
+                            ._tag #Выбирайте врача самостоятельно
+                            ._tag #Удобное время
+                        .btn-wrapper
+                            a(href="#").common-btn.common-btn--primary Войти и выбрать время
+                            a(href="#").common-btn.common-btn--secondary
+                                +icon('person')
+                                | Личный кабинет пациента
+        section.seo
+            ._container.container
+                ._text Небольшой сео текст про медицинские услуги медицинского центра Небольшой сео текст про медицинские услуги медицинского центра Небольшой сео текст про медицинские услуги медицинского центра Небольшой сео текст про медицинские услуги медицинского центра Небольшой сео текст про медицинские услуги медицинского центра Небольшой сео текст про медицинские услуги медицинского центра Небольшой сео текст про медицинские услуги медицинского центра Небольшой сео текст про медицинские услуги медицинского центра Небольшой сео текст про медицинские услуги медицинского центра Небольшой сео текст про медицинские услуги медицинского центра Небольшой сео текст про медицинские услуги медицинского центра Небольшой сео текст про медицинские услуги медицинского центра Небольшой сео текст про медицинские услуги медицинского центра Небольшой сео текст про медицинские услуги медицинского центра Небольшой сео текст про медицинские услуги медицинского центра Небольшой сео текст про медицинские услуги медицинского центра
+        section.hotline
+            ._bg
+                +pictureAdaptive('hotline-bg', 'png', 1920, 150)
+            ._container.container
+                ._inner
+                    ._col
+                        ._title.h2 #[span.primary Телефон горячей линии ]
+                            a._phone(href="tel:88005001089") 8 (800) 500-10-89
+                    ._col
+                        ._btn.common-btn.common-btn.common-btn--secondary
+                            +icon('pen')
+                            | Написать
+                        ._text руководителю медицинского центра
+
+block footer
+    include ../components/footer

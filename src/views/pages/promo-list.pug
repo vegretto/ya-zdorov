@@ -1,0 +1,112 @@
+extends ../layout
+include ../mixins/mixins
+
+block header
+    include ../components/header
+block content
+    .container
+        .breadcrumbs
+            a(href="/")._item Главная
+            ._item.-current Акции и спецпредложения
+    main.promo-list.main-wrapper
+        ._container.container
+            h1.h1 #[span.primary Акции] и спецпредложения
+        section.large-blocks-grid
+            ._container.container
+                ._items
+                    a(href="#").large-block.-fw.-promo.-gray
+                        ._bg
+                            +pictureAdaptive('large-block-bg7', 'png', 1180, 300)
+                        ._content.-mobile-br-show
+                            ._text #[strong Получите медицинскую справку на вождение со скидкой!]<br>
+                                span.primary Приходите и приводите друзей Скидка по промокоду для клиента “Я&nbsp;Здоров!” - 100 ₽
+                            ._btn.common-btn.common-btn--secondary Получить скидку
+
+                    a(href="#").large-block
+                        ._bg
+                            +pictureAdaptive('large-block-bg1', 'png', 580, 300)
+                        ._content
+                            ._text #[strong Акция в честь открытия медицинского центра:]<br>
+                                span.primary Скидка 50% до 28 марта 2022 года;<br> 750 ₽ первичный прием
+                            ._btn.common-btn.common-btn--primary Узнать подробнее
+                    a(href="#").large-block
+                        ._bg
+                            +pictureAdaptive('large-block-bg6', 'png', 580, 300)
+                        ._content
+                            ._text #[strong Программа лояльности:]<br>
+                                span.primary Копи баллы и оплачивай стоимость услуг
+                            ._btn.common-btn.common-btn--primary Узнать подробнее
+        section.fw-banner
+            ._bg
+                +pictureAdaptive('appointment-bg', 'png', 1920, 350)
+            ._container.container
+                ._inner
+                    ._left
+                        ._title.h1 Записаться на прием #[span.primary за&nbsp;1&nbsp;минуту]
+                        ._text Воспользуйтесь удобным и бесплатным сервисом записи на прием. Вас перенаправит на систему регистрации, где сможете выбрать специалиста и удобное время приема.
+                    ._right
+                        ._tags
+                            ._tag #Без очередей
+                            ._tag #Выбирайте врача самостоятельно
+                            ._tag #Удобное время
+                        .btn-wrapper
+                            a(href="#").common-btn.common-btn--primary Войти и выбрать время
+                            a(href="#").common-btn.common-btn--secondary
+                                +icon('person')
+                                | Личный кабинет пациента
+        section.additional-info
+            ._container.container
+                ._inner
+                    ._left
+                        .h1 #[span.primary Полезная информация] о нашей работе
+                        .accordion
+                            ._item
+                                .__title.js-accordion-toggle.active
+                                    | Как можно записаться на прием?
+                                    +icon('arrow-down')
+                                .__content.js-accordion-content.opened Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                            ._item
+                                .__title.js-accordion-toggle
+                                    | Сколько длится прием у специалиста?
+                                    +icon('arrow-down')
+                                .__content.js-accordion-content Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                            ._item
+                                .__title.js-accordion-toggle
+                                    | Можно ли прийти без записи (по острой боли и др)?
+                                    +icon('arrow-down')
+                                .__content.js-accordion-content Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                            ._item
+                                .__title.js-accordion-toggle
+                                    | Работает ли мед. центр в выходные или в поздние часы в будни?
+                                    +icon('arrow-down')
+                                .__content.js-accordion-content Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                            ._item
+                                .__title.js-accordion-toggle
+                                    | Есть ли очереди, каково максимальное ожидание, если пришел по предварительной записи?
+                                    +icon('arrow-down')
+                                .__content.js-accordion-content Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                    ._right
+                        .aside-banner
+                            ._bg
+                                +picture('aside-banner-bg', 'png', 380, 510)
+                            ._content
+                                ._title.h2.primary Остались вопросы?
+                                ._text Нажмите кнопку “Перезвоните мне”, чтобы связаться с нашими специалистами
+                                ._btn.common-btn.common-btn.common-btn--primary.js-open-modal(data-modal="#modal-callback")
+                                    +icon('phone')
+                                    | Перезвоните мне
+        section.hotline
+            ._bg
+                +pictureAdaptive('hotline-bg', 'png', 1920, 150)
+            ._container.container
+                ._inner
+                    ._col
+                        ._title.h2 #[span.primary Телефон горячей линии ]
+                            a._phone(href="tel:88005001089") 8 (800) 500-10-89
+                    ._col
+                        ._btn.common-btn.common-btn.common-btn--secondary
+                            +icon('pen')
+                            | Написать
+                        ._text руководителю медицинского центра
+block footer
+    include ../components/footer

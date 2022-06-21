@@ -1,0 +1,35 @@
+extends ../layout
+include ../mixins/mixins
+
+block header
+    include ../components/header
+block content
+    main.main-wrapper
+        section.pages-list
+            ._container.container
+                h1.h1 Список страниц
+                ._items
+                    a(href="main.html")._item Главная
+                    a(href="worktime.html")._item Режим работы
+                    a(href="med-certificates.html")._item Справки и медкнижки
+                    a(href="services.html")._item Медицинские услуги
+                    a(href="doctor-appointment.html")._item Прием врачей
+                    a(href="doctors.html")._item Врачи клиники
+                    a(href="doctor.html")._item Страница врача
+                    a(href="price.html")._item Цены
+                    a(href="promo-list.html")._item Акции и спецпредложения
+                    a(href="promo-page.html")._item Страница акции
+                    a(href="about.html")._item О клинике
+                    a(href="testimonials.html")._item Отзывы
+                    a(href="contacts.html")._item Контакты
+                    a(href="elements.html")._item Элементы для наполнения
+                    a(href="404.html")._item 404 страница
+block footer
+    include ../components/footer
+
+
+
+
+
+
+
