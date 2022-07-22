@@ -132,6 +132,7 @@
 .large-blocks-grid .large-block.podlojka .large-block__title {
   color: #fff;
 }
+
 .large-blocks-grid .large-block.podlojka:before {
   content: '';
   display: block;
@@ -145,6 +146,7 @@
   background-image: linear-gradient(180deg, rgb(19, 163, 218) 0%, rgb(255, 255, 255) 100%);
   opacity: .7;
 }
+
 .large-blocks-grid .large-block.podlojka:after {
   background-image: url(/local/templates/main/images/svg/heart.svg);
   content: '';

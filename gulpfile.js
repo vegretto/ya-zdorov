@@ -56,6 +56,7 @@ function scriptsVendor() {
         'src/scripts/vendor/jquery.fancybox.js',
         //'src/scripts/vendor/datepicker.min.js',
         //'node_modules/easy-autocomplete/dist/jquery.easy-autocomplete.js',
+        'src/scripts/vendor/js.cookie.min.js'
     ])
         .pipe(plumber())
         .pipe(sourcemaps.init())
