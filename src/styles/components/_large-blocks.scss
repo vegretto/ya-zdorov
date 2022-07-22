@@ -44,6 +44,7 @@
   &--fw {
     flex-basis: 100%;
     max-width: 100%;
+    min-height: 300px;
     @media (max-width: 1199px) {
       flex-basis: 580px;
       max-width: 580px;

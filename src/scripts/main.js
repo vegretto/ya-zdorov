@@ -37,6 +37,18 @@ $(document).ready(function () {
     moveElement('.footer__license ', '.footer__col:last-child .footer__col-inner', 600);
     moveElement('.doctor-appointment .text-w-sideblock .common-btn', '.btn-wrapper--grid', 767);
 
+    $('.js-adaptive-height').each(function () {
+        let maxHeight = 0;
+        $(this).find('.large-block__content > *').each(function () {
+            if ($(this).height() > maxHeight) {
+                maxHeight = $(this).height();
+            }
+        });
+        maxHeight += 100;
+        console.log(maxHeight);
+        $(this).css('height', maxHeight)
+    })
+
     /*--Overflow scroll glitch fix---*/
     let div = document.createElement('div');
 
@@ -139,9 +151,11 @@ $(document).ready(function () {
         renderClickableBG(true, modal, bgId, modal)
     }
 
-    const closeModal = (modal, bg) => {
+    const closeModal = (modal, bg=null) => {
         modal.removeClass('opened');
-        bg.remove();
+        if (bg) {
+            bg.remove();
+        }
         $('body').css({
             'padding-right': 0,
             'overflow-y': 'auto',
@@ -157,6 +171,7 @@ $(document).ready(function () {
     $(document).on('click', '.js-close-modal', function () {
         const modal = $(this).parents('.modal');
         const bg = $(this).parents('.modal').find('#modal-bg')
+        console.log($(this).parents('.modal'));
         closeModal(modal, bg);
     });
 
@@ -445,6 +460,20 @@ $(document).ready(function () {
             scrollTop: $(elementToScroll).offset().top - 40
         }, 1000);
     });
+
+
+    const cookiesModal = $('#modal-cookies');
+
+    if (Cookies.get('modal') !== '1') {
+        cookiesModal.addClass('opened')
+    }
+
+    $('.js-close-cookies').on('click', function () {
+        closeModal(cookiesModal);
+        Cookies.set('modal', '1')
+    });
+
+
 
 });
 
