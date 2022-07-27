@@ -160,3 +160,12 @@
   background-repeat: no-repeat;
   z-index: 1;
 }
+
+.table-procedure {
+  th {
+    background-color: $secondary;
+  }
+  .table-subtitle td {
+    background-color: $primary !important;
+  }
+}
