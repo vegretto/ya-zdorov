@@ -464,16 +464,14 @@ $(document).ready(function () {
 
     const cookiesModal = $('#modal-cookies');
 
-    if (Cookies.get('modal') !== '2') {
+    if (Cookies.get('modal') !== '1') {
         cookiesModal.addClass('opened')
     }
 
-    console.log(sessionStorage.getItem('cook'))
 
     $('.js-close-cookies').on('click', function () {
         closeModal(cookiesModal);
-        // Cookies.set('modal', '2')
-        sessionStorage.setItem('cook', true);
+        Cookies.set('modal', '1')
     });
 
 
