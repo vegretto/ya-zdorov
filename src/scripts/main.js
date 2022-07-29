@@ -165,7 +165,7 @@ $(document).ready(function () {
 
     $(document).on('click', '.js-open-modal', function () {
         const modal = $($(this).attr('data-modal'));
-        openModal(modal, '#modal-bg')
+        openModal(modal, 'modal-bg')
     });
 
     $(document).on('click', '.js-close-modal', function () {
