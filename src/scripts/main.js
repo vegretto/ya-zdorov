@@ -170,8 +170,7 @@ $(document).ready(function () {
 
     $(document).on('click', '.js-close-modal', function () {
         const modal = $(this).parents('.modal');
-        const bg = $(this).parents('.modal').find('#modal-bg')
-        console.log($(this).parents('.modal'));
+        const bg = $(this).parents('.modal').find('#modal-bg');
         closeModal(modal, bg);
     });
 
