@@ -443,11 +443,18 @@
   display: flex;
   align-items: flex-start;
   margin-bottom: 40px;
+  @media (max-width: 600px) {
+    flex-wrap: wrap;
+  }
 
   &__text {
     max-width: 580px;
     flex-basis: 580px;
     margin-right: 20px;
+    @media (max-width: 600px) {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
   }
 
   &__sideblock {

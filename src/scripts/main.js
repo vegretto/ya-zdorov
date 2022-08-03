@@ -217,7 +217,8 @@ $(document).ready(function () {
             }, 350)
         });
     } else {
-        $(document).on('click', '.mobile-menu__nav-submenu-toggle', function () {
+        $(document).on('click', '.mobile-menu__nav-submenu-toggle', function (e) {
+            e.preventDefault();
             const submenuParent = $(this).parent('.mobile-menu__nav-item');
             const submenu = submenuParent.next('.mobile-menu__nav-submenu');
             if (submenu.length > 0) {
