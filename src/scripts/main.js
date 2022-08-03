@@ -329,7 +329,7 @@ $(document).ready(function () {
                         hideIconOnBalloonOpen: false,
                         balloonOffset: [4, -37],
                         iconLayout: 'default#image',
-                        iconImageHref: 'img/svg/marker.svg',
+                        iconImageHref: point.icon
                     }
                 );
                 myGeoObjects.push(placemark)
@@ -384,6 +384,8 @@ $(document).ready(function () {
 
     let initialFoldedHeight;
     let initialText;
+
+
 
     $(document).on('click', '.js-read-more-toggle', function () {
         let initialHeight = $(this).siblings('.js-read-more-container').height();
