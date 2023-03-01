@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Я здоров</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="styles/style.min.css">
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__top">
+				<div class="header__visually-impaired-toggle text-icon-box" id="specialButton">
+					<svg class="icon icon-eye">
+						<use xlink:href="img/svg/sprite.svg#eye"></use>
+					</svg>Версия для слабовидящих
+				</div><a class="header__worktime text-icon-box" href="#">
+					<svg class="icon icon-calendar">
+						<use xlink:href="img/svg/sprite.svg#calendar"></use>
+					</svg>Режим работы кабинетов и врачей</a>
+				<div class="header__phone-box text-icon-box">
+					<svg class="icon icon-phone">
+						<use xlink:href="img/svg/sprite.svg#phone"></use>
+					</svg><a class="header__phone" href="tel:88005001089">8 (800) 500-10-89</a><span class="header__callback js-open-modal" data-modal="#modal-callback">Перезвоните мне</span>
+				</div><a class="header__account text-icon-box" href="">
+					<svg class="icon icon-person">
+						<use xlink:href="img/svg/sprite.svg#person"></use>
+					</svg>
+					<div class="header__account-text">Личный кабинет пациента</div></a>
+			</div>
+			<div class="header__middle">
+				<div class="header__mobile-menu-toggle js-open-mobile-menu">
+					<svg class="icon icon-mobile-menu">
+						<use xlink:href="img/svg/sprite.svg#mobile-menu"></use>
+					</svg>
+				</div><a class="header__logo" href="/">
+					<svg class="icon icon-logo">
+						<use xlink:href="img/svg/sprite.svg#logo"></use>
+					</svg></a>
+				<div class="header__address">
+					<svg class="icon icon-point">
+						<use xlink:href="img/svg/sprite.svg#point"></use>
+					</svg>Медицинский центр<br> в&nbsp;г.&nbsp;Миллерово, ул.&nbsp;Льва&nbsp;Толстого&nbsp;44
+				</div><a class="header__promo-btn common-btn common-btn--secondary" href="#">Акции и спецпредложения</a>
+				<div class="header__appointment-btn common-btn common-btn--primary">
+					<svg class="icon icon-pen">
+						<use xlink:href="img/svg/sprite.svg#pen"></use>
+					</svg>Записаться на прием
+				</div>
+			</div>
+			<div class="header__bottom">
+				<nav class="header__nav"><a class="header__nav-item" href="#">Медицинские услуги</a>
+					<div class="header__nav-submenu">
+						<div class="close js-close">
+							<svg class="icon icon-close">
+								<use xlink:href="img/svg/sprite.svg#close"></use>
+							</svg>
+						</div>
+						<div class="header__nav-submenu-items"><a class="header__nav-submenu-item current" href="#">Прием врача</a><a class="header__nav-submenu-item" href="#">Лечение / Процедуры</a><a class="header__nav-submenu-item" href="#">УЗИ</a><a class="header__nav-submenu-item" href="#">Медицинские анализы</a><a class="header__nav-submenu-item" href="#">Прием врача</a></div>
+					</div><a class="header__nav-item current" href="#">Комплексные программы</a>
+					<div class="header__nav-submenu">
+						<div class="close js-close">
+							<svg class="icon icon-close">
+								<use xlink:href="img/svg/sprite.svg#close"></use>
+							</svg>
+						</div>
+						<div class="header__nav-submenu-items"><a class="header__nav-submenu-item" href="#">Прием врача</a><a class="header__nav-submenu-item" href="#">Лечение / Процедуры</a><a class="header__nav-submenu-item" href="#">УЗИ</a><a class="header__nav-submenu-item" href="#">Медицинские анализы</a><a class="header__nav-submenu-item" href="#">Прием врача</a><a class="header__nav-submenu-item" href="#">Лечение / Процедуры</a><a class="header__nav-submenu-item" href="#">Лечение / Процедуры</a><a class="header__nav-submenu-item" href="#">УЗИ</a><a class="header__nav-submenu-item" href="#">Медицинские анализы</a></div>
+					</div><a class="header__nav-item" href="#">Справки и медкнижки</a><a class="header__nav-item" href="#">Врачи медицинского центра</a><a class="header__nav-item" href="#">Профосмотры</a><a class="header__nav-item" href="#">Цены</a><a class="header__nav-item" href="#">О медицинском центре</a><a class="header__nav-item" href="#">Контакты</a>
+				</nav>
+			</div>
+		</header>
+		<div class="container">
+			<div class="breadcrumbs"><a class="breadcrumbs__item" href="/">Главная</a><a class="breadcrumbs__item" href="/">О медицинском центре</a>
+				<div class="breadcrumbs__item breadcrumbs__item--current">Подкатегория</div>
+			</div>
+		</div>
+		<div class="main-wrapper elements">
+			<div class="main-wrapper__container container">
+				<h1 class="h1"><span class="primary">Заголовок H1.</span> Заголовок должен быть длинным, чтобы был верно выстроен интерлиньяж</h1>
+				<div class="content-wrapper">
+					<aside class="sidebar">
+						<nav class="sidebar__nav"><a class="sidebar__nav-item current" href="#">Трудоустройство</a><a class="sidebar__nav-item" href="#">Отзывы</a><a class="sidebar__nav-item" href="#">Правовая информация</a><a class="sidebar__nav-item" href="#">Лицензия и документы</a><a class="sidebar__nav-item" href="#">Пользовательское соглашение</a><a class="sidebar__nav-item" href="#">Политика конфиденциальности</a></nav>
+					</aside>
+					<main class="main-content">
+						<div class="typography">
+							<div class="lead">Лид. Первый абзац текста/статьи, информативный отрывок, позволяющий захватить внимание читателя на материале.</div>
+							<p>Текст блока. В основном тексте блока должны быть верно определены: кегель, межбуквенные и межстрочные интервалы, абзацы, подобран читабельный шрифт. Это блоки, в которых будет содержаться основной информационный посыл блока, следовательно, он должен быть максимально комфортен для чтения.</p>
+							<p>Текст блока. В основном тексте блока должны быть верно определены: кегель, межбуквенные и межстрочные интервалы, абзацы, подобран читабельный шрифт. Это блоки, в которых будет содержаться основной информационный посыл блока, следовательно, он должен быть максимально комфортен для чтения.</p>
+							<h2 class="primary">Заголовок H2. Многострочный заголовок, длина которого иногда бывает так не кстати.</h2>
+							<p>Текст блока. В основном тексте блока должны быть верно определены: кегель, межбуквенные и межстрочные интервалы, абзацы, подобран читабельный шрифт. Это блоки, в которых будет содержаться основной информационный посыл блока, следовательно, он должен быть максимально комфортен для чтения.</p>
+							<p>Текст блока. В основном тексте блока должны быть верно определены: кегель, межбуквенные и межстрочные интервалы, абзацы, подобран читабельный шрифт. Это блоки, в которых будет содержаться основной информационный посыл блока, следовательно, он должен быть максимально комфортен для чтения.</p>
+							<p>Текст блока. В основном тексте блока должны быть верно определены: кегель, межбуквенные и межстрочные интервалы, абзацы, подобран читабельный шрифт. Это блоки, в которых будет содержаться основной информационный посыл блока, следовательно, он должен быть максимально комфортен для чтения.</p>
+							<h3>Заголовок Н3. Делаем заголовок нарочито длинным, чтобы убедится в правильном интерлиньяже</h3>
+							<p>Текст блока. В основном тексте блока должны быть верно определены: кегель, межбуквенные и межстрочные интервалы, абзацы, подобран читабельный шрифт. Это блоки, в которых будет содержаться основной информационный посыл блока, следовательно, он должен быть максимально комфортен для чтения.</p>
+							<p>Текст блока. В основном тексте блока должны быть верно определены: кегель, межбуквенные и межстрочные интервалы, абзацы, подобран читабельный шрифт. Это блоки, в которых будет содержаться основной информационный посыл блока, следовательно, он должен быть максимально комфортен для чтения.</p>
+							<h2 class="primary">Списки</h2>
+							<ul>
+								<li>Текст блока. В основном тексте блока должны быть верно определены: кегель, межбуквенные и межстрочные интервалы, абзацы, подобран читабельный шрифт. Это блоки, в которых будет содержаться основной информационный посыл блока, следовательно, он должен быть максимально комфортен для чтения.</li>
+								<li>
+									<ul>
+										<li>Текст блока. В основном тексте блока должны быть верно определены: кегель, межбуквенные и межстрочные интервалы, абзацы, подобран читабельный шрифт. Это блоки, в которых будет содержаться основной информационный посыл блока, следовательно, он должен быть максимально комфортен для чтения.</li>
+										<li>
+											<ol>
+												<li>Текст блока. В основном тексте блока должны быть верно определены: кегель, межбуквенные и межстрочные интервалы, абзацы, подобран читабельный шрифт. Это блоки, в которых будет содержаться основной информационный посыл блока, следовательно, он должен быть максимально комфортен для чтения.</li>
+												<li>Текст блока. В основном тексте блока должны быть верно определены: кегель, межбуквенные и межстрочные интервалы, абзацы, подобран читабельный шрифт. Это блоки, в которых будет содержаться основной информационный посыл блока, следовательно, он должен быть максимально комфортен для чтения.</li>
+											</ol>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<ol>
+										<li>Текст блока. В основном тексте блока должны быть верно определены: кегель, межбуквенные и межстрочные интервалы, абзацы, подобран читабельный шрифт. Это блоки, в которых будет содержаться основной информационный посыл блока, следовательно, он должен быть максимально комфортен для чтения</li>
+									</ol>
+								</li>
+							</ul>
+							<ol>
+								<li>Текст блока. В основном тексте блока должны быть верно определены: кегель, межбуквенные и межстрочные интервалы, абзацы, подобран читабельный шрифт. Это блоки, в которых будет содержаться основной информационный посыл блока, следовательно, он должен быть максимально комфортен для чтения.</li>
+								<li>
+									<ul>
+										<li>Текст блока. В основном тексте блока должны быть верно определены: кегель, межбуквенные и межстрочные интервалы, абзацы, подобран читабельный шрифт. Это блоки, в которых будет содержаться основной информационный посыл блока, следовательно, он должен быть максимально комфортен для чтения.</li>
+									</ul>
+								</li>
+								<li>
+									<ol>
+										<li>Текст блока. В основном тексте блока должны быть верно определены: кегель, межбуквенные и межстрочные интервалы, абзацы, подобран читабельный шрифт. Это блоки, в которых будет содержаться основной информационный посыл блока, следовательно, он должен быть максимально комфортен для чтения</li>
+									</ol>
+								</li>
+							</ol>
+						</div>
+						<div class="float-block">
+							<picture>
+								<source data-srcset="img/elements1.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMSAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNkMWQxZDEiLz48L3N2Zz4=" data-src="img/elements1.undefined" alt="" width="380" height="300"/>
+							</picture>
+							<div class="float-block__text">
+								<div class="typography">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid commodi cumque cupiditate dolor dolorem dolores dolorum eligendi eos facilis in inventore ipsum necessitatibus nemo optio porro sapiente, tempore temporibus unde.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid commodi cumque cupiditate dolor dolorem dolores dolorum eligendi eos facilis in inventore ipsum necessitatibus nemo optio porro sapiente, tempore temporibus unde.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid commodi cumque cupiditate dolor dolorem dolores dolorum eligendi eos facilis in inventore ipsum necessitatibus nemo optio porro sapiente, tempore temporibus unde.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid commodi cumque cupiditate dolor dolorem dolores dolorum eligendi eos facilis in inventore ipsum necessitatibus nemo optio porro sapiente, tempore temporibus unde.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid commodi cumque cupiditate dolor dolorem dolores dolorum eligendi eos facilis in inventore ipsum necessitatibus nemo optio porro sapiente, tempore temporibus unde.</p>
+								</div>
+							</div>
+						</div>
+					</main>
+				</div>
+			</div>
+			<div class="fw-img">
+				<picture>
+					<source data-srcset="img/appointment-bg-sm.webp" type="image/webp" media="(max-width: 600px)"/>
+					<source data-srcset="img/appointment-bg-sm.png" media="(max-width: 600px)"/>
+					<source data-srcset="img/appointment-bg.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMSAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNkMWQxZDEiLz48L3N2Zz4=" data-src="img/appointment-bg.png" alt="" width="1920" height="350"/>
+				</picture>
+			</div>
+			<section>
+				<div class="container">
+					<div class="flex-wrapper">
+						<div class="col-6">
+							<div class="typography">
+								<ul class="ul primary">
+									<li>Нумерованный список</li>
+									<li>Маркированный список</li>
+								</ul>
+								<ol class="ol primary">
+									<li>Нумерованный список</li>
+									<li>Маркированный список</li>
+								</ol>
+								<div class="comment">* Элемент «Комментарий» (класс comment) применяется к пояснительному тексту. И еще немного специально написанного текста, чтобы получилось несколько строк для наглядности.</div>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="typography">
+								<blockquote>
+									<p>И открылись царю слова «И это тоже пройдет». Удивление от того, что никогда он не замечал этой строчки ранее, охладило Соломона. Больше срывов с ним не случалось долгие годы, но, наконец, пришла пора ему уходить в мир иной. Он сидел и рассматривал свое кольцо, с которым, казалось, никогда не расставался. Соломон знал каждую щербинку на нем. Грустно улыбнулся царь, в последний раз прочитывая сначала одну надпись “Это пройдет”, затем вторую “И это тоже пройдет”.</p>
+									<p>И открылись царю слова «И это тоже пройдет». Удивление от того, что никогда он не замечал этой строчки ранее, охладило Соломона. Больше срывов с ним не случалось долгие годы, но, наконец, пришла пора ему уходить в мир иной. Он сидел и рассматривал свое кольцо, с которым, казалось, никогда не расставался. Соломон знал каждую щербинку на нем. Грустно улыбнулся царь, в последний раз прочитывая сначала одну надпись “Это пройдет”, затем вторую “И это тоже пройдет”.</p>
+								</blockquote>
+								<cite>Цитата</cite>
+							</div>
+						</div>
+					</div>
+					<div class="important">
+						<div class="important__box">
+							<svg class="icon icon-sale">
+								<use xlink:href="img/svg/sprite.svg#sale"></use>
+							</svg>
+							<div class="important__title h2">Важно. Используется для выделения особо важной информации:</div>
+						</div>
+						<div class="important__text">Важная информация, важнаяинформация, важнаяинформация, важнаяинформация</div>
+					</div>
+				</div>
+			</section>
+			<section class="medium-block-grid medium-block-grid--content">
+				<div class="medium-block-grid__container container">
+					<div class="medium-block-grid__items">
+						<div class="medium-block">
+							<div class="medium-block__icon">
+								<svg class="icon icon-medium-block-icon1">
+									<use xlink:href="img/svg/sprite.svg#medium-block-icon1"></use>
+								</svg>
+							</div>
+							<div class="medium-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis eget.</div>
+						</div>
+						<div class="medium-block">
+							<div class="medium-block__icon">
+								<svg class="icon icon-medium-block-icon2">
+									<use xlink:href="img/svg/sprite.svg#medium-block-icon2"></use>
+								</svg>
+							</div>
+							<div class="medium-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis eget.</div>
+						</div>
+						<div class="medium-block">
+							<div class="medium-block__icon">
+								<svg class="icon icon-medium-block-icon3">
+									<use xlink:href="img/svg/sprite.svg#medium-block-icon3"></use>
+								</svg>
+							</div>
+							<div class="medium-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis eget.</div>
+						</div>
+						<div class="medium-block">
+							<div class="medium-block__icon">
+								<svg class="icon icon-medium-block-icon4">
+									<use xlink:href="img/svg/sprite.svg#medium-block-icon4"></use>
+								</svg>
+							</div>
+							<div class="medium-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis eget.</div>
+						</div>
+						<div class="medium-block">
+							<div class="medium-block__icon">
+								<svg class="icon icon-medium-block-icon5">
+									<use xlink:href="img/svg/sprite.svg#medium-block-icon5"></use>
+								</svg>
+							</div>
+							<div class="medium-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis eget.</div>
+						</div>
+						<div class="medium-block">
+							<div class="medium-block__icon">
+								<svg class="icon icon-medium-block-icon6">
+									<use xlink:href="img/svg/sprite.svg#medium-block-icon6"></use>
+								</svg>
+							</div>
+							<div class="medium-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis eget.</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="container"><a class="large-block large-block--fw large-block--promo large-block--gray" href="#">
+						<div class="large-block__bg">
+							<picture>
+								<source data-srcset="img/large-block-bg7-sm.webp" type="image/webp" media="(max-width: 600px)"/>
+								<source data-srcset="img/large-block-bg7-sm.png" media="(max-width: 600px)"/>
+								<source data-srcset="img/large-block-bg7.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMSAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNkMWQxZDEiLz48L3N2Zz4=" data-src="img/large-block-bg7.png" alt="" width="1180" height="300"/>
+							</picture>
+						</div>
+						<div class="large-block__content large-block__content--mobile-br-show">
+							<div class="large-block__text"><strong>Фотографию поменьше, примерно на </strong><span class="primary">70% ширины сайта с подписью к ней</span></div>
+							<div class="large-block__btn common-btn common-btn--secondary">Получить скидку</div>
+						</div></a></div>
+			</section>
+			<section>
+				<div class="container">
+					<div class="common-slider js-common-slider">
+						<div class="common-slider__wrapper swiper-wrapper">
+							<div class="common-slider__slide swiper-slide">
+								<picture>
+									<source data-srcset="img/slider1.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMSAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNkMWQxZDEiLz48L3N2Zz4=" data-src="img/slider1.png" alt="" width="580" height="350"/>
+								</picture>
+							</div>
+							<div class="common-slider__slide swiper-slide">
+								<picture>
+									<source data-srcset="img/slider1.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMSAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNkMWQxZDEiLz48L3N2Zz4=" data-src="img/slider1.png" alt="" width="580" height="350"/>
+								</picture>
+							</div>
+							<div class="common-slider__slide swiper-slide">
+								<picture>
+									<source data-srcset="img/slider1.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMSAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNkMWQxZDEiLz48L3N2Zz4=" data-src="img/slider1.png" alt="" width="580" height="350"/>
+								</picture>
+							</div>
+							<div class="common-slider__slide swiper-slide">
+								<picture>
+									<source data-srcset="img/slider1.webp" type="image/webp"/><img class="lazyload" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMSAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNkMWQxZDEiLz48L3N2Zz4=" data-src="img/slider1.png" alt="" width="580" height="350"/>
+								</picture>
+							</div>
+						</div>
+						<div class="common-slider__pagination-box">
+							<div class="common-slider__pagination"></div>
+						</div>
+						<div class="common-slider__arrow common-slider__arrow--prev">
+							<svg class="icon icon-arrow-right">
+								<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+							</svg>
+						</div>
+						<div class="common-slider__arrow common-slider__arrow--next">
+							<svg class="icon icon-arrow-right">
+								<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="container">
+					<form class="form">
+						<div class="form__header">
+							<div class="form__title h1 txt-center">Регистрация</div>
+							<div class="form__header-text primary txt-center"><strong>Регистрация даст вам доступ к скидкам и бонусной программе</strong></div>
+						</div>
+						<div class="form__container col-6 col-6--center">
+							<div class="form__form-groups-wrapper">
+								<div class="flex-wrapper">
+									<div class="col-6">
+										<div class="form-group">
+											<label class="label" for="cf1">Введите Имя:</label>
+											<input class="input" type="text" id="cf1" required="required"/>
+											<div class="error-message">Это поле обязательно для заполнения</div>
+										</div>
+										<div class="form-group">
+											<label class="label" for="cf2">Введите Фамилию:</label>
+											<input class="input" type="text" id="cf2" required="required"/>
+											<div class="error-message">Это поле обязательно для заполнения</div>
+										</div>
+										<div class="form-group">
+											<label class="label" for="cf3">Введите Отчество:</label>
+											<input class="input" type="text" id="cf3" required="required"/>
+											<div class="error-message">Это поле обязательно для заполнения</div>
+										</div>
+									</div>
+									<div class="col-6">
+										<div class="form-group">
+											<label class="label" for="cf4">Введите номер телефона:</label>
+											<input class="input" type="tel" id="cf4" required="required"/>
+											<div class="error-message">Это поле обязательно для заполнения</div>
+										</div>
+										<div class="form-group">
+											<label class="label" for="cf5">Введите Email:</label>
+											<input class="input" type="email" id="cf5" required="required"/>
+											<div class="error-message">Это поле обязательно для заполнения</div>
+										</div>
+										<div class="form-group">
+											<label class="label" for="cf6">Введите пароль:</label>
+											<input class="input" type="password" id="cf6" required="required"/>
+											<div class="error-message">Это поле обязательно для заполнения</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form__btn-wrapper btn-wrapper btn-wrapper--center">
+								<button class="form__btn common-btn common-btn--primary" type="submit">Отправить</button>
+							</div>
+							<div class="form__text txt-center">Нажимая на кнопку, я соглашаюсь на обработку моих персональных данных и ознакомлен(а) с условиями <a href="#">политики конфиденциальности.</a></div>
+							<div class="form-group form-group--checkbox form-group--center">
+								<input class="checkbox" type="checkbox" id="cf7" checked="checked"/>
+								<div class="custom-cb-badge js-custom-cb checked"></div>
+								<label class="label" for="cf7">Подписаться на новости</label>
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+			<section>
+				<div class="container">
+					<div class="typography">
+						<table>
+							<thead>
+								<tr>
+									<th>Кабинет врача</th>
+									<th>Фамилия специалиста</th>
+									<th>Номер кабинета</th>
+									<th>Стоимость приема</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="b">Невролог</td>
+									<td>Зенкина Татьяна Алексеевна</td>
+									<td class="b">2</td>
+									<td>1500 рублей первичный прием;<br>1000 рублей повторный прием.</td>
+								</tr>
+								<tr>
+									<td class="b">Невролог</td>
+									<td>Зенкина Татьяна Алексеевна</td>
+									<td class="b">2</td>
+									<td>1500 рублей первичный прием;<br>1000 рублей повторный прием.</td>
+								</tr>
+								<tr>
+									<td class="b">Терапевт</td>
+									<td>Иванов Иван Иванович</td>
+									<td class="b">3</td>
+									<td>1500 рублей первичный прием;<br>1000 рублей повторный прием.</td>
+								</tr>
+								<tr>
+									<td class="b">Рефлексотерапия</td>
+									<td>Среда, пятница с 14.00 до 16.00</td>
+									<td class="b">3</td>
+									<td>1500 рублей первичный прием;<br>1000 рублей повторный прием.</td>
+								</tr>
+								<tr>
+									<td class="b">Терапевт</td>
+									<td>Иванов Иван Иванович</td>
+									<td class="b">3</td>
+									<td>1500 рублей первичный прием;<br>1000 рублей повторный прием.</td>
+								</tr>
+								<tr>
+									<td class="b">Невролог</td>
+									<td>Зенкина Татьяна Алексеевна</td>
+									<td class="b">2</td>
+									<td>1500 рублей первичный прием;<br>1000 рублей повторный прием.</td>
+								</tr>
+								<tr>
+									<td class="b">Невролог</td>
+									<td>Зенкина Татьяна Алексеевна</td>
+									<td class="b">2</td>
+									<td>1500 рублей первичный прием;<br>1000 рублей повторный прием.</td>
+								</tr>
+								<tr>
+									<td class="b">Терапевт</td>
+									<td>Иванов Иван Иванович</td>
+									<td class="b">3</td>
+									<td>1500 рублей первичный прием;<br>1000 рублей повторный прием.</td>
+								</tr>
+								<tr>
+									<td class="b">Рефлексотерапия</td>
+									<td>Среда, пятница с 14.00 до 16.00</td>
+									<td class="b">3</td>
+									<td>1500 рублей первичный прием;<br>1000 рублей повторный прием.</td>
+								</tr>
+								<tr>
+									<td class="b">Терапевт</td>
+									<td>Иванов Иван Иванович</td>
+									<td class="b">3</td>
+									<td>1500 рублей первичный прием;<br>1000 рублей повторный прием.</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="pagination"><a class="pagination__item pagination__item--prev" href="#">Предыдущий</a><a class="pagination__item" href="#">1</a><a class="pagination__item" href="#">2</a><a class="pagination__item current" href="#">3</a><a class="pagination__item" href="#">4</a><a class="pagination__item" href="#">5</a><a class="pagination__item pagination__item--next" href="#">Следующий</a></div>
+				</div>
+			</section>
+			<section>
+				<div class="container">
+					<div class="accordion">
+						<div class="accordion__item">
+							<div class="accordion__title js-accordion-toggle active">Как можно записаться на прием?
+								<svg class="icon icon-arrow-down">
+									<use xlink:href="img/svg/sprite.svg#arrow-down"></use>
+								</svg>
+							</div>
+							<div class="accordion__content js-accordion-content opened">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
+						</div>
+						<div class="accordion__item">
+							<div class="accordion__title js-accordion-toggle">Сколько длится прием у специалиста?
+								<svg class="icon icon-arrow-down">
+									<use xlink:href="img/svg/sprite.svg#arrow-down"></use>
+								</svg>
+							</div>
+							<div class="accordion__content js-accordion-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
+						</div>
+						<div class="accordion__item">
+							<div class="accordion__title js-accordion-toggle">Можно ли прийти без записи (по острой боли и др)?
+								<svg class="icon icon-arrow-down">
+									<use xlink:href="img/svg/sprite.svg#arrow-down"></use>
+								</svg>
+							</div>
+							<div class="accordion__content js-accordion-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
+						</div>
+						<div class="accordion__item">
+							<div class="accordion__title js-accordion-toggle">Работает ли мед. центр в выходные или в поздние часы в будни?
+								<svg class="icon icon-arrow-down">
+									<use xlink:href="img/svg/sprite.svg#arrow-down"></use>
+								</svg>
+							</div>
+							<div class="accordion__content js-accordion-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
+						</div>
+						<div class="accordion__item">
+							<div class="accordion__title js-accordion-toggle">Есть ли очереди, каково максимальное ожидание, если пришел по предварительной записи?
+								<svg class="icon icon-arrow-down">
+									<use xlink:href="img/svg/sprite.svg#arrow-down"></use>
+								</svg>
+							</div>
+							<div class="accordion__content js-accordion-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer class="footer">
+			<div class="footer__container container">
+				<div class="footer__top">
+					<div class="footer__col">
+						<div class="footer__col-inner">
+							<div class="footer__logo">
+								<svg class="icon icon-logo">
+									<use xlink:href="img/svg/sprite.svg#logo"></use>
+								</svg>
+							</div>
+							<div class="footer__address">
+								<svg class="icon icon-point">
+									<use xlink:href="img/svg/sprite.svg#point"></use>
+								</svg>Медицинский центр в&nbsp;г.&nbsp;Миллерово, ул.&nbsp;Льва&nbsp;Толстого&nbsp;44
+							</div>
+							<div class="footer__phone-box text-icon-box">
+								<svg class="icon icon-phone">
+									<use xlink:href="img/svg/sprite.svg#phone"></use>
+								</svg><a class="footer__phone" href="tel:88005001089">8 (800) 500-10-89</a><span class="footer__callback js-open-modal" data-modal="#modal-callback">Перезвоните мне</span>
+							</div>
+							<div class="footer__license">Лицензия № ЛО-26-01-04072757 от&nbsp;8&nbsp;октября&nbsp;2021&nbsp;г.</div>
+						</div>
+					</div>
+					<div class="footer__col footer__col--nav">
+						<div class="footer__col-inner">
+							<nav class="footer__nav"><a class="footer__nav-item footer__nav-item--main" href="#">Медицинские услуги</a><a class="footer__nav-item" href="#">Прием врача</a><a class="footer__nav-item" href="#">Лечение / Процедуры</a><a class="footer__nav-item" href="#">МРТ</a><a class="footer__nav-item" href="#">УЗИ</a><a class="footer__nav-item" href="#">Медицинские анализы</a><a class="footer__nav-item" href="#">КТ</a></nav>
+							<nav class="footer__nav"><a class="footer__nav-item footer__nav-item--main" href="#">Комплексные программы</a><a class="footer__nav-item" href="#">Ежегодное обследование</a><a class="footer__nav-item" href="#">Планирование беременности</a><a class="footer__nav-item" href="#">Женское здоровье</a><a class="footer__nav-item" href="#">Мужское здоровье</a><a class="footer__nav-item" href="#">Здоровое сердце</a><a class="footer__nav-item" href="#">Реабилитация после COVID</a></nav>
+						</div>
+					</div>
+					<div class="footer__col footer__col--nav">
+						<div class="footer__col-inner">
+							<nav class="footer__nav"><a class="footer__nav-item" href="#">Справки и медкнижки</a><a class="footer__nav-item" href="#">Врачи медицинского центра</a><a class="footer__nav-item" href="#">Профосмотры</a><a class="footer__nav-item" href="#">Цены</a><a class="footer__nav-item secondary" href="#">Акции и спецпредложения</a><a class="footer__nav-item" href="#">Программа лояльности</a><a class="footer__nav-item secondary" href="#">Контакты</a></nav>
+							<nav class="footer__nav"><a class="footer__nav-item footer__nav-item--main" href="#">О медицинском центре</a><a class="footer__nav-item" href="#">Отзывы</a><a class="footer__nav-item" href="#">Трудоустройство</a><a class="footer__nav-item" href="#">Правовая информация</a><a class="footer__nav-item" href="#">Лицензия и документы</a><a class="footer__nav-item" href="#">Пользовательское соглашение</a><a class="footer__nav-item" href="#">Политика конфиденциальности</a></nav>
+						</div>
+					</div>
+					<div class="footer__col footer__col--mobile mobile-only">
+						<div class="footer__col-inner">
+							<nav class="footer__nav"><a class="footer__nav-item" href="#">Медицинские услуги</a><a class="footer__nav-item" href="#">Комплексные программы</a><a class="footer__nav-item" href="#">Справки и медкнижки</a><a class="footer__nav-item" href="#">Врачи клиники</a><a class="footer__nav-item" href="#">Профосмотры</a></nav>
+							<nav class="footer__nav"><a class="footer__nav-item" href="#">Цены</a><a class="footer__nav-item" href="#">О клинике</a><a class="footer__nav-item secondary" href="#">Акции и спецпредложения</a><a class="footer__nav-item secondary" href="#">Контакты</a></nav>
+						</div>
+					</div>
+					<div class="footer__col">
+						<div class="footer__col-inner">
+							<div class="footer__appointment-btn common-btn common-btn--primary">
+								<svg class="icon icon-pen">
+									<use xlink:href="img/svg/sprite.svg#pen"></use>
+								</svg>Записаться на прием
+							</div><a class="footer__account text-icon-box" href="">
+								<svg class="icon icon-person">
+									<use xlink:href="img/svg/sprite.svg#person"></use>
+								</svg>
+								<div class="footer__account-text">Личный кабинет пациента</div><a class="footer__worktime text-icon-box" href="#">
+									<svg class="icon icon-calendar">
+										<use xlink:href="img/svg/sprite.svg#calendar"></use>
+									</svg>Режим работы кабинетов и врачей</a></a>
+							<div class="social"><a class="social__item" href="#">
+									<svg class="icon icon-vk">
+										<use xlink:href="img/svg/sprite.svg#vk"></use>
+									</svg></a><a class="social__item" href="#">
+									<svg class="icon icon-tg">
+										<use xlink:href="img/svg/sprite.svg#tg"></use>
+									</svg></a><a class="social__item" href="#">
+									<svg class="icon icon-wa">
+										<use xlink:href="img/svg/sprite.svg#wa"></use>
+									</svg></a><a class="social__item" href="#">
+									<svg class="icon icon-ok">
+										<use xlink:href="img/svg/sprite.svg#ok"></use>
+									</svg></a></div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<div class="footer__copywrite">© Медицинский центр "Я Здоров", 2022 год</div>
+					<div class="footer__developers">Разработка сайта -&nbsp;<a href="http://webelement.ru/">WEBELEMENT</a></div>
+				</div>
+			</div>
+		</footer>
+		<div class="mobile-menu">
+			<div class="mobile-menu__inner">
+				<div class="close js-close-mobile-menu">
+					<svg class="icon icon-close">
+						<use xlink:href="img/svg/sprite.svg#close"></use>
+					</svg>
+				</div>
+				<div class="mobile-menu__top">
+					<div class="mobile-menu__phone-box text-icon-box">
+						<svg class="icon icon-phone">
+							<use xlink:href="img/svg/sprite.svg#phone"></use>
+						</svg><a class="mobile-menu__phone" href="tel:88005001089">8 (800) 500-10-89</a>
+					</div>
+					<div class="mobile-menu__appointment-btn common-btn common-btn--primary">
+						<svg class="icon icon-pen">
+							<use xlink:href="img/svg/sprite.svg#pen"></use>
+						</svg>Записаться на прием
+					</div>
+				</div>
+				<div class="mobile-menu__middle">
+					<nav class="mobile-menu__nav"><a class="mobile-menu__nav-item current" href="#">Медицинские услуги
+							<div class="mobile-menu__nav-submenu-toggle">
+								<svg class="icon icon-arrow-right">
+									<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+								</svg>
+							</div></a>
+						<div class="mobile-menu__nav-submenu">
+							<div class="mobile-menu__nav-back js-menu-back">
+								<svg class="icon icon-arrow-right">
+									<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+								</svg>
+							</div>
+							<div class="mobile-menu__nav-submenu-category js-menu-back">Медицинские услуги</div>
+							<div class="mobile-menu__nav-submenu-items"><a class="mobile-menu__nav-submenu-item" href="#">Прием врача</a><a class="mobile-menu__nav-submenu-item" href="#">Лечение / Процедуры</a><a class="mobile-menu__nav-submenu-item" href="#">УЗИ</a><a class="mobile-menu__nav-submenu-item" href="#">Медицинские анализы</a></div>
+						</div><a class="mobile-menu__nav-item" href="#">Комплексные программы
+							<div class="mobile-menu__nav-submenu-toggle">
+								<svg class="icon icon-arrow-right">
+									<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+								</svg>
+							</div></a>
+						<div class="mobile-menu__nav-submenu">
+							<div class="mobile-menu__nav-back js-menu-back">
+								<svg class="icon icon-arrow-right">
+									<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+								</svg>
+							</div>
+							<div class="mobile-menu__nav-submenu-category js-menu-back">Комплексные программы</div>
+							<div class="mobile-menu__nav-submenu-items"><a class="mobile-menu__nav-submenu-item" href="#">Прием врача</a><a class="mobile-menu__nav-submenu-item" href="#">Лечение / Процедуры</a><a class="mobile-menu__nav-submenu-item" href="#">УЗИ</a><a class="mobile-menu__nav-submenu-item" href="#">Медицинские анализы</a></div>
+						</div><a class="mobile-menu__nav-item" href="#">Справки и медкнижки
+							<div class="mobile-menu__nav-submenu-toggle">
+								<svg class="icon icon-arrow-right">
+									<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+								</svg>
+							</div></a>
+						<div class="mobile-menu__nav-submenu">
+							<div class="mobile-menu__nav-back js-menu-back">
+								<svg class="icon icon-arrow-right">
+									<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+								</svg>
+							</div>
+							<div class="mobile-menu__nav-submenu-category js-menu-back">Справки и медкнижки</div>
+							<div class="mobile-menu__nav-submenu-items"><a class="mobile-menu__nav-submenu-item" href="#">Прием врача</a><a class="mobile-menu__nav-submenu-item" href="#">Лечение / Процедуры</a><a class="mobile-menu__nav-submenu-item" href="#">УЗИ</a><a class="mobile-menu__nav-submenu-item" href="#">Медицинские анализы</a></div>
+						</div><a class="mobile-menu__nav-item" href="#">Врачи клиники</a><a class="mobile-menu__nav-item" href="#">Профосмотры</a><a class="mobile-menu__nav-item" href="#">Цены</a><a class="mobile-menu__nav-item" href="#">О клинике</a><a class="mobile-menu__nav-item" href="#">Контакты</a>
+					</nav>
+				</div>
+				<div class="mobile-menu__bottom"></div>
+			</div>
+		</div>
+		<div class="modal modal--callback" id="modal-callback">
+			<div class="modal__body">
+				<div class="close js-close-modal">
+					<svg class="icon icon-close">
+						<use xlink:href="img/svg/sprite.svg#close"></use>
+					</svg>
+				</div>
+				<div class="modal__content">
+					<div class="modal__text">Чтобы связаться с нашими специалистами <span class="primary">оставьте свой номер телефона, и мы вам перезвоним</span></div>
+					<form class="form">
+						<div class="form-group">
+							<label class="label" for="mc1">Введите номер телефона:</label>
+							<input class="input" type="tel" id="mc1" required="required"/>
+							<div class="error-message">Это поле обязательно для заполнения</div>
+						</div>
+						<button class="form__btn common-btn common-btn--primary js-open-modal" type="submit" data-modal="#modal-callback-success">Отправить</button>
+						<div class="form__text">Нажимая на кнопку, я соглашаюсь на обработку моих персональных данных и ознакомлен(а) с условиями <a href="#">политики конфиденциальности.</a></div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="modal modal--callback-success" id="modal-callback-success">
+			<div class="modal__body">
+				<div class="close js-close-modal">
+					<svg class="icon icon-close">
+						<use xlink:href="img/svg/sprite.svg#close"></use>
+					</svg>
+				</div>
+				<div class="modal__content">
+					<div class="modal__text"><span class="primary">Ваша заявка принята!</span><br> Мы обязательно вам перезвоним в ближайшее время</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal modal--testimonial-success" id="modal-testimonial-success">
+			<div class="modal__body">
+				<div class="close js-close-modal">
+					<svg class="icon icon-close">
+						<use xlink:href="img/svg/sprite.svg#close"></use>
+					</svg>
+				</div>
+				<div class="modal__content">
+					<div class="modal__text"><span class="primary">Отзыв отправлен в отдел качества.</span><br> После его обработки с вами свяжется менеджер и расскажет условия получения скидки</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal modal--cookies" id="modal-cookies">
+			<div class="modal__body">
+				<div class="modal__content">
+					<div class="modal__cookie-text"><span>ООО «Я Здоров» использует файлы cookie.</span><span class="mobile-hide">Продолжая работу с сайтом, вы подтверждаете использование сайтом cookies вашего браузера, которые помогают нам делать этот сайт удобнее для пользователей. Однако вы можете запретить сохранение файлов cookie в настройках своего браузера. Обработка данных пользователей осуществляется в соответствии с Политикой обработки персональных данных и Согласием на обработку данных пользователя сайта.</span></div>
+					<button class="modal__btn common-btn common-btn--primary common-btn js-close-cookies">Понятно</button>
+				</div>
+			</div>
+		</div>
+		<script src="scripts/vendor.min.js"></script>
+		<script src="scripts/vendor/uhpv-full.min.js"></script>
+		<script src="scripts/main.min.js"></script>
+	</body>
+</html>
